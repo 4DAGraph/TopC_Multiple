@@ -1,0 +1,42 @@
+pragma solidity ^0.4.11;
+
+contract data {
+    string saySomething;
+	address owner;
+	address user;
+	struct dataInfo {
+        string data;
+        uint256 developeTime;
+        uint256 expireTime;
+    }
+	struct keyInfo {
+        mapping(string => dataInfo) dataMap;
+    }
+	mapping (address => keyInfo) userInfo;
+	event own(address owner);
+    function data() {
+        owner = msg.sender;
+    }
+    function getData2() constant returns(address str) {
+	return owner; 
+    }
+    function getData(address useraddress,string dataName) constant returns(string str) {
+        if(now<=userInfo[useraddress].dataMap[dataName].expireTime)
+		return (userInfo[useraddress].dataMap[dataName].data);
+        else
+        throw;
+    }
+    function setData(address useraddress,string dataName,string newData, uint settime) returns(string success) {
+        if(msg.sender==owner)
+        {
+		    userInfo[useraddress].dataMap[dataName].data = newData;
+		    userInfo[useraddress].dataMap[dataName].developeTime = now;
+		    userInfo[useraddress].dataMap[dataName].expireTime = now+ settime;
+		    return newData;
+        }
+        else{
+            return "false";
+        }
+    }
+}
+

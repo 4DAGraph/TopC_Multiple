@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <title>iServChain</title>
+  <meta name="keywords" content="iServChain" />
+  <meta name="description" content="iServChain">
+  <meta name="author" content="iii">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font CSS (Via CDN) -->
+  <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'>
+  
+  <!-- Font CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/fonts/glyphicons-pro/glyphicons-pro.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/octicons/octicons.css">
+  <link rel="stylesheet" type="text/css" href="assets/fonts/icomoon/icomoon.css">
+    <link rel="stylesheet" href="/css/style.css">
+  
+  <!-- Datatables CSS -->
+  <link rel="stylesheet" type="text/css" href="vendor/plugins/datatables/media/css/dataTables.bootstrap.css">
+  
+  <!-- Bootstrap Datetimepicker CSS -->
+  <link rel="stylesheet" type="text/css" href="vendor/plugins/datepicker/css/bootstrap-datetimepicker.css">
+  <!-- Bootstrap Daterangepicker CSS -->
+  <link rel="stylesheet" type="text/css" href="vendor/plugins/daterange/daterangepicker.css">
+  <!-- C3 Chart CSS -->
+  <link rel="stylesheet" type="text/css" href="vendor/plugins/c3charts/c3.min.css">
+  
+  <!-- Admin Forms CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/admin-tools/admin-forms/css/admin-forms.css">
+  
+  <!-- Theme CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/skin/default_skin/css/theme.css">
+ 
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+  <!-- iServCloud CSS -->
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/role_business.css" id="role_business">
+  <link rel="stylesheet" type="text/css" href="css/role_client.css" id="role_client">
+  <link rel="stylesheet" type="text/css" href="css/role_admin.css" id="role_admin"> -->
+  
+  <!-- Vis.js CSS -->
+  <link type="text/css" href="vendor/plugins/vis/vis.min.css" rel="stylesheet" />
+  
+  <!-- other CSS -->
+  <link rel="stylesheet" type="text/css" href="vendor/plugins/select2/css/core.css">
+
+</head>
+
+<body class="external-page dashboard-page" onload="document.getElementById('password').focus()">
+  
+  <!-- Start: login_section -->
+  <section id="login_section" style="display:none">
+	
+		<!-- begin canvas animation bg -->
+	    <div id="canvas-wrapper">
+	       <canvas id="demo-canvas"></canvas>
+	    </div>
+	    
+	    <!-- Begin: Content -->
+		<section id="content">
+			<div class="admin-form theme-info mw500">
+				<div class="login-title">iServChain</div>
+				<!-- Login Panel/Form -->
+				<div class="panel mt30 mb25 login_div">
+					<form method="post" action="/topChain/check" id="login_form">
+						<div class="panel-body bg-light p25 pb15">
+							<!-- Username Input -->
+							<div class="section">
+								<label for="username" class="field-label text-muted fs18 mb10">Account</label>
+								<label for="username" class="field prepend-icon">
+									<input type="text" name="account" id="account" class="gui-input" placeholder="Enter account">
+									<label for="username" class="field-icon">
+									  <i class="fa fa-user"></i>
+									</label>
+								</label>
+							</div>
+							<!-- Password Input -->
+							<div class="section">
+								<label for="username" class="field-label text-muted fs18 mb10">Password</label>
+								<label for="password" class="field prepend-icon">
+									<input type="password" name="password" id="password" class="gui-input" placeholder="Enter password">
+									<label for="password" class="field-icon">
+									  <i class="fa fa-lock"></i>
+									</label>
+								</label>
+								</div>
+							</div>
+							<div class="panel-footer clearfix">
+								<button type="button" class="btn btn-primary mr10 pull-right" id="loginButton">Sign In</button>
+							</div>
+					</form>
+				</div>
+				<div class="panel mt30 mb25 register_div">
+					<form method="post" action="/" id="register_form">
+					  <div class="panel-body p25 bg-light">
+						<div class="section-divider mt10 mb40">
+							<span>Register your account</span>
+						</div>
+
+						<!-- <div class="section row">
+						  <div class="col-md-6">
+							<label for="username" class="field prepend-icon">
+							  <input type="text" name="username" id="username" class="gui-input vDefaultInputFormatChecker required" maxlength="15" placeholder="name">
+							  <label for="username" class="field-icon">
+								<i class="fa fa-user"></i>
+							  </label>
+							</label>
+						  </div>
+
+						  <div class="col-md-6">
+							<label for="useridentity" class="field prepend-icon">
+							  <input type="text" name="useridentity" id="useridentity" class="gui-input digits" placeholder="identity">
+							  <label for="useridentity" class="field-icon">
+								<i class="fa fa-key"></i>
+							  </label>
+							</label>
+						  </div>
+						</div>
+						
+						<div class="section row">
+						  <div class="col-md-4">
+							<label for="userphone" class="field prepend-icon">
+							  <input type="text" name="userphone" id="userphone" class="gui-input digits" placeholder="phone">
+							  <label for="userphone" class="field-icon">
+								<i class="fa fa-phone"></i>
+							  </label>
+							</label>
+						  </div>
+						  <div class="col-md-4">
+							<label for="usermobile" class="field prepend-icon">
+							  <input type="text" name="usermobile" id="usermobile" class="gui-input digits" placeholder="mobile">
+							  <label for="usermobile" class="field-icon">
+								<i class="fa fa-mobile"></i>
+							  </label>
+							</label>
+						  </div>
+						  <div class="col-md-4">
+							<select class="form-control" id="userlanguage">
+						      <option>繁體中文</option>
+							  <option>简体中文</option>
+							  <option>English</option>
+							</select>
+						  </div>						  
+						</div>
+						<div class="section">
+						  <label for="email" class="field prepend-icon">
+							<input type="email" name="useremail" id="useremail" class="gui-input email required" placeholder="Email address">
+							<label for="email" class="field-icon">
+							  <i class="fa fa-envelope"></i>
+							</label>
+						  </label>
+						</div> -->
+						<div class="section">
+							<label for="useraccount" class="field prepend-icon">
+							  <input type="text" name="useraccount" id="useraccount" class="gui-input vDefaultAccountChecker required" maxlength="15" placeholder="Create login account">
+							  <label for="useraccount" class="field-icon">
+								<i class="fa fa-user"></i>
+							  </label>
+							</label>
+						  <!-- end .smart-widget section -->
+						</div>
+						<!-- end section -->
+						<div class="section row">
+						  <div class="col-md-6">
+							<label for="password" class="field prepend-icon">
+								<input type="password" name="userpassword" id="userpassword" class="gui-input vDefaultPasswordChecker required vMinLength5" placeholder="Create login password">
+								<label for="password" class="field-icon">
+									<i class="fa fa-unlock-alt"></i>
+								</label>
+							</label>
+						  </div>
+						  <div class="col-md-6">
+							<label for="confirmPassword" class="field prepend-icon">
+								<input type="password" name="confirmpassword" id="confirmpassword" class="gui-input vDefaultPasswordChecker required vMinLength5 vEqual-userpassword" placeholder="Retype login password">
+								<label for="confirmPassword" class="field-icon">
+									<i class="fa fa-lock"></i>
+								</label>
+							</label>
+						  </div>						  
+						</div>
+						<!-- end section -->
+					  </div>
+					  <!-- end .form-body section -->
+					  <div class="panel-footer clearfix">
+						<button type="button" id="register-bottom" class="button btn-primary pull-right registaccount">Register Account</button>
+					  </div>
+					  <!-- end .form-footer section -->
+					</form>
+				</div>
+				<div class="panel mt30 mb25 forgetpassword_div">
+					<form method="post" action="/" id="forgetpassword_form">
+					  <div class="panel-body p25 bg-light">
+						<div class="section-divider mt10 mb40">
+							<span>Send your password</span>
+						</div>					
+						<div class="section">
+							<label for="youraccount" class="field prepend-icon">
+							  <input type="text" name="youraccount" id="youraccount" class="gui-input" placeholder="your account">
+							  <label for="youraccount" class="field-icon">
+								<i class="fa fa-user"></i>
+							  </label>
+							</label>
+						  <!-- end .smart-widget section -->
+						</div>
+						<div class="section">
+						  <label for="email" class="field prepend-icon">
+							<input type="email" name="emailvalidate" id="emailvalidate" class="gui-input email required" placeholder="Email Validate">
+							<label for="email" class="field-icon">
+							  <i class="fa fa-envelope"></i>
+							</label>
+						  </label>
+						</div>
+						<!-- end section -->
+					  </div>
+					  <!-- end .form-body section -->
+					  <div class="panel-footer clearfix">
+						<button type="button" class="button btn-primary pull-right sendpassowrd">Send Password</button>
+					  </div>
+					  <!-- end .form-footer section -->
+					</form>
+				</div>
+				<div class="row mb20 login-bottom" data-animate="800">
+					<div class="col-md-6" >
+						<span style="display:none">Forget Password</span>
+					</div>
+					<div class="col-md-6">
+						<span>Register your account</span>
+					</div>
+				</div>
+				<div class="row mb20 register-bottom" data-animate="800">
+					<div class="col-md-6">
+						<span>Sign In</span>
+					</div>
+				</div>				
+			</div>
+		</section>
+		<!-- End: Content -->
+	</section>
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" style="height:100%;margin:0px auto;">
+		<div class="modal-dialog modal-sm"> 
+			<div class="modal-content"> 
+				<div class="modal-body">
+					<div class="row" data-animate="600">
+						<div class="col-md-12 text-left title"><h3>This account does not exist or Inactive</h3></div>
+					</div>
+					<div class="row" data-animate="600">
+						<div class="col-md-12 text-left content">Please sign-up page to register an account or contact your administrator to enable account</div>
+					</div>
+				</div> 
+				<div class="modal-footer"> 
+					<button type="button" data-dismiss="modal" class="btn btn-primary btn-clipboard">Confirm</button> 
+				</div> 
+			</div> 
+		</div> 
+	</div>
+  <!-- BEGIN: PAGE SCRIPTS -->
+  <!-- jQuery -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  
+  <!-- Time/Date Plugin Dependencies -->
+  <script src="vendor/plugins/globalize/globalize.min.js"></script>
+  <script src="vendor/plugins/moment/moment.min.js"></script>
+  
+  <!-- Bootstrap Datetimepicker -->
+  <script src="vendor/plugins/datepicker/js/bootstrap-datetimepicker.min.js"></script>
+  <!-- Daterangepicker Plugin -->
+  <script src="vendor/plugins/daterange/daterangepicker.min.js"></script>
+  <script src="assets/admin-tools/admin-forms/js/jquery-ui-monthpicker.min.js"></script>
+  <script src="assets/admin-tools/admin-forms/js/jquery.spectrum.min.js"></script>
+  <script src="assets/admin-tools/admin-forms/js/jquery.stepper.min.js"></script>
+  
+  <!-- pnotify Javascript -->
+  <script src="vendor/plugins/pnotify/pnotify.js"></script>
+  
+  <!-- Theme Javascript -->
+  <script src="assets/js/utility/utility.js"></script>
+  <script src="assets/js/demo/demo.js"></script>
+  <script src="assets/js/main.js"></script>
+  
+  <!-- HighChart Javascript -->
+  <script src="vendor/plugins/highcharts/highcharts.js"></script>
+  <script src="vendor/plugins/circles/circles.js"></script>
+  
+  <!-- Sparkline Local -->
+  <script src="vendor/plugins/sparkline/jquery.sparkline.min.js"></script>
+  
+  <!-- Markdown to Html -->
+  <script src="vendor/plugins/markdown/markdown.js"></script>
+  
+  <!-- D3 Javascript -->
+  <script src="vendor/plugins/c3charts/d3.min.js"></script>
+  <script src="vendor/plugins/c3charts/c3.min.js"></script>
+  
+  <!-- HighChart Demo Javascript -->
+  <!-- <script src="assets/js/demo/charts/highcharts.js"></script> -->
+  
+  <!-- Datatables -->
+  <script src="vendor/plugins/datatables/media/js/jquery.dataTables.js"></script>
+  <script src="vendor/plugins/datatables/media/js/dataTables.bootstrap.js"></script>
+  
+  <!-- iServCloud js-->
+  <script type="text/javascript" charset="utf-8" src="./js/i18n.js" ></script> 
+  <script type="text/javascript" charset="utf-8" src="./js/common.js" ></script> 
+  <script type="text/javascript" charset="utf-8" src="./js/frontend.framework.js" ></script> 
+  <script type="text/javascript" charset="utf-8" src="./js/index.js" ></script>
+
+  <!-- MD5 Encrypt -->
+  <script src="vendor/plugins/md5/md5.min.js"></script>
+
+  <!-- jQuery validate-->
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery-validate.bootstrap-tooltip.js"></script>
+  <script src="js/jquery.validate.component.js"></script>
+  
+  <!-- CanvasBG Plugin(creates mousehover effect) -->
+  <script src="vendor/plugins/canvasbg/canvasbg.js"></script>
+  
+  <script src="vendor/plugins/duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+  <script src="vendor/plugins/select2/select2.min.js"></script>
+  <!-- Typeahead Plugin -->
+  <script src="vendor/plugins/typeahead/typeahead.bundle.min.js"></script>
+  
+  <!-- Vis.js Plugin -->
+  <script src="vendor/plugins/vis/vis.min.js"></script>
+	
+  <!-- SCT Pass Value -->
+  <script type="text/javascript" charset="utf-8" src="./js/getUserIdAndPassValue.js" ></script>  
+  <!-- END: PAGE SCRIPTS -->
+</body>
+
+</html>
