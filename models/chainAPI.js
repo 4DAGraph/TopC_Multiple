@@ -280,6 +280,7 @@ module.exports = {
                                         data.push(element);
                                         console.log(a);
                                         console.log(data.length)
+					console.log(data);
                                         if(leng == finalBlock&&data.length == a){
                                         res.send(data)
                                         }
