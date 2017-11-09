@@ -16,7 +16,7 @@ var config = require('../config/default.js');
 
 var crypto = require('crypto');
 
-
+var Tx = require('ethereumjs-tx');
 
 web3.setProvider(new web3.providers.HttpProvider('http://'+"localhost"+':8545'));
 
@@ -366,8 +366,6 @@ module.exports = {
 
 	call_constant:  function call_constant(req, res, next){
 
-		web3.setProvider(new web3.providers.HttpProvider('http://localhost:1111')); 
-
 		var b = fs.readFileSync('contract.txt',"utf8");
 
 		var contractAddress = "0xff31be57cd6caf395ad2e08220d38f30b7c6f6f7";
@@ -423,9 +421,7 @@ module.exports = {
 
 	CC_signInformation:  function CC_signInformation(req, res, next){
 
-		var Tx = require('ethereumjs-tx');
-
-		console.log(req.params.rawtx);
+		//console.log(req.params.rawtx);
 
 		var tx = new Tx(JSON.parse(req.params.rawtx));
 
@@ -434,16 +430,13 @@ module.exports = {
 		tx.sign(privateKey);
 
 		var serializedTx = tx.serialize();
+		var result = '{"signText":"'+serializedTx.toString('hex')+'","tx":'+req.params.rawtx+'}';
 
-		console.log(serializedTx.toString('hex'));
-
-		res.send(serializedTx.toString('hex'));
+		res.send(result);
 
 	},
 
 	HC_signInformationOut:  function HC_signInformationOut(req, res, next){
-
-		var Tx = require('ethereumjs-tx');
 
 		//熱錢包將簽章送出交易
 
