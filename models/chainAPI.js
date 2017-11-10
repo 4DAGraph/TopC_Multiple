@@ -267,6 +267,7 @@ module.exports = {
 	},
 
         transactionListRange:  function transactionListRange(req, res, next){
+		console.log(123)
                 var data = [];
                 var initialBlock = req.params.initialBlock;
                 var finalBlock = req.params.finalBlock;
@@ -275,7 +276,8 @@ module.exports = {
                         for(var leng=initialBlock;leng<=finalBlock;leng++){
                                 console.log(leng)
                                 var blockinfo = web3.eth.getBlock(leng, true);
-                                a = a+blockinfo.transactions.length;
+                                console.log(123)
+				a = a+blockinfo.transactions.length;
                                 blockinfo.transactions.forEach(function(element){
                                         data.push(element);
                                         console.log(a);
