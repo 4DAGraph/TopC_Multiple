@@ -273,7 +273,7 @@ module.exports = {
 
                 var a=0;
                         for(var leng=initialBlock;leng<=finalBlock;leng++){
-                                //console.log(leng)
+                                console.log(leng)
                                 var blockinfo = web3.eth.getBlock(leng, true);
                                 a = a+blockinfo.transactions.length;
                                 blockinfo.transactions.forEach(function(element){
@@ -281,10 +281,15 @@ module.exports = {
                                         console.log(a);
                                         console.log(data.length)
 					console.log(data);
+					console.log(leng);
+					console.log(finalBlock);/*
                                         if(leng == finalBlock&&data.length == a){
                                         res.send(data)
-                                        }
+                                        }*/
                                 });
+                                if(leng == finalBlock&&data.length == a){
+                                	res.send(data)
+                                }
                         }
 	},
 
