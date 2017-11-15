@@ -44,7 +44,7 @@ function ccTest(req, res, next){
 				console.log("*result:")
 				console.log(body)
 				//callpoint
-				HcOutTest(JSON.parse(body).signText)
+				HcOutTest(req, res, next,JSON.parse(body).signText)
 			}
 		}
 	);
