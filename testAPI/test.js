@@ -4,10 +4,14 @@ var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
 var Web3 = require('web3');
 var web3 = new Web3();
 web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
+module.exports = {
+	txout: function txout(req, res, next){
+		ccTest(req, res, next);
+		HcInTest(req, res, next);
+	}
+}
+function HcInTest(req, res, next){
 
-ccTest();
-HcInTest();
-function HcInTest(){
 	request.post(
     	'http://192.168.51.202:3200/topChain/HC_signInformationIn/0x6a2f20a64dc0f784195db570ac14b2d2359fdb88/210000/26/1/20000000000" } ',
     	{ json: { key: 'value' } },
@@ -24,7 +28,7 @@ function HcInTest(){
 }
 
 
-function ccTest(){
+function ccTest(req, res, next){
 
 	const nonce = web3.eth.getTransactionCount("0xe70C2ee30cbF71f92D6C3bC6153Fa588046b84D7");
 
@@ -40,7 +44,7 @@ function ccTest(){
 				console.log("*result:")
 				console.log(body)
 				//callpoint
-				HcOutTest(JSON.parse(body).signText)
+				HcOutTest(req, res, next,JSON.parse(body).signText)
 			}
 		}
 	);
@@ -48,16 +52,17 @@ function ccTest(){
 }
 
 
-function HcOutTest(tx){
+function HcOutTest(req, res, next, tx){
 	request.post(
 		'http://192.168.51.202:3200/topChain/HC_signInformationOut/'+tx,
 		function (error, response, body) {
 			if (!error && response.statusCode == 200) {
-				console.log("\n2.CC_signInformation:\n")
+				console.log("\n3.CC_signInformation:\n")
 				console.log("*method:post\n")
-				console.log("*formate:/CC_signInformation/:privateKey/:rawtx\n")
+				console.log("*formate:/HC_signInformationOut/:serializedTx\n")
 				console.log("*result:")
 				console.log(body)
+				res.send(body)
 			}
 		}
 	);

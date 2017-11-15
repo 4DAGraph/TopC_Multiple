@@ -2,6 +2,11 @@ var express = require('express');
 var router = express.Router();
 var chainAPI = require('../models/chainAPI');
 var signAPI = require('../models/signAPI');
+var testAPI = require('../testAPI/test');
+
+///測試專用
+
+router.post("/testTxOut",testAPI.txout);
 
 ///簽章專用
 
