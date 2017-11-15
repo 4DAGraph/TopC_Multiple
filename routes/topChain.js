@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var chainAPI = require('../models/chainAPI');
 var signAPI = require('../models/signAPI');
-var testAPI = require('../testAPI/test');
+var testAPI = require('../testAPI/APIToTest');
 
 ///測試專用
 
