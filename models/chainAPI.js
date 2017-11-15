@@ -462,7 +462,8 @@ module.exports = {
 
 			if (!err){
 
-				console.log(hash);res.send(hash); 
+				console.log(hash);
+				res.send(hash.toString()); 
 
 			}
 
