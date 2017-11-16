@@ -1,5 +1,4 @@
 var request = require('request');
-var sha256 = require('sha256');
 var config = require('../config/default.js');
 var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
 var Web3 = require('web3');
