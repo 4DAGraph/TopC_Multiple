@@ -92,7 +92,7 @@ function testStart(){
 	)
 	checkGet(
 		"transactionListRange",
-		'http://192.168.51.202:3200/topChain/transactionListRange/1/2',
+		'http://127.0.0.1:3200/topChain/transactionListRange/1/10',
 		{},
 		""
 	)

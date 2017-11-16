@@ -267,29 +267,29 @@ module.exports = {
 	},
 
         transactionListRange:  function transactionListRange(req, res, next){
-		console.log(123)
+		console.log(date+":transactionListRange");
                 var data = [];
                 var initialBlock = req.params.initialBlock;
                 var finalBlock = req.params.finalBlock;
 
                 var a=0;
                         for(var leng=initialBlock;leng<=finalBlock;leng++){
-                                console.log(leng)
+				console.log(date+":transactionListRange","readBlock",leng);
                                 var blockinfo = web3.eth.getBlock(leng, true);
-                                console.log(123)
 				a = a+blockinfo.transactions.length;
                                 blockinfo.transactions.forEach(function(element){
                                         data.push(element);
-                                        console.log(a);
-                                        console.log(data.length)
-					console.log(data);
-					console.log(leng);
-					console.log(finalBlock);/*
+                                        //console.log(a);
+                                        //console.log(data.length)
+					//console.log(data);
+					//console.log(finalBlock);/*
                                         if(leng == finalBlock&&data.length == a){
-                                        res.send(data)
-                                        }*/
+						console.log(date+":transactionListRange-success");
+                                        	res.send(data)
+                                        }
                                 });
                                 if(leng == finalBlock&&data.length == a){
+					console.log(date+":transactionListRange-success");
                                 	res.send(data)
                                 }
                         }
@@ -335,39 +335,39 @@ module.exports = {
 	},
 
 	blockNumber:  function blockNumber(req, res, next){
-
+		console.log(date+":blockNumber");
 		var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
 
 		web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
-
+		console.log(date+":blockNumber-success");
 		res.send(web3.eth.blockNumber.toString());
 
 	},
 	transactionCount:  function transactionCount(req, res, next){
-
+		console.log(date+":transactionCount");
 		var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
 
 		web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
-
+		console.log(date+":transactionCount-success");
 		res.send(web3.eth.getTransactionCount(req.params.address).toString());
 
 	},
 	transactionReceipt:  function transactionReceipt(req, res, next){
-
+		console.log(date+":transactionReceipt");
 		var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
 
 		web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
-
+		console.log(date+":transactionReceipt-success");
 		res.send(web3.eth.getTransactionReceipt(req.params.address));
 
 	},
 
 	getBalance:  function getBalance(req, res, next){
-
+		console.log(date+":getBalance");
 		var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
 
 		web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
-
+		console.log(date+":getBalance-success");
 		res.send(web3.eth.getBalance(req.params.address));
 
 	},
@@ -399,6 +399,7 @@ module.exports = {
 	},
 
 	HC_signInformationIn:  function HC_signInformationIn(req, res, next){
+		console.log(date+":HC_signInformationIn");
 		//const gasPrice = web3.eth.gasPrice;
 
 		const gasPriceHex = web3.toHex(req.params.gasPrice);
@@ -422,13 +423,13 @@ module.exports = {
 
 		    gasPrice: gasPriceHex
 		}
-
+		console.log(date+":HC_signInformationIn-success");
 		res.send(rawTx);
 		
 	},
 
 	CC_signInformation:  function CC_signInformation(req, res, next){
-
+		console.log(date+":CC_signInformation");
 		//console.log(req.params.rawtx);
 
 		var tx = new Tx(JSON.parse(req.params.rawtx));
@@ -439,15 +440,13 @@ module.exports = {
 
 		var serializedTx = tx.serialize();
 		var result = '{"signText":"'+serializedTx.toString('hex')+'","tx":'+req.params.rawtx+'}';
-
+		console.log(date+":CC_signInformation:success");
 		res.send(result);
 
 	},
 
 	HC_signInformationOut:  function HC_signInformationOut(req, res, next){
-
-		//熱錢包將簽章送出交易
-
+		console.log(date+":HC_signInformationOut");
 		web3.eth.sendRawTransaction("0x"+req.params.serializedTx.toString('hex'), function(err, hash) {
 
 			if(err != null){
@@ -461,8 +460,7 @@ module.exports = {
 			}
 
 			if (!err){
-
-				console.log(hash);
+				console.log(date+":"+hash);
 				res.send(hash.toString()); 
 
 			}
@@ -547,7 +545,6 @@ module.exports = {
 
 	},
 	key_publish: function (req, res, next){
-		console.log(123)
 		key_generate(req.params.amounts);
 
 		function key_generate( keyAmounts){
