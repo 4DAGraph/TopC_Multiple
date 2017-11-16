@@ -547,7 +547,7 @@ module.exports = {
 
 	},
 	key_publish: function (req, res, next){
-
+		console.log(123)
 		key_generate(req.params.amounts);
 
 		function key_generate( keyAmounts){
