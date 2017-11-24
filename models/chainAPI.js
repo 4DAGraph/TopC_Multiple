@@ -271,9 +271,10 @@ module.exports = {
                 var data = [];
                 var initialBlock = req.params.initialBlock;
                 var finalBlock = req.params.finalBlock;
-
+console.log(initialBlock)
+console.log(finalBlock)
                 var a=0;
-                        for(var leng=initialBlock;leng<=finalBlock;leng++){
+                        for(var leng=parseInt(initialBlock);leng<=parseInt(finalBlock);leng++){
 				console.log(date+":transactionListRange","readBlock",leng);
                                 var blockinfo = web3.eth.getBlock(leng, true);
 				a = a+blockinfo.transactions.length;
@@ -285,6 +286,7 @@ module.exports = {
 					//console.log(finalBlock);/*
                                         if(leng == finalBlock&&data.length == a){
 						console.log(date+":transactionListRange-success");
+						a = 0;
                                         	res.send(data)
                                         }
                                 });
@@ -296,35 +298,46 @@ module.exports = {
 	},
 
         transactionTokenListRange:  function transactionListRange(req, res, next){
-		console.log(date+":transactionListRange");
+                console.log(date+":transactionListRange");
                 var data = [];
                 var initialBlock = req.params.initialBlock;
                 var finalBlock = req.params.finalBlock;
-
                 var a=0;
-                        for(var leng=initialBlock;leng<=finalBlock;leng++){
-				console.log(date+":transactionListRange","readBlock",leng);
+                        for(var leng=parseInt(initialBlock);leng<=parseInt(finalBlock);leng++){
+				
+                                console.log(date+":transactionListRange","readBlock",leng);
                                 var blockinfo = web3.eth.getBlock(leng, true);
-				a = a+blockinfo.transactions.length;
+                                a = a+blockinfo.transactions.length;
                                 blockinfo.transactions.forEach(function(element){
-					if(element.input.substr(0,10) == "0xa9059cbb"){
-                                        	data.push(element);
+                                        if(element.to != req.params.address || element.input.substr(0,10) != "0xa9059cbb"){
+                                                a =a-1;
+                                        }
+					if(element.to == req.params.address){
+						if(element.input.substr(0,10) == "0xa9059cbb"){
+							element.to = element.input.substr(34,40);
+							element.value = parseInt(element.input.substr(74,64)).toString();
+                                        		console.log(element)
+							data.push(element);
+						
+						}
 					}
-                                        //console.log(a);
-                                        //console.log(data.length)
-					//console.log(data);
-					//console.log(finalBlock);/*
-                                        if(leng == finalBlock&&data.length == a){
-						console.log(date+":transactionListRange-success");
-                                        	res.send(data)
+                                        console.log(a);
+                                        console.log(data.length)
+                                        //console.log(data);
+                                        //console.log(finalBlock);/*
+                                        
+					if(leng == finalBlock&&data.length == a){
+                                                console.log(date+":transactionListRange-success");
+                                                a = 0;
+                                                res.send(data)
                                         }
                                 });
                                 if(leng == finalBlock&&data.length == a){
-					console.log(date+":transactionListRange-success");
-                                	res.send(data)
+                                        console.log(date+":transactionListRange-success");
+                                        res.send(data)
                                 }
                         }
-	},
+        },
 
 	transactionList:  function transactionList(req, res, next){
 
