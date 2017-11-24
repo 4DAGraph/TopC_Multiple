@@ -297,7 +297,7 @@ console.log(finalBlock)
                         }
 	},
 
-        transactionTokenListRange:  function transactionListRange(req, res, next){
+        transactionTokenListRange:  function transactionTokenListRange(req, res, next){
                 console.log(date+":transactionListRange");
                 var data = [];
                 var initialBlock = req.params.initialBlock;
@@ -469,7 +469,7 @@ console.log(finalBlock)
 		res.send(rawTx);
 	},
 
-	HC_signTokenInformationIn:  function HC_signInformationIn(req, res, next){
+	HC_signTokenInformationIn:  function HC_signTokenInformationIn(req, res, next){
 		console.log(date+":HC_signInformationIn");
 		//const gasPrice = web3.eth.gasPrice;
 

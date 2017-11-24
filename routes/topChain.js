@@ -32,7 +32,7 @@ router.get("/sendTransaction/:from/:password/:to/:balance",chainAPI.sendTransact
 router.get("/receiveTransaction/:transaction",chainAPI.receiveTransaction);
 //result formate 
 router.get("/call_constant",chainAPI.call_constant);
-
+router.post("/HC_signTokenInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice",chainAPI.HC_signInformationIn);
 router.post("/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice",chainAPI.HC_signInformationIn);
 //127.0.0.1:3200/topChain/HC_signInformationIn/0x6a2f20a64dc0f784195db570ac14b2d2359fdb88/210000/26/1
 router.post("/CC_signInformation/:privateKey/:rawtx",chainAPI.CC_signInformation);
