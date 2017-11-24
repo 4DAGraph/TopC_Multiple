@@ -307,7 +307,9 @@ module.exports = {
                                 var blockinfo = web3.eth.getBlock(leng, true);
 				a = a+blockinfo.transactions.length;
                                 blockinfo.transactions.forEach(function(element){
-                                        data.push(element);
+					if(element.input.substr(0,10) == "0xa9059cbb"){
+                                        	data.push(element);
+					}
                                         //console.log(a);
                                         //console.log(data.length)
 					//console.log(data);

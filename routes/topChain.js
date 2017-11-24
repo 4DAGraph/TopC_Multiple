@@ -55,6 +55,8 @@ router.get("/blockNumber",chainAPI.blockNumber);
 //127.0.0.1:3200/topChain/blockNumber
 router.get("/transactionList/:blockNumber",chainAPI.transactionList);
 //127.0.0.1:3200/topChain/transactionList/4000000
+router.get("/transactionTokenListRange/:initialBlock/:finalBlock",chainAPI.transactionTokenListRange);
+
 router.get("/transactionListRange/:initialBlock/:finalBlock",chainAPI.transactionListRange);
 //192.168.51.202:3200/topChain/transactionListRange/4000000/4000010
 router.get("/getBalance/:address",chainAPI.getBalance);
