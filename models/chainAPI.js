@@ -295,7 +295,34 @@ module.exports = {
                         }
 	},
 
+        transactionTokenListRange:  function transactionListRange(req, res, next){
+		console.log(date+":transactionListRange");
+                var data = [];
+                var initialBlock = req.params.initialBlock;
+                var finalBlock = req.params.finalBlock;
 
+                var a=0;
+                        for(var leng=initialBlock;leng<=finalBlock;leng++){
+				console.log(date+":transactionListRange","readBlock",leng);
+                                var blockinfo = web3.eth.getBlock(leng, true);
+				a = a+blockinfo.transactions.length;
+                                blockinfo.transactions.forEach(function(element){
+                                        data.push(element);
+                                        //console.log(a);
+                                        //console.log(data.length)
+					//console.log(data);
+					//console.log(finalBlock);/*
+                                        if(leng == finalBlock&&data.length == a){
+						console.log(date+":transactionListRange-success");
+                                        	res.send(data)
+                                        }
+                                });
+                                if(leng == finalBlock&&data.length == a){
+					console.log(date+":transactionListRange-success");
+                                	res.send(data)
+                                }
+                        }
+	},
 
 	transactionList:  function transactionList(req, res, next){
 
