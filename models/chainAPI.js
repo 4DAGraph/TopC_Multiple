@@ -454,7 +454,51 @@ module.exports = {
 		}
 		console.log(date+":HC_signInformationIn-success");
 		res.send(rawTx);
-		
+	},
+
+	HC_signTokenInformationIn:  function HC_signInformationIn(req, res, next){
+		console.log(date+":HC_signInformationIn");
+		//const gasPrice = web3.eth.gasPrice;
+
+		const gasPriceHex = web3.toHex(req.params.gasPrice);
+
+		const gasLimitHex = web3.toHex(req.params.gasLimit);
+
+		const nonce = req.params.nonce;
+
+		const nonceHex = web3.toHex(nonce);
+
+		var func = "0xa9059cbb000000000000000000000000"
+
+		var to = "0x2783ca61c6a2e5e1fecd5896f03603162ab10f35"
+
+		var amount = req.params.value
+
+		var input = func+to.substr(2)+paddingLeft(amount,64);
+
+		var rawTx = {
+
+		    nonce: nonceHex,
+
+		    gasLimit: gasLimitHex,
+
+		    to: req.params.to,
+
+		    value: 0,
+			
+		    input: input,
+
+		    gasPrice: gasPriceHex
+		}
+		console.log(date+":HC_signInformationIn-success");
+		res.send(rawTx);
+		function paddingLeft(str,lenght){
+			if(str.length >= lenght)
+			return str;
+			else
+			return paddingLeft("0" +str,lenght);
+		}
+
 	},
 
 	CC_signInformation:  function CC_signInformation(req, res, next){
