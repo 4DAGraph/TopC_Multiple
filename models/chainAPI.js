@@ -1,32 +1,21 @@
 var Web3 = require('web3');
-
 var web3 = new Web3();
-
 var fs = require('fs');
-
 var solc = require("solc");
-
 const Wallet = require('ethereumjs-wallet');
-
 var ethKeys = require("ethereumjs-keys");
-
 var date = new Date();
-
 var config = require('../config/default.js');
-
 var crypto = require('crypto');
-
 var Tx = require('ethereumjs-tx');
-
-web3.setProvider(new web3.providers.HttpProvider('http://'+"localhost"+':8545'));
+var abi = require('./erc.json');
+var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
+web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
+var address = require("./address.json")
 
 module.exports = {
 
 	deploy_contract:  function deploy_contract(req, res, next){
-
-		var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
-
-		web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
 
 		var account = web3.eth.accounts[0];
 
@@ -88,10 +77,6 @@ module.exports = {
 
 		var balance = req.params.balance;
 
-		var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
-
-		web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
-
 		var account = req.params.from;
 
 		var to = req.params.to;
@@ -132,10 +117,6 @@ module.exports = {
 
 		var record = req.params.transaction;
 
-		var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
-
-		web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
-
 		var transactionRecord = web3.eth.getTransaction(record);
 
 		var data = {
@@ -163,10 +144,6 @@ module.exports = {
 	transactionList_to:  function transactionList_to(req, res, next){
 
 		var record = req.params.transaction;
-
-		var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
-
-		web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
 
 		var blockInitial = req.params.blockInitial;
 
@@ -219,10 +196,6 @@ module.exports = {
 	transactionList_from:  function transactionList_from(req, res, next){
 
 		var record = req.params.transaction;
-
-		var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
-
-		web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
 
 		var blockInitial = req.params.blockInitial;
 
@@ -298,6 +271,8 @@ console.log(finalBlock)
 	},
 
         transactionTokenListRange:  function transactionTokenListRange(req, res, next){
+
+console.log(address[req.params.address])
                 console.log(date+":transactionListRange");
                 var data = [];
                 var initialBlock = req.params.initialBlock;
@@ -309,20 +284,20 @@ console.log(finalBlock)
                                 var blockinfo = web3.eth.getBlock(leng, true);
                                 a = a+blockinfo.transactions.length;
                                 blockinfo.transactions.forEach(function(element){
-                                        if(element.to != req.params.address || element.input.substr(0,10) != "0xa9059cbb"){
+                                        if(element.to != address[req.params.token] || element.input.substr(0,10) != "0xa9059cbb"){
                                                 a =a-1;
                                         }
-					if(element.to == req.params.address){
+					if(element.to == address[req.params.token]){
 						if(element.input.substr(0,10) == "0xa9059cbb"){
 							element.to = element.input.substr(34,40);
-							element.value = parseInt(element.input.substr(74,64)).toString();
-                                        		console.log(element)
+							element.value = parseInt(element.input.substr(74,64),16).toString();
+                                        		//console.log(element)
 							data.push(element);
 						
 						}
 					}
-                                        console.log(a);
-                                        console.log(data.length)
+                                        //console.log(a);
+                                        //console.log(data.length)
                                         //console.log(data);
                                         //console.log(finalBlock);/*
                                         
@@ -342,10 +317,6 @@ console.log(finalBlock)
 	transactionList:  function transactionList(req, res, next){
 
 		//var record = req.params.transaction;
-
-		var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
-
-		web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
 
 		var data = []
 
@@ -378,41 +349,67 @@ console.log(finalBlock)
 
 	blockNumber:  function blockNumber(req, res, next){
 		console.log(date+":blockNumber");
-		var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
+		//var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
 
-		web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
+		//web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
 		console.log(date+":blockNumber-success");
 		res.send(web3.eth.blockNumber.toString());
 
 	},
 	transactionCount:  function transactionCount(req, res, next){
 		console.log(date+":transactionCount");
-		var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
-
-		web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
 		console.log(date+":transactionCount-success");
 		res.send(web3.eth.getTransactionCount(req.params.address).toString());
 
 	},
 	transactionReceipt:  function transactionReceipt(req, res, next){
 		console.log(date+":transactionReceipt");
-		var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
-
-		web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
-		console.log(date+":transactionReceipt-success");
-		res.send(web3.eth.getTransactionReceipt(req.params.address));
-
+		try{
+			console.log(date+":transactionReceipt-success");
+			res.send(web3.eth.getTransaction(req.params.address));
+		}
+		catch(error){
+			console.log("this address is error")
+			res.send("error")
+		}
 	},
+
+        transactionTokenReceipt:  function transactionTokenReceipt(req, res, next){
+                console.log(date+":transactionReceipt");
+		var result = web3.eth.getTransaction(req.params.address);
+		try{
+			result.to = result.input.substr(34,40);
+			result.value = parseInt(result.input.substr(74,64),16).toString();
+                	console.log(date+":transactionReceipt-success");
+			res.send(result)
+                }
+		catch(err){
+			console.log("this address is error");
+			res.send(result);
+		}
+        },
 
 	getBalance:  function getBalance(req, res, next){
 		console.log(date+":getBalance");
-		var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
-
-		web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
 		console.log(date+":getBalance-success");
 		res.send(web3.eth.getBalance(req.params.address));
 
 	},
+
+        getTokenBalance:  function getTokenBalance(req, res, next){
+                console.log(date+":Token");
+		var CoursetroContract = web3.eth.contract(abi["abi"]);
+		var Coursetro = CoursetroContract.at(address[req.params.token]);
+
+		Coursetro.balanceOf(req.params.address,function(error, result) {
+		if (!error) {
+			//console.log(result)
+	                console.log(date+":getTokenBalance-success");
+                	res.send(result);
+           	} else
+        	        console.log(error);
+       		});
+        },
 
 	call_constant:  function call_constant(req, res, next){
 
@@ -485,7 +482,7 @@ console.log(finalBlock)
 
 		var to = "0x2783ca61c6a2e5e1fecd5896f03603162ab10f35"
 
-		var amount = req.params.value
+		var amount = parseInt(req.params.value).toString(16)
 
 		var input = func+to.substr(2)+paddingLeft(amount,64);
 

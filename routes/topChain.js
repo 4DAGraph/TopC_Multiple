@@ -24,15 +24,16 @@ router.post("/keyDelete",signAPI.keyDelete);
 ///簽章end
 
 
-
-
+router.get("/transactionTokenListRange/:initialBlock/:finalBlock/:token",chainAPI.transactionTokenListRange);
+router.post("/HC_signTokenInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice",chainAPI.HC_signTokenInformationIn);
+router.get("/getTokenBalance/:address/:token",chainAPI.getTokenBalance);
+router.get("/transactionTokenReceipt/:address",chainAPI.transactionTokenReceipt);
 
 router.get("/deploy_contract/:account/:password",chainAPI.deploy_contract);
 router.get("/sendTransaction/:from/:password/:to/:balance",chainAPI.sendTransaction);
 router.get("/receiveTransaction/:transaction",chainAPI.receiveTransaction);
 //result formate 
 router.get("/call_constant",chainAPI.call_constant);
-router.post("/HC_signTokenInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice",chainAPI.HC_signInformationIn);
 router.post("/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice",chainAPI.HC_signInformationIn);
 //127.0.0.1:3200/topChain/HC_signInformationIn/0x6a2f20a64dc0f784195db570ac14b2d2359fdb88/210000/26/1
 router.post("/CC_signInformation/:privateKey/:rawtx",chainAPI.CC_signInformation);
@@ -55,7 +56,6 @@ router.get("/blockNumber",chainAPI.blockNumber);
 //127.0.0.1:3200/topChain/blockNumber
 router.get("/transactionList/:blockNumber",chainAPI.transactionList);
 //127.0.0.1:3200/topChain/transactionList/4000000
-router.get("/transactionTokenListRange/:initialBlock/:finalBlock/:address",chainAPI.transactionTokenListRange);
 
 router.get("/transactionListRange/:initialBlock/:finalBlock",chainAPI.transactionListRange);
 //192.168.51.202:3200/topChain/transactionListRange/4000000/4000010
