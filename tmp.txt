@@ -1,26 +1,2393 @@
 nohup: ignoring input
-myblog listening on port 3200
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber-success
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber-success
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber-success
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber-success
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber-success
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber-success
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber-success
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber-success
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber-success
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber-success
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber-success
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber
-Tue Nov 28 2017 14:41:42 GMT+0800 (CST):blockNumber-success
+worker 1607, listen: null:3200
+worker 1589, listen: null:3200
+worker 1595, listen: null:3200
+worker 1601, listen: null:3200
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionReceipt
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionReceipt-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange
+25562
+25962
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25562
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25563
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25564
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25565
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25566
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25567
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25568
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25569
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25570
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25571
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25572
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25573
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25574
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25575
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25576
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25577
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25578
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25579
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25580
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25581
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25582
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25583
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25584
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25585
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25586
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25587
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25588
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25589
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25590
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25591
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25592
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25593
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25594
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25595
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25596
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25597
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25598
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25599
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25600
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25601
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25602
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25603
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25604
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25605
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25606
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25607
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25608
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25609
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25610
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25611
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25612
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25613
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25614
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25615
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25616
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25617
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25618
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25619
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25620
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25621
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25622
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25623
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25624
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25625
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25626
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25627
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25628
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25629
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25630
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25631
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25632
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25633
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25634
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25635
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25636
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25637
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25638
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25639
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25640
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25641
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25642
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25643
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25644
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25645
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25646
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25647
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25648
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25649
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25650
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25651
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25652
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25653
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25654
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25655
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25656
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25657
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25658
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25659
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25660
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25661
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25662
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25663
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25664
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25665
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25666
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25667
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25668
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25669
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25670
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25671
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25672
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25673
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25674
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25675
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25676
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25677
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25678
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25679
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25680
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25681
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25682
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25683
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25684
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25685
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25686
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25687
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25688
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25689
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25690
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25691
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25692
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25693
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25694
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25695
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25696
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25697
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25698
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25699
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25700
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25701
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25702
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25703
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25704
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25705
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25706
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25707
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25708
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25709
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25710
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25711
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25712
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25713
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25714
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25715
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25716
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25717
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25718
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25719
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25720
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25721
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25722
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25723
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25724
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25725
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25726
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25727
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25728
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25729
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25730
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25731
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25732
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25733
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25734
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25735
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25736
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25737
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25738
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25739
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25740
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25741
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25742
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25743
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25744
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25745
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25746
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25747
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25748
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25749
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25750
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25751
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25752
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25753
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25754
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25755
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25756
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25757
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25758
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25759
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25760
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25761
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25762
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25763
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25764
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25765
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25766
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25767
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25768
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25769
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25770
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25771
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25772
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25773
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25774
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25775
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25776
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25777
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25778
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25779
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25780
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25781
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25782
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25783
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25784
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25785
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25786
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25787
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25788
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25789
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25790
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25791
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25792
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25793
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25794
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25795
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25796
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25797
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25798
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25799
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25800
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25801
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25802
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25803
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25804
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25805
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25806
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25807
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25808
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25809
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25810
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25811
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25812
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25813
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25814
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25815
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25816
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25817
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25818
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25819
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25820
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25821
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25822
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25823
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25824
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25825
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25826
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25827
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25828
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25829
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25830
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25831
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25832
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25833
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25834
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25835
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25836
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25837
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25838
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25839
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25840
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25841
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25842
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25843
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25844
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25845
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25846
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25847
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25848
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25849
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25850
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25851
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25852
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25853
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25854
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25855
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25856
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25857
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25858
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25859
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25860
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25861
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25862
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25863
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25864
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25865
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25866
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25867
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25868
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25869
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25870
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25871
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25872
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25873
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25874
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25875
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25876
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25877
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25878
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25879
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25880
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25881
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25882
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25883
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25884
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25885
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25886
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25887
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25888
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25889
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25890
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25891
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25892
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25893
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25894
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25895
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25896
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25897
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25898
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25899
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25900
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25901
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25902
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25903
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25904
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25905
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25906
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25907
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25908
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25909
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25910
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25911
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25912
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25913
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25914
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25915
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25916
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25917
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25918
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25919
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25920
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25921
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25922
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25923
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25924
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25925
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25926
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25927
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25928
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25929
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25930
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25931
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25932
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25933
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25934
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25935
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25936
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25937
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25938
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25939
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25940
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25941
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25942
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25943
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25944
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25945
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25946
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25947
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25948
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25949
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25950
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25951
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25952
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25953
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25954
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25955
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25956
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25957
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25958
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25959
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25960
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25961
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 25962
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f67018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca0d4b5084f38c26967520dc721df53e05539442064e28b6395a039c2ce739e8361a01ea441405f35e8abf038f219aaaa8816d1fa0c25c97075596013cc7b597f75ea","tx":{ "nonce": "0x67", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):0xe442df0a4a54539da0131a8e204bf0f82f15e08f2622bc243cd2a19de86521f1
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0xe442df0a4a54539da0131a8e204bf0f82f15e08f2622bc243cd2a19de86521f1
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f67018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca0d4b5084f38c26967520dc721df53e05539442064e28b6395a039c2ce739e8361a01ea441405f35e8abf038f219aaaa8816d1fa0c25c97075596013cc7b597f75ea","tx":{ "nonce": "0x67", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Error: known transaction: e442df0a4a54539da0131a8e204bf0f82f15e08f2622bc243cd2a19de86521f1
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f68018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba0dbe8be083a8ed73e3754a993295a594de8f4ec2977d23a3f9c55c923bc12f794a0401c66fdb4fb3a1681eebf4bf7284fa2cefc27af989c6321f31c94ef4df2b509","tx":{ "nonce": "0x68", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):0x801faad42cf29e3e2a6b328b8f5d9477c8423fb7ed419e3245a071905b9435d9
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0x801faad42cf29e3e2a6b328b8f5d9477c8423fb7ed419e3245a071905b9435d9
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f68018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba0dbe8be083a8ed73e3754a993295a594de8f4ec2977d23a3f9c55c923bc12f794a0401c66fdb4fb3a1681eebf4bf7284fa2cefc27af989c6321f31c94ef4df2b509","tx":{ "nonce": "0x68", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+Error: known transaction: 801faad42cf29e3e2a6b328b8f5d9477c8423fb7ed419e3245a071905b9435d9
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation:success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f69018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca0bdf32941b5ca937416c6649fb4c22edcc89e52b07dd5efce7e50022dcb22c756a048a2b43fd31f86f21cf159f64cd3d15c68f5ecb92cba1dbb13f9659dc8ec1a37","tx":{ "nonce": "0x69", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):0x7c217a21fc71a01b58b379330ac2355327fe7574de586dd3ff9c51339766c1cc
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0x7c217a21fc71a01b58b379330ac2355327fe7574de586dd3ff9c51339766c1cc
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):getBalance
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):getBalance-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f69018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca0bdf32941b5ca937416c6649fb4c22edcc89e52b07dd5efce7e50022dcb22c756a048a2b43fd31f86f21cf159f64cd3d15c68f5ecb92cba1dbb13f9659dc8ec1a37","tx":{ "nonce": "0x69", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Error: known transaction: 7c217a21fc71a01b58b379330ac2355327fe7574de586dd3ff9c51339766c1cc
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f69018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca0bdf32941b5ca937416c6649fb4c22edcc89e52b07dd5efce7e50022dcb22c756a048a2b43fd31f86f21cf159f64cd3d15c68f5ecb92cba1dbb13f9659dc8ec1a37","tx":{ "nonce": "0x69", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Error: known transaction: 7c217a21fc71a01b58b379330ac2355327fe7574de586dd3ff9c51339766c1cc
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f6a018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba01b26c8cbefd1f297641f7fb7bf0e8abc7ff11c9a81223c4bd3a5cdc72bcb1363a05404c6efd198f8defb81dd1df62ec207c736293ae37ec1ae4098a5e0cf71fad8","tx":{ "nonce": "0x6a", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):0x8e591bffafe03389016f6c326de6cbc0acfdb59112a41b0ee7b862955284ac6e
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0x8e591bffafe03389016f6c326de6cbc0acfdb59112a41b0ee7b862955284ac6e
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation:success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f6a018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba01b26c8cbefd1f297641f7fb7bf0e8abc7ff11c9a81223c4bd3a5cdc72bcb1363a05404c6efd198f8defb81dd1df62ec207c736293ae37ec1ae4098a5e0cf71fad8","tx":{ "nonce": "0x6a", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+Error: known transaction: 8e591bffafe03389016f6c326de6cbc0acfdb59112a41b0ee7b862955284ac6e
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation:success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f6b018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca0f307d1f8f7cd5cfbd6b8b31b9e897f7f5b2c6a3c3cbcaf2cf87801a0fabf33eda05a1255fdc050a5607bd8df62392498562f5488d6fa1137053e6f5be3ee138414","tx":{ "nonce": "0x6b", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):0x207cadb3bad97f622ef12d739246e65c254fbd8caec83ebb7273a0705ae216d0
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0x207cadb3bad97f622ef12d739246e65c254fbd8caec83ebb7273a0705ae216d0
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f6b018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca0f307d1f8f7cd5cfbd6b8b31b9e897f7f5b2c6a3c3cbcaf2cf87801a0fabf33eda05a1255fdc050a5607bd8df62392498562f5488d6fa1137053e6f5be3ee138414","tx":{ "nonce": "0x6b", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+Error: known transaction: 207cadb3bad97f622ef12d739246e65c254fbd8caec83ebb7273a0705ae216d0
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation:success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f6b018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca0f307d1f8f7cd5cfbd6b8b31b9e897f7f5b2c6a3c3cbcaf2cf87801a0fabf33eda05a1255fdc050a5607bd8df62392498562f5488d6fa1137053e6f5be3ee138414","tx":{ "nonce": "0x6b", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Error: known transaction: 207cadb3bad97f622ef12d739246e65c254fbd8caec83ebb7273a0705ae216d0
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f6b018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca0f307d1f8f7cd5cfbd6b8b31b9e897f7f5b2c6a3c3cbcaf2cf87801a0fabf33eda05a1255fdc050a5607bd8df62392498562f5488d6fa1137053e6f5be3ee138414","tx":{ "nonce": "0x6b", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Error: known transaction: 207cadb3bad97f622ef12d739246e65c254fbd8caec83ebb7273a0705ae216d0
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation:success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f6b018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca0f307d1f8f7cd5cfbd6b8b31b9e897f7f5b2c6a3c3cbcaf2cf87801a0fabf33eda05a1255fdc050a5607bd8df62392498562f5488d6fa1137053e6f5be3ee138414","tx":{ "nonce": "0x6b", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+Error: known transaction: 207cadb3bad97f622ef12d739246e65c254fbd8caec83ebb7273a0705ae216d0
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation:success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f6c018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca09b42d17cc324430b5e6552c96a160830ae1090553f3fdebf4a7e7a81464706e4a064324a98cb3b91b47f6198d47a06009544075c40e476bf859e39143633f46e70","tx":{ "nonce": "0x6c", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):0xf494ef207d4077ae0e7679a084a8d3f0633d746dcc2a22d147595c09926e610a
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0xf494ef207d4077ae0e7679a084a8d3f0633d746dcc2a22d147595c09926e610a
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f6d018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba063847e082956ef4be66f4c53e164724e630c3ca719f8ff62d0d331e3f8933d3aa03715a5b4970744385883e1253ad8ccb3930c7ebbc9068c42723334bf4f97d621","tx":{ "nonce": "0x6d", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):0xe49ea3e588e7ff82435471713f70c09886c1547b0726b93e46b00fc2e8aacc4d
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0xe49ea3e588e7ff82435471713f70c09886c1547b0726b93e46b00fc2e8aacc4d
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f6e018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca0675714a5e6c0f52ba6609fec82e122fb48e242aafae13a3840f185d577a0ae9aa06da5933b7102c345d13a72390c8791cb376b92dd93baf9af25b2cbeafe7e34ff","tx":{ "nonce": "0x6e", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):0x57571d9de1d5001637968cb30bb5c51bc08153f9bcca24699efe6aa7080d4aa1
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0x57571d9de1d5001637968cb30bb5c51bc08153f9bcca24699efe6aa7080d4aa1
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f6e018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca0675714a5e6c0f52ba6609fec82e122fb48e242aafae13a3840f185d577a0ae9aa06da5933b7102c345d13a72390c8791cb376b92dd93baf9af25b2cbeafe7e34ff","tx":{ "nonce": "0x6e", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Error: known transaction: 57571d9de1d5001637968cb30bb5c51bc08153f9bcca24699efe6aa7080d4aa1
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f6e018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca0675714a5e6c0f52ba6609fec82e122fb48e242aafae13a3840f185d577a0ae9aa06da5933b7102c345d13a72390c8791cb376b92dd93baf9af25b2cbeafe7e34ff","tx":{ "nonce": "0x6e", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+Error: known transaction: 57571d9de1d5001637968cb30bb5c51bc08153f9bcca24699efe6aa7080d4aa1
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f6f018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba0975261cdb3b05aaab56fc8a7f7b304c020802b996e12a24a565ca76d48bee539a0515f4d05ba3ea488396ac1fc2c72f0c5214ac5229ba9f105c035cd7f9c564df1","tx":{ "nonce": "0x6f", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):0xa0bd64fbb00e30d79a6d539e121e5b2c67b0da5b3cdbb370ae9b90d26643b089
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0xa0bd64fbb00e30d79a6d539e121e5b2c67b0da5b3cdbb370ae9b90d26643b089
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f70018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca0b012dcd2b93b2b31a72f17c38c55b437f27f4363a01163b5cbca33f3ac5555afa0386136c6500ac1e212e1489bbebcfadd31647d075fcba73593f7dfa6b1609719","tx":{ "nonce": "0x70", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):0x17a4ef09262de1b0720d4f154f3321c32a3e6c536b37216a8ed29606f5c87a02
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0x17a4ef09262de1b0720d4f154f3321c32a3e6c536b37216a8ed29606f5c87a02
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f70018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca0b012dcd2b93b2b31a72f17c38c55b437f27f4363a01163b5cbca33f3ac5555afa0386136c6500ac1e212e1489bbebcfadd31647d075fcba73593f7dfa6b1609719","tx":{ "nonce": "0x70", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Error: known transaction: 17a4ef09262de1b0720d4f154f3321c32a3e6c536b37216a8ed29606f5c87a02
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f71018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba02629ebf7528ce0f96ba652282921635fb186e91e61f28c4ac5f8ec74a7028d79a02ed77a7c01f01a32a7594a82fa95e22214147cb9c6c0ac79fcb008b58f00a5c5","tx":{ "nonce": "0x71", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):0xec4991045db06630056b817b9b70e66687491e63fcdc257fb3c396186a62c417
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0xec4991045db06630056b817b9b70e66687491e63fcdc257fb3c396186a62c417
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f71018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba02629ebf7528ce0f96ba652282921635fb186e91e61f28c4ac5f8ec74a7028d79a02ed77a7c01f01a32a7594a82fa95e22214147cb9c6c0ac79fcb008b58f00a5c5","tx":{ "nonce": "0x71", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+Error: known transaction: ec4991045db06630056b817b9b70e66687491e63fcdc257fb3c396186a62c417
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f72018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba0a0d91399a3234b83f50b9f8f7196573d9df621e57df9b8be51c1eb24b0b12b69a06a386b34a7213e3d2b9099c402ebf89d25ac93eb88a0d9b10cadbb0be46ec224","tx":{ "nonce": "0x72", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):0xa7953c73d8898fa0007479ad115aa222d3c2dab094f52c7fb43e617e47b931c9
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0xa7953c73d8898fa0007479ad115aa222d3c2dab094f52c7fb43e617e47b931c9
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f73018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba0adf1c3cafa94fc175edb9001814de833d62556780428ed32e4083b4f5bec1916a0235ba829ab001bd2fcef7e3fc0e5ad7047e28a6ebd1734f539721b1ffe886933","tx":{ "nonce": "0x73", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):0x19dbfc71a68f7d4e63baeab7d25c0512dba832505467eca075671fdc4f6358c6
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0x19dbfc71a68f7d4e63baeab7d25c0512dba832505467eca075671fdc4f6358c6
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f74018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba0a2bc32d3c6fad0f303d45fb2be9436e75c914dcd3acbfbb8d03304ff6ac0bc96a057c1c1df7a3703e77f4ead75dd5ec31e63ca806c4a8e2247cdd83233fe507ddc","tx":{ "nonce": "0x74", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):0x392741beea623ef11ebdaaf7a1eba8d0bf471f97dbd6386a7f2ff018caedfab1
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0x392741beea623ef11ebdaaf7a1eba8d0bf471f97dbd6386a7f2ff018caedfab1
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f74018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba0a2bc32d3c6fad0f303d45fb2be9436e75c914dcd3acbfbb8d03304ff6ac0bc96a057c1c1df7a3703e77f4ead75dd5ec31e63ca806c4a8e2247cdd83233fe507ddc","tx":{ "nonce": "0x74", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Error: known transaction: 392741beea623ef11ebdaaf7a1eba8d0bf471f97dbd6386a7f2ff018caedfab1
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation:success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f74018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba0a2bc32d3c6fad0f303d45fb2be9436e75c914dcd3acbfbb8d03304ff6ac0bc96a057c1c1df7a3703e77f4ead75dd5ec31e63ca806c4a8e2247cdd83233fe507ddc","tx":{ "nonce": "0x74", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+Error: known transaction: 392741beea623ef11ebdaaf7a1eba8d0bf471f97dbd6386a7f2ff018caedfab1
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f75018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba07918fb6134a390758534c70c5566adbe2a604280898cfc8e81c9e49e048c7d42a0174c0740bf83954424aa6473d19df49d0025ce518b4f174e369b15be4d5caa3f","tx":{ "nonce": "0x75", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):0x74d4d3c0d20fe2cebf093163d5ea948e6d740c3426d57ec3a0a76a7682eca22e
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0x74d4d3c0d20fe2cebf093163d5ea948e6d740c3426d57ec3a0a76a7682eca22e
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f75018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba07918fb6134a390758534c70c5566adbe2a604280898cfc8e81c9e49e048c7d42a0174c0740bf83954424aa6473d19df49d0025ce518b4f174e369b15be4d5caa3f","tx":{ "nonce": "0x75", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Error: known transaction: 74d4d3c0d20fe2cebf093163d5ea948e6d740c3426d57ec3a0a76a7682eca22e
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+{"signText":"f85f76018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca0d2374c5832c6017ae32dc22c0138f863af431b1630c2aaf0a73e1cdd93533397a03c936b71e1c085d73d5a9979fc1ef93ad171c6ae1a7e757516c9bc2694e1c077","tx":{ "nonce": "0x76", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):0xe3703a655e8ea90bee4f4513872b246e8b009da07b0a068ab44a4adefe2c37d1
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0xe3703a655e8ea90bee4f4513872b246e8b009da07b0a068ab44a4adefe2c37d1
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation:success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f77018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba0d0cfb39abf39084b56096d0e4c8c0843681643a9d2e40fc97701fc6e0ea8d644a07ae26ec77b9bb166585fe532987929fb08f21278b26cab627060ff8f932c8f80","tx":{ "nonce": "0x77", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):0x97083f6b8b2ebe99eb6ce0cd1df1349840203d16b7dbe6d2ff775d38d7ac6c24
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0x97083f6b8b2ebe99eb6ce0cd1df1349840203d16b7dbe6d2ff775d38d7ac6c24
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f77018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba0d0cfb39abf39084b56096d0e4c8c0843681643a9d2e40fc97701fc6e0ea8d644a07ae26ec77b9bb166585fe532987929fb08f21278b26cab627060ff8f932c8f80","tx":{ "nonce": "0x77", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+Error: known transaction: 97083f6b8b2ebe99eb6ce0cd1df1349840203d16b7dbe6d2ff775d38d7ac6c24
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f78018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca07304efca9585c3d2ee5449eb17faeab93530f99d20d6b33041d0d99a3da6d732a00ad133f47e698c69ad8911d66c78615ac744693a8f9a462ca6687788e2872e97","tx":{ "nonce": "0x78", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):0x09b47fed13115d8a2b96d52f19083d35fab5451c3e6c8446b7c0c1ce8dac2786
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0x09b47fed13115d8a2b96d52f19083d35fab5451c3e6c8446b7c0c1ce8dac2786
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f78018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca07304efca9585c3d2ee5449eb17faeab93530f99d20d6b33041d0d99a3da6d732a00ad133f47e698c69ad8911d66c78615ac744693a8f9a462ca6687788e2872e97","tx":{ "nonce": "0x78", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Error: known transaction: 09b47fed13115d8a2b96d52f19083d35fab5451c3e6c8446b7c0c1ce8dac2786
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f79018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca09f1ef010b5db5d726fa1257f8f5e06e75ba612baa0c34ec04119b47ae9b75775a07cb4049c59bbf9ddb665eeded6a923f7950b73ce41953f774e2ad8f2a53e39c2","tx":{ "nonce": "0x79", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):0x810850122fc0708e8c57c9ecf6dcc104ecf5e84e31805155c3c0873197c0d0b3
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0x810850122fc0708e8c57c9ecf6dcc104ecf5e84e31805155c3c0873197c0d0b3
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f79018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ca09f1ef010b5db5d726fa1257f8f5e06e75ba612baa0c34ec04119b47ae9b75775a07cb4049c59bbf9ddb665eeded6a923f7950b73ce41953f774e2ad8f2a53e39c2","tx":{ "nonce": "0x79", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+Error: known transaction: 810850122fc0708e8c57c9ecf6dcc104ecf5e84e31805155c3c0873197c0d0b3
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f7a018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba032e4346506e717c18e65b7c580a4509f557f601dba69d10e2720d0d638e4cfa0a0713683c43227d8a96f18a3b41dcdc57d675c482c9dc3143e397048332918c92a","tx":{ "nonce": "0x7a", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):0x8cb07d7ec4c2bc482a847bbe8b736e67581e0e0ad065637ba8eb4c3151fb59a1
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0x8cb07d7ec4c2bc482a847bbe8b736e67581e0e0ad065637ba8eb4c3151fb59a1
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation:success
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f7a018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba032e4346506e717c18e65b7c580a4509f557f601dba69d10e2720d0d638e4cfa0a0713683c43227d8a96f18a3b41dcdc57d675c482c9dc3143e397048332918c92a","tx":{ "nonce": "0x7a", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Error: known transaction: 8cb07d7ec4c2bc482a847bbe8b736e67581e0e0ad065637ba8eb4c3151fb59a1
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):CC_signInformation:success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f7b018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba02d0c811a57de6398c28e722cde527248c5d4fa225ef63b1eebd24b90ea0ab775a0220342d92e993beea774b51be2e962cb7f6fc195a58d60a0cfc810960fa8fc7d","tx":{ "nonce": "0x7b", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationIn-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationOut
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):0x6a013af9e0377adde60d652f6bd8b50751c9b56dacf3bd2218d1d74088c01056
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+0x6a013af9e0377adde60d652f6bd8b50751c9b56dacf3bd2218d1d74088c01056
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):CC_signInformation:success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):HC_signInformationIn-success
+
+2.CC_signInformation:
+
+*method:post
+
+*formate:/CC_signInformation/:privateKey/:rawtx
+
+*result:
+{"signText":"f85f7b018252089400765c5d8a2b57b75d77a77b85ff10898168cac401801ba02d0c811a57de6398c28e722cde527248c5d4fa225ef63b1eebd24b90ea0ab775a0220342d92e993beea774b51be2e962cb7f6fc195a58d60a0cfc810960fa8fc7d","tx":{ "nonce": "0x7b", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 1, "gasPrice": "0x1" }}
+
+1.HC_signInformationIn:
+
+*method:post
+
+*formate:/HC_signInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice
+
+*result:
+{ nonce: '0x1a',
+  gasLimit: '0x33450',
+  to: '0x6a2f20a64dc0f784195db570ac14b2d2359fdb88',
+  value: 1,
+  gasPrice: '0x323030303030303030303022207d' }
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):HC_signInformationOut
+Error: known transaction: 6a013af9e0377adde60d652f6bd8b50751c9b56dacf3bd2218d1d74088c01056
+    at Object.InvalidResponse (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/errors.js:35:16)
+    at /home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/requestmanager.js:86:36
+    at XMLHttpRequest.request.onreadystatechange (/home/administrator/ethServer/iiiBlockchain/node_modules/web3/lib/web3/httpprovider.js:118:13)
+    at XMLHttpRequestEventTarget.dispatchEvent (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:64:18)
+    at XMLHttpRequest._setReadyState (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:354:12)
+    at XMLHttpRequest._onHttpResponseEnd (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:509:12)
+    at IncomingMessage.<anonymous> (/home/administrator/ethServer/iiiBlockchain/node_modules/xhr2/lib/xhr2.js:469:24)
+    at emitNone (events.js:91:20)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+
+3.CC_signInformation:
+
+*method:post
+
+*formate:/HC_signInformationOut/:serializedTx
+
+*result:
+error
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:35 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):blockNumber-success
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange
+1000
+2000
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1000
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1001
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1002
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1003
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1004
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1005
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1006
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1007
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1008
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1009
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1010
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1011
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1012
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1013
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1014
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1015
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1016
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1017
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1018
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1019
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1020
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1021
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1022
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1023
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1024
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1025
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1026
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1027
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1028
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1029
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1030
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1031
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1032
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1033
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1034
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1035
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1036
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1037
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1038
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1039
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1040
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1041
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1042
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1043
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1044
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1045
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1046
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1047
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1048
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1049
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1050
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1051
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1052
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1053
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1054
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1055
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1056
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1057
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1058
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1059
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1060
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1061
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1062
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1063
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1064
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1065
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1066
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1067
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1068
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1069
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1070
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1071
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1072
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1073
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1074
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1075
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1076
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1077
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1078
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1079
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1080
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1081
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1082
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1083
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1084
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1085
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1086
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1087
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1088
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1089
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1090
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1091
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1092
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1093
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1094
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1095
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1096
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1097
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1098
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1099
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1100
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1101
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1102
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1103
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1104
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1105
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1106
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1107
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1108
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1109
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1110
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1111
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1112
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1113
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1114
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1115
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1116
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1117
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1118
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1119
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1120
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1121
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1122
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1123
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1124
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1125
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1126
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1127
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1128
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1129
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1130
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1131
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1132
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1133
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1134
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1135
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1136
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1137
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1138
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1139
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1140
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1141
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1142
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1143
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1144
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1145
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1146
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1147
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1148
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1149
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1150
+Wed Nov 29 2017 14:12:34 GMT+0800 (CST):transactionListRange readBlock 1151

@@ -23,6 +23,29 @@ app.use(function (err, req, res, next) {
   });
 });
 
+app.set('port', config.port);
+
+var cluster = require('cluster');
+var http = require('http');
+var numCPUs = require('os').cpus().length;
+
+if (cluster.isMaster) {
+	for (var i = 0; i < numCPUs; i++) {
+		cluster.fork();
+	}
+
+	cluster.on('listening', (worker, address) => {
+		console.log('worker ' + worker.process.pid +', listen: '+address.address+":"+address.port);
+	});
+	cluster.on('exit', (worker, code, signal) => {
+		console.log('worker ' + worker.process.pid + ' died');
+		cluster.fork();
+	});
+} else {
+	app.listen(app.get('port'));
+}
+
+/*
 if (module.parent) {
   module.exports = app;
 } else {
@@ -30,3 +53,4 @@ if (module.parent) {
     console.log(`${pkg.name} listening on port ${config.port}`);
   });
 }
+*/
