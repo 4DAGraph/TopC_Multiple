@@ -32,11 +32,13 @@ console.log(nodeConnect)
 
 function ccTest(req, res, next){
 
-	const nonce = web3.eth.getTransactionCount("0x9Bf2dBACE6533Dabd88fE2d2A2A7Be10EA8Cb995");
+	const nonce = web3.eth.getTransactionCount(req.params.from);
 
 	const nonceHex = web3.toHex(nonce);
+	var postString = nodejsConnect+'/topChain/CC_signInformation/'+req.params.key+'/{ "nonce": "'+nonceHex+'", "gasLimit": "0x5208", "to":"'+req.params.to+'", "value": '+req.params.value+', "gasPrice": "0x1" } '
+	console.log(postString)
 	request.post(
-		nodejsConnect+'/topChain/CC_signInformation/07c97e0a6a71d9b707f1eb9d89a2c0dd40904a5baf7f227f938b95460dce32ba/{ "nonce": "'+nonceHex+'", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 10000000000, "gasPrice": "0x1" } ',
+		postString,
 		function (error, response, body) {
 			if (!error && response.statusCode == 200) {
 				console.log("\n2.CC_signInformation:\n")

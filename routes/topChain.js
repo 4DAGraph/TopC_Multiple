@@ -4,10 +4,12 @@ var chainAPI = require('../models/chainAPI');
 var signAPI = require('../models/signAPI');
 var testAPI = require('../testAPI/APIToTest');
 
+var APIToTestRpcTest = require('../testAPI/APIToTestRpcTest')
 ///測試專用
 
 router.post("/testTxOut",testAPI.txout);
 
+router.post("/testTxOut2/:from/:to/:value/:key",APIToTestRpcTest.txout);
 ///簽章專用
 
 router.post("/key1store",signAPI.key1store);
