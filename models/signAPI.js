@@ -7,9 +7,12 @@ var ethKeys = require("ethereumjs-keys");
 var date = new Date();
 var config = require('../config/default.js');
 var crypto = require('crypto');
-
 var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
 web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
+
+var key = 'exampleakeya1334'
+var cipher = crypto.createCipher('aes-256-cbc', key)
+//var decipher = crypto.createDecipher('aes-256-cbc', key);
 
 var key1="";
 var key2="";
@@ -39,12 +42,23 @@ module.exports = {
 		key5 = req.body.key;
 		res.send("success");
 	},
+        keyCryptoTx: function (req, res, next){
+                var encryptedPassword = cipher.update(JSON.stringify(req.body.plainTx), 'utf8', 'base64');
+		encryptedPassword = encryptedPassword + cipher.final('base64')
+                res.send(encryptedPassword);
+        },
 	keyResult: function (req, res, next){
 		console.log(key1+key2+key3+key4+key5);
 		res.send(privateKey);
 	},
 	keyCombine: function (req, res, next){
-		var result = req.body.KeyResult;
+var key = 'exampleakeya1334'
+	var decipher = crypto.createDecipher('aes-256-cbc', key);
+		console.log("123")
+		var decryptedPassword = decipher.update(req.body.txt, 'base64', 'utf8');
+		decryptedPassword = decryptedPassword + decipher.final('utf8');
+		console.log(decryptedPassword)
+		var result = JSON.parse(decryptedPassword).KeyResult;
 		for (var i=0;i< result.length;i++){
 			key[result[i].KeyNumber-1] = result[i].Key;
 		}
@@ -58,6 +72,7 @@ module.exports = {
 		res.send("success");
 	},
 	keyStore_publishV2: function (req, res, next){
+		console.log(date+"keyStore_publishV2")
 		var sha256 = crypto.createHash("sha256");
 		var sum ="";
 		//console.log(key.length)
@@ -78,11 +93,12 @@ module.exports = {
 		var privateKey = new Buffer(priKey, 'hex')
 		tx.sign(privateKey);
 		var serializedTx = tx.serialize();
-		console.log(serializedTx.toString('hex'));
-		res.send(serializedTx.toString('hex'));
+		//console.log(serializedTx.toString('hex'));
+		//console.log(req.body)
+		console.log(date+{"signText":serializedTx.toString('hex'),"tx":req.body});
+		res.send({'signText':serializedTx.toString('hex'),'tx':req.body});
 	},
 	keyStore_checkKey: function (req, res, next){
-console.log(key)
 		var sum ="";
 		for (var i=0;i< key.length;i++){
 			if(i==0){

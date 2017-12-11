@@ -12,6 +12,7 @@ router.post("/testTxOut",testAPI.txout);
 router.post("/testTxOut2/:from/:to/:value/:key",APIToTestRpcTest.txout);
 ///簽章專用
 
+router.post("/keyCryptoTx",signAPI.keyCryptoTx);
 router.post("/key1store",signAPI.key1store);
 router.post("/key2store",signAPI.key2store);
 router.post("/key3store",signAPI.key3store);
