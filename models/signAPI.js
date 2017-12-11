@@ -8,7 +8,9 @@ var date = new Date();
 var config = require('../config/default.js');
 var crypto = require('crypto');
 
-web3.setProvider(new web3.providers.HttpProvider('http://'+"localhost"+':8545'));
+var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
+web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
+
 var key1="";
 var key2="";
 var key3="";
@@ -46,6 +48,7 @@ module.exports = {
 		for (var i=0;i< result.length;i++){
 			key[result[i].KeyNumber-1] = result[i].Key;
 		}
+		console.log(key)
 		res.send("success");
 	},
 	keyDelete: function (req, res, next){
@@ -77,9 +80,9 @@ module.exports = {
 		var serializedTx = tx.serialize();
 		console.log(serializedTx.toString('hex'));
 		res.send(serializedTx.toString('hex'));
-		
 	},
 	keyStore_checkKey: function (req, res, next){
+console.log(key)
 		var sum ="";
 		for (var i=0;i< key.length;i++){
 			if(i==0){

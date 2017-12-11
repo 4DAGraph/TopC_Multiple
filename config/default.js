@@ -1,6 +1,6 @@
 module.exports = {
-  port: process.argv[2]||3200,
-  rpcPort:process.argv[3]||8546,
+  port: process.argv[3]||3200,
+  rpcPort:process.argv[4]||8546,
 //  rpcPort:8546,
 //  port:3200,
   session: {
