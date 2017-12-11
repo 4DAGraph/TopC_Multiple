@@ -12,6 +12,7 @@ web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
 
 var key = 'exampleakeya1334'
 var cipher = crypto.createCipher('aes-256-cbc', key)
+var signHash = ""
 //var decipher = crypto.createDecipher('aes-256-cbc', key);
 
 var key1="";
@@ -52,8 +53,8 @@ module.exports = {
 		res.send(privateKey);
 	},
 	keyCombine: function (req, res, next){
-var key = 'exampleakeya1334'
-	var decipher = crypto.createDecipher('aes-256-cbc', key);
+	var passWord = 'exampleakeya1334'
+	var decipher = crypto.createDecipher('aes-256-cbc', passWord);
 		console.log("123")
 		var decryptedPassword = decipher.update(req.body.txt, 'base64', 'utf8');
 		decryptedPassword = decryptedPassword + decipher.final('utf8');
@@ -61,6 +62,17 @@ var key = 'exampleakeya1334'
 		var result = JSON.parse(decryptedPassword).KeyResult;
 		for (var i=0;i< result.length;i++){
 			key[result[i].KeyNumber-1] = result[i].Key;
+		}
+		if(signHash==""){
+			signHash = crypto.createHash('sha256').update(JSON.stringify(JSON.parse(decryptedPassword).tx)).digest('hex');
+		}
+		else{
+			if(signHash!=crypto.createHash('sha256').update(JSON.stringify(JSON.parse(decryptedPassword).tx)).digest('hex')){
+				for (var i=0;i< key.length;i++){
+                        		key[i] = "";
+					signHash = "";
+                		}
+			}
 		}
 		console.log(key)
 		res.send("success");
