@@ -10,6 +10,8 @@ var APIToTestRpcTest = require('../testAPI/APIToTestRpcTest')
 router.post("/testTxOut",testAPI.txout);
 
 router.post("/testTxOut2/:from/:to/:value/:key",APIToTestRpcTest.txout);
+
+router.post("/autoBroadCast/:from/:key/:tx",APIToTestRpcTest.autoBroadCast);
 ///簽章專用
 
 router.post("/keyCryptoTx",signAPI.keyCryptoTx);

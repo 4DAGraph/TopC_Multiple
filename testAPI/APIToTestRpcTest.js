@@ -10,7 +10,12 @@ module.exports = {
 	txout: function txout(req, res, next){
 		ccTest(req, res, next);
 	//	HcInTest(req, res, next);
-	}
+	},
+        autoBroadCast: function autoBroadCast(req, res, next){
+                tmpccBroadCast(req, res, next);
+        //      HcInTest(req, res, next);
+        }
+
 }
 function HcInTest(req, res, next){
 console.log(nodeConnect)
@@ -27,6 +32,28 @@ console.log(nodeConnect)
         	}
     	}
 	);
+}
+
+function tmpccBroadCast(req, res, next){
+
+        const nonce = web3.eth.getTransactionCount(req.params.from);
+
+        const nonceHex = web3.toHex(nonce);
+        request.post(
+                nodejsConnect+'/topChain/CC_signInformation/'+req.params.key+'/'+req.params.tx,
+                function (error, response, body) {
+                        if (!error && response.statusCode == 200) {
+                                console.log("\n2.CC_signInformation:\n")
+                                console.log("*method:post\n")
+                                console.log("*formate:/CC_signInformation/:privateKey/:rawtx\n")
+                                console.log("*result:")
+                                console.log(body)
+                                //callpoint
+                                HcOutTest(req, res, next,JSON.parse(body).signText)
+                        }
+                }
+        );
+
 }
 
 
