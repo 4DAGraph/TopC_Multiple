@@ -9,5 +9,5 @@ module.exports = {
     maxAge: 2592000000
   },
   mongodb: 'mongodb://localhost:27017/myblog',
-  nodeip:"192.168.0.112"
+  nodeip:"0.0.0.0"
 };
