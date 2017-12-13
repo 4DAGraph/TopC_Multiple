@@ -10,9 +10,10 @@ var crypto = require('crypto');
 var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
 web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
 
-var key = 'exampleakeya1334'
-var cipher = crypto.createCipher('aes-256-cbc', key)
+//var key = 'exampleakeya1334'
+//var cipher = crypto.createCipher('aes-256-cbc', key)
 var signHash = ""
+var verifyTx = ""
 //var decipher = crypto.createDecipher('aes-256-cbc', key);
 
 var key1="";
@@ -44,9 +45,11 @@ module.exports = {
 		res.send("success");
 	},
         keyCryptoTx: function (req, res, next){
+        	var passWord = 'exampleakeya1334'
+		var cipher = crypto.createCipher('aes-256-cbc', passWord)
                 var encryptedPassword = cipher.update(JSON.stringify(req.body.plainTx), 'utf8', 'base64');
 		encryptedPassword = encryptedPassword + cipher.final('base64')
-                res.send(encryptedPassword);
+                res.send({"txt":encryptedPassword});
         },
 	keyResult: function (req, res, next){
 		console.log(key1+key2+key3+key4+key5);
@@ -58,19 +61,21 @@ module.exports = {
 		console.log("123")
 		var decryptedPassword = decipher.update(req.body.txt, 'base64', 'utf8');
 		decryptedPassword = decryptedPassword + decipher.final('utf8');
-		console.log(decryptedPassword)
+		//console.log(decryptedPassword)
 		var result = JSON.parse(decryptedPassword).KeyResult;
 		for (var i=0;i< result.length;i++){
 			key[result[i].KeyNumber-1] = result[i].Key;
 		}
 		if(signHash==""){
 			signHash = crypto.createHash('sha256').update(JSON.stringify(JSON.parse(decryptedPassword).tx)).digest('hex');
+			verifyTx = JSON.parse(decryptedPassword).tx;
 		}
 		else{
 			if(signHash!=crypto.createHash('sha256').update(JSON.stringify(JSON.parse(decryptedPassword).tx)).digest('hex')){
 				for (var i=0;i< key.length;i++){
                         		key[i] = "";
 					signHash = "";
+					res.send("signTx is not mapping");
                 		}
 			}
 		}
@@ -86,7 +91,7 @@ module.exports = {
 	keyStore_publishV2: function (req, res, next){
 		console.log(date+"keyStore_publishV2")
 		var sha256 = crypto.createHash("sha256");
-		var sum ="";
+		var sum ="ve$(Kaman)lo";
 		//console.log(key.length)
 		for (var i=0;i< key.length;i++){
 			sum =sum+ key[i];
@@ -99,16 +104,22 @@ module.exports = {
 		//res.send("success");
 		//簽章
 		var Tx = require('ethereumjs-tx');
-		//console.log(req.body);
-		var tx = new Tx(req.body);
 		//console.log(123)
 		var privateKey = new Buffer(priKey, 'hex')
-		tx.sign(privateKey);
-		var serializedTx = tx.serialize();
-		//console.log(serializedTx.toString('hex'));
-		//console.log(req.body)
-		console.log(date+{"signText":serializedTx.toString('hex'),"tx":req.body});
-		res.send({'signText':serializedTx.toString('hex'),'tx':req.body});
+		var allTx = verifyTx
+		//console.log(allTx)
+		var arrayTx = [];
+		for(var i=0;i< allTx.length;i++){
+                	var tx = new Tx(allTx[i]);
+			tx.sign(privateKey);
+			var serializedTx = tx.serialize();
+			//console.log(serializedTx.toString('hex'));
+			//console.log(req.body)
+			console.log(date+JSON.stringify({"signText":serializedTx.toString('hex'),"tx":allTx[i]}));
+			arrayTx.push({"signText":serializedTx.toString('hex'),"tx":allTx[i]});
+		}
+		//console.log(arrayTx)
+		res.send(arrayTx);
 	},
 	keyStore_checkKey: function (req, res, next){
 		var sum ="";

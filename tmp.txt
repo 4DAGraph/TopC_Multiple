@@ -12275,3 +12275,1709 @@ Error: bind EADDRINUSE null:3200
     at _combinedTickCallback (internal/process/next_tick.js:73:7)
 worker 62490 died
 worker 62484 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62497 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62503 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62509 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62515 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62521 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62527 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62533 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62539 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62545 died
+worker 62551 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62557 died
+worker 62563 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+worker 62575 died
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62569 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+http://127.0.0.1:3200
+worker 62581 died
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62587 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+worker 62599 died
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62593 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62605 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62611 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+worker 62623 died
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62629 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+worker 62642 died
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62648 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62654 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62660 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62666 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62672 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62678 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62684 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62690 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62696 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62702 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62708 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62714 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62720 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62726 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62732 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62759 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62765 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62771 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62777 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62783 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62789 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62795 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62801 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62815 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62809 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62822 died
+worker 62828 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62841 died
+worker 62835 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62847 died
+worker 62853 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62859 died
+worker 62865 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62872 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62878 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62887 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62893 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+worker 62900 died
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62906 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+worker 62915 died
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62921 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62927 died
+worker 62933 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62969 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62975 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62981 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62987 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+worker 62993 died
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 62999 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63011 died
+worker 63005 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63025 died
+worker 63019 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63037 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63031 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+http://127.0.0.1:3200
+worker 63053 died
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63065 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63079 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63088 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+worker 63125 died
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63131 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63147 died
+worker 63141 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63160 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63154 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63166 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63172 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63178 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63184 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63190 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63196 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63202 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63208 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+worker 63214 died
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63220 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63226 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+/home/administrator/ethServer/iiiBlockchain/node_modules/solc/soljson.js:1
+(function (exports, require, module, __filename, __dirname) { var Module;if(!Module)Module=(typeof Module!=="undefined"?Module:null)||{};var moduleOverrides={};for(var key in Module){if(Module.hasOwnProperty(key)){moduleOverrides[key]=Module[key]}}var ENVIRONMENT_IS_WEB=typeof window==="object";var ENVIRONMENT_IS_WORKER=typeof importScripts==="function";var ENVIRONMENT_IS_NODE=typeof process==="object"&&typeof require==="function"&&!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_WORKER;var ENVIRONMENT_IS_SHELL=!ENVIRONMENT_IS_WEB&&!ENVIRONMENT_IS_NODE&&!ENVIRONMENT_IS_WORKER;if(ENVIRONMENT_IS_NODE){if(!Module["print"])Module["print"]=function print(x){process["stdout"].write(x+"\n")};if(!Module["printErr"])Module["printErr"]=function printErr(x){process["stderr"].write(x+"\n")};var nodeFS=require("fs");var nodePath=require("path");Module["read"]=function read(filename,binary){filename=nodePath["normalize"](filename);var ret=nodeFS["readFileSync
+
+Error: bind EADDRINUSE null:3200
+    at Object.exports._errnoException (util.js:1020:11)
+    at exports._exceptionWithHostPort (util.js:1043:20)
+    at cb (net.js:1327:16)
+    at rr (cluster.js:625:14)
+    at Worker.<anonymous> (cluster.js:594:9)
+    at process.<anonymous> (cluster.js:766:8)
+    at emitTwo (events.js:111:20)
+    at process.emit (events.js:191:7)
+    at process.nextTick (internal/child_process.js:787:12)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+worker 63232 died
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+worker 63238, listen: null:3200
+http://127.0.0.1:3200
+http://127.0.0.1:3200
+worker 63244, listen: null:3200

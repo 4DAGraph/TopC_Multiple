@@ -36,7 +36,7 @@ function ccTest(req, res, next){
 
 	const nonceHex = web3.toHex(nonce);
 	request.post(
-		nodejsConnect+'/topChain/CC_signInformation/07c97e0a6a71d9b707f1eb9d89a2c0dd40904a5baf7f227f938b95460dce32ba/{ "nonce": "'+nonceHex+'", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 10000000000, "gasPrice": "0x1" } ',
+		nodejsConnect+'/topChain/CC_signInformation/07c97e0a6a71d9b707f1eb9d89a2c0dd40904a5baf7f227f938b95460dce32ba/{ "nonce": "'+nonceHex+'", "gasLimit": "0x5208", "to":"0x00765c5d8a2b57b75d77a77b85ff10898168cac4", "value": 10000000000000000, "gasPrice": "0x1" } ',
 		function (error, response, body) {
 			if (!error && response.statusCode == 200) {
 				console.log("\n2.CC_signInformation:\n")
