@@ -3,8 +3,9 @@ var config = require('../config/default.js');
 var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
 var Web3 = require('web3');
 var web3 = new Web3();
-var nodejsConnect = 'http://'+config.nodeip+':'+config.port;
-console.log(nodejsConnect)
+//var nodejsConnect = 'http://'+config.nodeip+':'+config.port;
+//console.log(nodejsConnect)
+var nodeConnect = 'http://'+config.nodeRpc;
 web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
 module.exports = {
 	txout: function txout(req, res, next){

@@ -8,6 +8,8 @@ var date = new Date();
 var config = require('../config/default.js');
 var crypto = require('crypto');
 var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
+var nodeConnect = 'http://'+config.nodeRpc;
+
 web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
 
 //var key = 'exampleakeya1334'

@@ -10,7 +10,9 @@ var crypto = require('crypto');
 var Tx = require('ethereumjs-tx');
 var abi = require('./erc.json');
 //var nodeConnect = 'https://mainnet.infura.io/metamask';
-var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
+//var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
+var nodeConnect = config.nodeRpc;
+console.log(nodeConnect)
 web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
 var address = require("./address.json")
 
@@ -716,6 +718,7 @@ console.log(address[req.params.address])
 	}
 
 }
+
 
 
 
