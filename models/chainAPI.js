@@ -532,7 +532,7 @@ console.log(address[req.params.address])
 	},
 
 	HC_signInformationOut:  function HC_signInformationOut(req, res, next){
-		console.log(date+":HC_signInformationOut");
+		console.log(date+":HC_signInformationOut",req.params.serializedTx.toString('hex'));
 		web3.eth.sendRawTransaction("0x"+req.params.serializedTx.toString('hex'), function(err, hash) {
 
 			if(err != null){

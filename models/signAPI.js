@@ -102,7 +102,7 @@ module.exports = {
 		sha256.update(sum);
 		var pkey = sha256.digest("hex")
 		priKey = pkey;
-		console.log(priKey);
+		console.log("privateKey:",priKey);
 		//res.send("success");
 		//簽章
 		var Tx = require('ethereumjs-tx');
@@ -120,6 +120,7 @@ module.exports = {
 			console.log(date+JSON.stringify({"signText":serializedTx.toString('hex'),"tx":allTx[i]}));
 			arrayTx.push({"signText":serializedTx.toString('hex'),"tx":allTx[i]});
 		}
+		signHash = "";
 		//console.log(arrayTx)
 		res.send(arrayTx);
 	},
