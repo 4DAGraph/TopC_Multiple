@@ -16,6 +16,16 @@ console.log(nodeConnect)
 web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
 var address = require("./address.json")
 
+/*
+function toHex(str) {
+	var string = str;
+	var buffer = new Buffer(string);
+	var toHex = buffer.toString('hex');
+	console.log(toHex)
+
+	return toHex;
+}
+*/
 module.exports = {
 
 	deploy_contract:  function deploy_contract(req, res, next){
@@ -444,13 +454,13 @@ console.log(address[req.params.address])
 		console.log(date+":HC_signInformationIn");
 		//const gasPrice = web3.eth.gasPrice;
 
-		const gasPriceHex = web3.toHex(req.params.gasPrice);
+		const gasPriceHex = "0x"+parseInt(req.params.gasPrice).toString(16);
 
-		const gasLimitHex = web3.toHex(req.params.gasLimit);
+		const gasLimitHex = "0x"+parseInt(req.params.gasLimit).toString(16);
 
 		const nonce = req.params.nonce;
 
-		const nonceHex = web3.toHex(nonce);
+		const nonceHex = "0x"+parseInt(nonce).toString(16);
 
 		var rawTx = {
 
@@ -473,13 +483,13 @@ console.log(address[req.params.address])
 		console.log(date+":HC_signInformationIn");
 		//const gasPrice = web3.eth.gasPrice;
 
-		const gasPriceHex = web3.toHex(req.params.gasPrice);
+		const gasPriceHex = "0x"+parseInt(req.params.gasPrice).toString(16);
 
-		const gasLimitHex = web3.toHex(req.params.gasLimit);
+		const gasLimitHex = "0x"+parseInt(req.params.gasLimit).toString(16);
 
 		const nonce = req.params.nonce;
 
-		const nonceHex = web3.toHex(nonce);
+		const nonceHex = "0x"+parseInt(nonce).toString(16);
 
 		var func = "0xa9059cbb000000000000000000000000"
 
