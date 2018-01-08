@@ -352,7 +352,7 @@ console.log(address[req.params.address])
 
 			});
 
-				console.log("transactionList"+req.params.blockNumber+data);
+				console.log("transactionList"+req.params.blockNumber/*+data*/);
 
 			res.send(data);
 
