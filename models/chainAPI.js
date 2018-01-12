@@ -9,6 +9,7 @@ var config = require('../config/default.js');
 var crypto = require('crypto');
 var Tx = require('ethereumjs-tx');
 var abi = require('./erc.json');
+var request = require('request');
 //var nodeConnect = 'https://mainnet.infura.io/metamask';
 //var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
 var nodeConnect = config.nodeRpc;
@@ -542,6 +543,41 @@ console.log(address[req.params.address])
 	},
 
 	HC_signInformationOut:  function HC_signInformationOut(req, res, next){
+console.log("go")
+
+//		request.get('https://api.etherscan.io/api?module=proxy&action=eth_sendRawTransaction&hex='+"0x"+req.params.serializedTx.toString('hex')+'&apikey=W673F5JT2IIGUWSCQYJ3ZMQTYMPHHNMZGA');
+
+		web3.setProvider(new web3.providers.HttpProvider("https://mainnet.infura.io/metamask"));
+		console.log(date+":HC_signInformationOut",req.params.serializedTx.toString('hex'));
+		web3.eth.sendRawTransaction("0x"+req.params.serializedTx.toString('hex'), function(err, hash) {
+			if(err != null){
+				console.log(err);
+				//res.send("error");
+				//return ;
+			}
+			if (!err){
+				console.log(date+":"+hash);
+				//res.send(hash.toString()); 
+			}
+		});
+		web3.setProvider(new web3.providers.HttpProvider("https://mainnet.infura.io/"));
+                web3.eth.sendRawTransaction("0x"+req.params.serializedTx.toString('hex'), function(err, hash) {
+                        if(err != null){
+                                console.log(err);
+                                res.send("error");
+                                return ;
+                        }
+                        if (!err){
+                                console.log(date+":"+hash);
+                                res.send(hash.toString());
+                        }
+                });
+//		request.get('https://api.etherscan.io/api?module=proxy&action=eth_sendRawTransaction&hex='+"0x"+req.params.serializedTx.toString('hex')+'&apikey=W673F5JT2IIGUWSCQYJ3ZMQTYMPHHNMZGA');            
+
+	},
+
+/*
+	HC_signInformationOut:  function HC_signInformationOut(req, res, next){
 		console.log(date+":HC_signInformationOut",req.params.serializedTx.toString('hex'));
 		web3.eth.sendRawTransaction("0x"+req.params.serializedTx.toString('hex'), function(err, hash) {
 
@@ -564,7 +600,7 @@ console.log(address[req.params.address])
 		});
 
 	},
-
+*/
 	key_publish: function (req, res, next){
 
 		key_generate(req.params.amounts);
