@@ -329,36 +329,22 @@ console.log(address[req.params.address])
         },
 
 	transactionList:  function transactionList(req, res, next){
-
 		//var record = req.params.transaction;
-
 		var data = []
-
 			var blockinfo = web3.eth.getBlock(req.params.blockNumber, true);
-
 			blockinfo.transactions.forEach(function(element){
-					/*
-
-					var output = { blockNumber: element.blockNumber, 
-
-							from: element.from, 
-
-							value: element.value,
-
-							to: 	element.to			
-
-							}*/
-
+				if(element.input.substr(0,10) != "0xa9059cbb"){
+					if(element.input.substr(34,40)){
+						//console.log(element.to)
+						element.to = "0x"+element.input.substr(34,40);
+						//element.value = parseInt(element.input.substr(74,64),16).toString();
+						element.value = parseInt(element.input.substr(74,64),16).toString();
+					}
+				}
 					data.push(element);
-
 			});
-
-				console.log("transactionList"+req.params.blockNumber/*+data*/);
-
+			console.log("transactionList"+req.params.blockNumber/*+data*/);
 			res.send(data);
-
-
-
 	},
 
 	blockNumber:  function blockNumber(req, res, next){
@@ -378,9 +364,18 @@ console.log(address[req.params.address])
 	},
 	transactionReceipt:  function transactionReceipt(req, res, next){
 		console.log(date+":transactionReceipt");
+		var result = web3.eth.getTransaction(req.params.address);
 		try{
-			console.log(date+":transactionReceipt-success");
-			res.send(web3.eth.getTransaction(req.params.address));
+			if(result.input.substr(34,40)){
+				result.to = result.input.substr(34,40);
+				result.value = parseInt(result.input.substr(74,64),16).toString();
+				console.log(date+":transactionReceipt-success");
+				res.send(result);
+			}
+			else{	
+				console.log(date+":transactionReceipt-success");
+				res.send(result)
+			}
 		}
 		catch(error){
 			console.log("this address is error")
