@@ -540,8 +540,10 @@ console.log(address[req.params.address])
 	HC_signInformationOut:  function HC_signInformationOut(req, res, next){
 console.log("go")
 
-//		request.get('https://api.etherscan.io/api?module=proxy&action=eth_sendRawTransaction&hex='+"0x"+req.params.serializedTx.toString('hex')+'&apikey=W673F5JT2IIGUWSCQYJ3ZMQTYMPHHNMZGA');
+//                request.get('https://api.etherscan.io/api?module=proxy&action=eth_sendRawTransaction&hex='+"0x"+req.params.serializedTx.toString('hex')+'&apikey=W673F5JT2IIGUWSCQYJ3ZMQTYMPHHNMZGA');
 
+//		request.get('https://api.etherscan.io/api?module=proxy&action=eth_sendRawTransaction&hex='+"0x"+req.params.serializedTx.toString('hex')+'&apikey=W673F5JT2IIGUWSCQYJ3ZMQTYMPHHNMZGA');
+/*
 		web3.setProvider(new web3.providers.HttpProvider("https://mainnet.infura.io/metamask"));
 		console.log(date+":HC_signInformationOut",req.params.serializedTx.toString('hex'));
 		web3.eth.sendRawTransaction("0x"+req.params.serializedTx.toString('hex'), function(err, hash) {
@@ -555,6 +557,7 @@ console.log("go")
 				//res.send(hash.toString()); 
 			}
 		});
+*/
 		web3.setProvider(new web3.providers.HttpProvider("https://mainnet.infura.io/"));
                 web3.eth.sendRawTransaction("0x"+req.params.serializedTx.toString('hex'), function(err, hash) {
                         if(err != null){
