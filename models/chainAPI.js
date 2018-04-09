@@ -489,7 +489,7 @@ console.log(address[req.params.address])
 
 		var func = "0xa9059cbb000000000000000000000000"
 
-		var to = "0x2783ca61c6a2e5e1fecd5896f03603162ab10f35"
+		var to = req.params.to
 
 		var amount = parseInt(req.params.value).toString(16)
 
@@ -501,7 +501,7 @@ console.log(address[req.params.address])
 
 		    gasLimit: gasLimitHex,
 
-		    to: req.params.to,
+		    to: address[req.params.token],
 
 		    value: 0,
 			

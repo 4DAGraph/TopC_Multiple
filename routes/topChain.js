@@ -30,7 +30,7 @@ router.post("/keyDelete",signAPI.keyDelete);
 
 
 router.get("/transactionTokenListRange/:token/:initialBlock/:finalBlock",chainAPI.transactionTokenListRange);
-router.post("/HC_signTokenInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice",chainAPI.HC_signTokenInformationIn);
+router.post("/HC_signTokenInformationIn/:token/:to/:gasLimit/:nonce/:value/:gasPrice",chainAPI.HC_signTokenInformationIn);
 router.get("/getTokenBalance/:token/:address",chainAPI.getTokenBalance);
 router.get("/transactionTokenReceipt/:address",chainAPI.transactionTokenReceipt);
 
