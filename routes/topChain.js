@@ -29,9 +29,9 @@ router.post("/keyDelete",signAPI.keyDelete);
 ///簽章end
 
 
-router.get("/transactionTokenListRange/:initialBlock/:finalBlock/:token",chainAPI.transactionTokenListRange);
+router.get("/transactionTokenListRange/:token/:initialBlock/:finalBlock",chainAPI.transactionTokenListRange);
 router.post("/HC_signTokenInformationIn/:to/:gasLimit/:nonce/:value/:gasPrice",chainAPI.HC_signTokenInformationIn);
-router.get("/getTokenBalance/:address/:token",chainAPI.getTokenBalance);
+router.get("/getTokenBalance/:token/:address",chainAPI.getTokenBalance);
 router.get("/transactionTokenReceipt/:address",chainAPI.transactionTokenReceipt);
 
 router.get("/deploy_contract/:account/:password",chainAPI.deploy_contract);
