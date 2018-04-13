@@ -524,7 +524,7 @@ console.log(address[req.params.address])
                 console.log(date+":HC_signInformationIn");
                 //const gasPrice = web3.eth.gasPrice;
 
-                const gasPriceHex = "0x"+parseInt(100000000000).toString(16);
+                const gasPriceHex = "0x"+parseInt(10000000000).toString(16);
 
                 const gasLimitHex = "0x"+parseInt(21000).toString(16);
 
