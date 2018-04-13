@@ -7,6 +7,8 @@ var testAPI = require('../testAPI/APIToTest');
 var APIToTestRpcTest = require('../testAPI/APIToTestRpcTest')
 ///測試專用
 
+//BYB_sign
+router.post("/BYBsign/:from/:to/:value/:key",chainAPI.BYB_sign);
 router.post("/testTxOut",testAPI.txout);
 
 router.post("/testTxOut2/:from/:to/:value/:key",APIToTestRpcTest.txout);

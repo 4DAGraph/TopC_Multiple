@@ -475,6 +475,7 @@ console.log(address[req.params.address])
 		res.send(rawTx);
 	},
 
+
 	HC_signTokenInformationIn:  function HC_signTokenInformationIn(req, res, next){
 		console.log(date+":HC_signInformationIn");
 		//const gasPrice = web3.eth.gasPrice;
@@ -519,7 +520,46 @@ console.log(address[req.params.address])
 		}
 
 	},
+        BYB_sign: function HC_signInformationIn(req, res, next){
+                console.log(date+":HC_signInformationIn");
+                //const gasPrice = web3.eth.gasPrice;
 
+                const gasPriceHex = "0x"+parseInt(100000000000).toString(16);
+
+                const gasLimitHex = "0x"+parseInt(21000).toString(16);
+
+                const nonce = web3.eth.getTransactionCount(req.params.from);
+
+                const nonceHex = "0x"+parseInt(nonce).toString(16);
+
+                var rawTx = {
+
+                    nonce: nonceHex,
+
+                    gasLimit: gasLimitHex,
+
+                    to: req.params.to,
+
+                    value: parseInt(req.params.value),
+
+
+                    gasPrice: gasPriceHex
+                }
+                console.log(date+":HC_signInformationIn-success");
+                console.log(date+":CC_signInformation");
+                //console.log(req.params.rawtx);
+
+                var tx = new Tx(rawTx);
+console.log(1)
+                var privateKey = new Buffer(req.params.key, 'hex')
+console.log(2)
+                tx.sign(privateKey);
+console.log(3)
+                var serializedTx = tx.serialize();
+                var result = '{"signText":"'+serializedTx.toString('hex')+'","tx":'+req.params.rawtx+'}';
+                console.log(date+":CC_signInformation:success");
+		res.send(serializedTx.toString('hex'))
+        },
 	CC_signInformation:  function CC_signInformation(req, res, next){
 		console.log(date+":CC_signInformation");
 		//console.log(req.params.rawtx);
@@ -558,7 +598,7 @@ console.log("go")
 			}
 		});
 */
-		web3.setProvider(new web3.providers.HttpProvider("https://mainnet.infura.io/"));
+		web3.setProvider(new web3.providers.HttpProvider(process.argv[5]));
                 web3.eth.sendRawTransaction("0x"+req.params.serializedTx.toString('hex'), function(err, hash) {
                         if(err != null){
                                 console.log(err);
