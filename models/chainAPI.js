@@ -287,12 +287,13 @@ console.log(finalBlock)
 
         transactionTokenListRange:  function transactionTokenListRange(req, res, next){
 
-console.log(address[req.params.address])
+console.log(address[req.params.token])
                 console.log(date+":transactionListRange");
                 var data = [];
                 var initialBlock = req.params.initialBlock;
                 var finalBlock = req.params.finalBlock;
                 var a=0;
+console.log(123)
                         for(var leng=parseInt(initialBlock);leng<=parseInt(finalBlock);leng++){
 				
                                 console.log(date+":transactionListRange","readBlock",leng);
