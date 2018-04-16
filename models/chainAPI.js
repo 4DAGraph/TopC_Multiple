@@ -16,6 +16,7 @@ var nodeConnect = config.nodeRpc;
 console.log(nodeConnect)
 web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
 var address = require("./address.json")
+var toHex = require('./bigIntToHex.js');
 
 /*
 function toHex(str) {
@@ -450,7 +451,7 @@ console.log(address[req.params.address])
 		console.log(date+":HC_signInformationIn");
 		//const gasPrice = web3.eth.gasPrice;
 
-		const gasPriceHex = "0x"+parseInt(req.params.gasPrice).toString(16);
+		const gasPriceHex = "0x"+toHex.toHex(req.params.gasPrice);
 
 		const gasLimitHex = "0x"+parseInt(req.params.gasLimit).toString(16);
 
@@ -492,8 +493,10 @@ console.log(address[req.params.address])
 
 		var to = req.params.to
 
-		var amount = parseInt(req.params.value).toString(16)
-
+		var amount = toHex.toHex(req.params.value)//parseInt(req.params.value).toString(16)
+//console.log(req.params.value);
+//console.log(amount);
+//console.log(toHex.toHex(req.params.value))
 		var input = func+to.substr(2)+paddingLeft(amount,64);
 
 		var rawTx = {
