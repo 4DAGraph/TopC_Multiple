@@ -259,8 +259,8 @@ module.exports = {
                 var data = [];
                 var initialBlock = req.params.initialBlock;
                 var finalBlock = req.params.finalBlock;
-console.log(initialBlock)
-console.log(finalBlock)
+//console.log(initialBlock)
+//console.log(finalBlock)
                 var a=0;
                         for(var leng=parseInt(initialBlock);leng<=parseInt(finalBlock);leng++){
 				console.log(date+":transactionListRange","readBlock",leng);
@@ -287,16 +287,16 @@ console.log(finalBlock)
 
         transactionTokenListRange:  function transactionTokenListRange(req, res, next){
 
-console.log(address[req.params.token])
-                console.log(date+":transactionListRange");
+//console.log(address[req.params.token])
+                console.log(date+":transactiontokenListRange");
                 var data = [];
                 var initialBlock = req.params.initialBlock;
                 var finalBlock = req.params.finalBlock;
                 var a=0;
-console.log(123)
+//console.log(123)
                         for(var leng=parseInt(initialBlock);leng<=parseInt(finalBlock);leng++){
 				
-                                console.log(date+":transactionListRange","readBlock",leng);
+                                console.log(date+":transactiontokenListRange","readBlock",leng);
                                 var blockinfo = web3.eth.getBlock(leng, true);
                                 a = a+blockinfo.transactions.length;
                                 blockinfo.transactions.forEach(function(element){
@@ -335,6 +335,7 @@ console.log(123)
 		var data = []
 			var blockinfo = web3.eth.getBlock(req.params.blockNumber, true);
 			blockinfo.transactions.forEach(function(element){
+			if (element.value == 0){
 				if(element.input.substr(0,10) != "0xa9059cbb"){
 					if(element.input.substr(34,40)){
 						//console.log(element.to)
@@ -343,6 +344,7 @@ console.log(123)
 						element.value = parseInt(element.input.substr(74,64),16).toString();
 					}
 				}
+			}
 					data.push(element);
 			});
 			console.log("transactionList"+req.params.blockNumber/*+data*/);
@@ -367,13 +369,13 @@ console.log(123)
 	transactionReceipt:  function transactionReceipt(req, res, next){
 		console.log(date+":transactionReceipt");
 		var result = web3.eth.getTransaction(req.params.address);
-		try{
+/*		try{
 			if(result.input.substr(34,40)){
 				result.to = result.input.substr(34,40);
 				result.value = parseInt(result.input.substr(74,64),16).toString();
 				console.log(date+":transactionReceipt-success");
-				res.send(result);
-			}
+				*/res.send(result);
+			/*}
 			else{	
 				console.log(date+":transactionReceipt-success");
 				res.send(result)
@@ -383,6 +385,7 @@ console.log(123)
 			console.log("this address is error")
 			res.send("error")
 		}
+*/
 	},
 
         transactionTokenReceipt:  function transactionTokenReceipt(req, res, next){
