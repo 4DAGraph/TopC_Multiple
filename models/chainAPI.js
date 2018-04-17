@@ -305,7 +305,7 @@ console.log(123)
                                         }
 					if(element.to == address[req.params.token]){
 						if(element.input.substr(0,10) == "0xa9059cbb"){
-							element.to = element.input.substr(34,40);
+							element.to = "0x"+element.input.substr(34,40);
 							element.value = parseInt(element.input.substr(74,64),16).toString();
                                         		//console.log(element)
 							data.push(element);
