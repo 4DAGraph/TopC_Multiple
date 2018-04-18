@@ -571,11 +571,11 @@ module.exports = {
                 //console.log(req.params.rawtx);
 
                 var tx = new Tx(rawTx);
-console.log(1)
+//console.log(1)
                 var privateKey = new Buffer(req.params.key, 'hex')
-console.log(2)
+//console.log(2)
                 tx.sign(privateKey);
-console.log(3)
+//console.log(3)
                 var serializedTx = tx.serialize();
                 var result = '{"signText":"'+serializedTx.toString('hex')+'","tx":'+req.params.rawtx+'}';
                 console.log(date+":CC_signInformation:success");
