@@ -60,7 +60,7 @@ module.exports = {
 	keyCombine: function (req, res, next){
 	var passWord = 'exampleakeya1334'
 	var decipher = crypto.createDecipher('aes-256-cbc', passWord);
-		console.log("123")
+		console.log("++keyCombine")
 		var decryptedPassword = decipher.update(req.body.txt, 'base64', 'utf8');
 		decryptedPassword = decryptedPassword + decipher.final('utf8');
 		//console.log(decryptedPassword)

@@ -335,6 +335,7 @@ module.exports = {
 		var data = []
 			var blockinfo = web3.eth.getBlock(req.params.blockNumber, true);
 			blockinfo.transactions.forEach(function(element){
+			element.token = "eth"
 			if (element.value == 0){
 				if(element.input.substr(0,10) != "0xa9059cbb"){
 					if(element.input.substr(34,40)){
@@ -345,6 +346,19 @@ module.exports = {
 					}
 				}
 			}
+			for(var a in address){
+                        	if(element.to == address[a]){
+                                	 if(element.input.substr(0,10) == "0xa9059cbb"){
+						element.token = a;
+                                        	 element.to = "0x"+element.input.substr(34,40);
+                                       	  	element.value = parseInt(element.input.substr(74,64),16).toString();
+                                        	 //console.log(element)
+                                        	 //data.push(element);
+
+                                  	}
+                        	}
+			}
+
 					data.push(element);
 			});
 			console.log("transactionList"+req.params.blockNumber/*+data*/);
