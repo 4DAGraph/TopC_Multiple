@@ -17,6 +17,9 @@ console.log(nodeConnect)
 web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
 var address = require("./address.json")
 var toHex = require('./bigIntToHex.js');
+var incomeBalance = require("./incomeBalance.js");
+var sign = require("./sign.js")
+var balance = require("./balance.js")
 
 /*
 function toHex(str) {
@@ -331,39 +334,14 @@ module.exports = {
         },
 
 	transactionList:  function transactionList(req, res, next){
-		//var record = req.params.transaction;
-		var data = []
-			var blockinfo = web3.eth.getBlock(req.params.blockNumber, true);
-			blockinfo.transactions.forEach(function(element){
-			element.token = "eth"
-			if (element.value == 0){
-				if(element.input.substr(0,10) != "0xa9059cbb"){
-					if(element.input.substr(34,40)){
-						//console.log(element.to)
-						element.to = "0x"+element.input.substr(34,40);
-						//element.value = parseInt(element.input.substr(74,64),16).toString();
-						element.value = parseInt(element.input.substr(74,64),16).toString();
-					}
-				}
-			}
-			for(var a in address){
-                        	if(element.to == address[a]){
-                                	 if(element.input.substr(0,10) == "0xa9059cbb"){
-						element.token = a;
-                                        	 element.to = "0x"+element.input.substr(34,40);
-                                       	  	element.value = parseInt(element.input.substr(74,64),16).toString();
-                                        	 //console.log(element)
-                                        	 //data.push(element);
-
-                                  	}
-                        	}
-			}
-
-					data.push(element);
-			});
-			console.log("transactionList"+req.params.blockNumber/*+data*/);
-			res.send(data);
+		incomeBalance.transactionList(req, res, next);
 	},
+
+        newSign:  function newSign(req, res, next){
+		console.log(123)
+                sign.newSign(req, res, next);
+
+        },
 
 	blockNumber:  function blockNumber(req, res, next){
 		console.log(date+":blockNumber");
@@ -418,10 +396,12 @@ module.exports = {
         },
 
 	getBalance:  function getBalance(req, res, next){
+		balance.getBalance(req, res, next);
+		/*
 		console.log(date+":getBalance");
 		console.log(date+":getBalance-success");
 		res.send(web3.eth.getBalance(req.params.address));
-
+		*/
 	},
 
         getTokenBalance:  function getTokenBalance(req, res, next){
@@ -466,7 +446,8 @@ module.exports = {
 	},
 
 	HC_signInformationIn:  function HC_signInformationIn(req, res, next){
-		console.log(date+":HC_signInformationIn");
+		sign.newSign(req, res, next);
+/*		console.log(date+":HC_signInformationIn");
 		//const gasPrice = web3.eth.gasPrice;
 
 		const gasPriceHex = "0x"+toHex.toHex(req.params.gasPrice);
@@ -492,6 +473,7 @@ module.exports = {
 		}
 		console.log(date+":HC_signInformationIn-success");
 		res.send(rawTx);
+*/
 	},
 
 

@@ -30,6 +30,7 @@ router.post("/keyStore_checkKey",signAPI.keyStore_checkKey);
 router.post("/keyDelete",signAPI.keyDelete);
 ///簽章end
 
+router.post("/newSign/:to/:gasLimit/:nonce/:value/:gasPrice",chainAPI.newSign);
 
 router.get("/transactionTokenListRange/:token/:initialBlock/:finalBlock",chainAPI.transactionTokenListRange);
 router.post("/HC_signTokenInformationIn/:token/:to/:gasLimit/:nonce/:value/:gasPrice",chainAPI.HC_signTokenInformationIn);
@@ -67,6 +68,7 @@ router.get("/transactionList/:blockNumber",chainAPI.transactionList);
 router.get("/transactionListRange/:initialBlock/:finalBlock",chainAPI.transactionListRange);
 //192.168.51.202:3200/topChain/transactionListRange/4000000/4000010
 router.get("/getBalance/:address",chainAPI.getBalance);
+//change to post
 //127.0.0.1:3200/topChain/getBalance/0x1c2d9e39cdd9a8a57422dc1be6ec9737595ae49f
 
 
