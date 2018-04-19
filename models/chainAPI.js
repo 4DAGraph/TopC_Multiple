@@ -296,9 +296,9 @@ module.exports = {
                 var initialBlock = req.params.initialBlock;
                 var finalBlock = req.params.finalBlock;
                 var a=0;
-//console.log(123)
+console.log(123)
                         for(var leng=parseInt(initialBlock);leng<=parseInt(finalBlock);leng++){
-				
+console.log(123)				
                                 console.log(date+":transactiontokenListRange","readBlock",leng);
                                 var blockinfo = web3.eth.getBlock(leng, true);
                                 a = a+blockinfo.transactions.length;
