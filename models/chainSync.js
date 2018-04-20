@@ -1,7 +1,7 @@
 var Web3 = require('web3');
 var web3 = new Web3();
 var fs = require('fs');
-//var solc = require("solc");
+var solc = require("solc");
 var request = require('request');
 var config = require('../config/default.js');
 //var nodeConnect = config.nodeRpc;
@@ -20,42 +20,26 @@ var sql=require('mssql');
 sql.connect(config,function (err) {
 //setTimeout(sync(), 8000);
 	try{
-    		syncGo()
+    		sync()
 	}
 	catch(err){
-		syncGo()
+		sync()
 	}
 });
 var initial = parseInt(process.argv[2]);
-function syncGo(){
-		try{ 
+function syncGo(){ 
                 var request=new sql.Request();
                 request.query("SELECT MAX(BlockNumber) FROM TransactionInfo",function(err,result){
                         //console.log(web3.eth.blockNumber)
                         if(result.recordset[0][""]<parseInt(web3.eth.blockNumber)){
                         request.query("INSERT [TransactionInfo] ([TransactionInfo], [BlockNumber], [ChainName]) VALUES ('"+JSON.stringify(go(initial+parseInt(process.argv[3])))+"',"+(initial+parseInt(process.argv[3]))+",'ETH')")
+                        setTimeout(syncGo, 500);
 			initial = initial+parseInt(process.argv[3]);
-                        try{
-                                setTimeout(syncGo, 500);
-                        }
-                        catch(error){
-                                setTimeout(syncGo, 500);
-                        }
-			//initial = initial+parseInt(process.argv[3]);
                         }
                         else{
-				try{
-                                setTimeout(syncGo, 8000);
-				}
-				catch(error){
-				setTimeout(syncGo, 8000);
-				}
+                                setTimeout(sync, 8000);
                         }
                 });
-		}
-		catch(error){
-                	setTimeout(syncGo, 8000);
-                }
 }
 
 function sync(){ 
