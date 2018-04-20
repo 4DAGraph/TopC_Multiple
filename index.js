@@ -10,7 +10,7 @@ var app = express();
 var RateLimit = require('express-rate-limit');
 
 app.enable('trust proxy'); // only if you're behind a reverse proxy (Heroku, Bluemix, AWS if you use an ELB, custom Nginx setup, etc)
-/*
+
 var apiLimiter = new RateLimit({
   windowMs: 1*1000, // 15 minutes
   max: 3,
@@ -24,7 +24,7 @@ var apiblock = new RateLimit({
   delayMs: 3000 // disabled
 });
 app.use('/topchain/blockNumber', apiblock);
-*/
+
 app.set('views', path.join(__dirname, 'views'));
 
 app.set('view engine', 'ejs');

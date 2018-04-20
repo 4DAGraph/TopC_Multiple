@@ -21,11 +21,11 @@ sql.connect(config,function (err) {
 //setTimeout(sync(), 8000);
 	try{
 		console.log("try1")
-    		syncGo()
+    		sync()
 	}
 	catch(err){
 		console.log("catch1")
-		syncGo()
+		sync()
 	}
 });
 var initial = parseInt(process.argv[2]);
@@ -38,6 +38,8 @@ function syncGo(){
                         if(result.recordset[0][""]<parseInt(web3.eth.blockNumber)){
                         request.query("INSERT [TransactionInfo] ([TransactionInfo], [BlockNumber], [ChainName]) VALUES ('"+JSON.stringify(go(initial+parseInt(process.argv[3])))+"',"+(initial+parseInt(process.argv[3]))+",'ETH')")
 			initial = initial+parseInt(process.argv[3]);
+			
+			console.log("init:"+initial);
                         try{
 			console.log("try3")
                                 setTimeout(syncGo, 500);
@@ -66,23 +68,34 @@ function syncGo(){
                 }
 }
 
-function sync(){ 
+function sync(){
+	//try{
+		console.log("sync"); 
 		var request=new sql.Request();
 		request.query("SELECT MAX(BlockNumber) FROM TransactionInfo",function(err,result){
 			//console.log(web3.eth.blockNumber)
-			if(result.recordset[0][""]<parseInt(web3.eth.blockNumber)){
+			var num = parseInt(web3.eth.blockNumber-18);
+			console.log(num)
+			if(parseInt(result.recordset[0][""])<num){
 			request.query("INSERT [TransactionInfo] ([TransactionInfo], [BlockNumber], [ChainName]) VALUES ('"+JSON.stringify(go(result.recordset[0][""]+1))+"',"+(result.recordset[0][""]+1)+",'ETH')")
-			setTimeout(sync, 500);
+				if(parseInt(result.recordset[0][""]+1)==num)setTimeout(sync, 20000);
+				else{setTimeout(sync, 1000)}
 			}
 			else{
-				setTimeout(sync, 8000);
+				setTimeout(sync, 20000);
 			}
 		});
+
+	//}
+	/*catch(error){
+		console.log("sync fail")
+		setTimeout(sync, 15000);
+	}*/
 }
 
 	//go(5000000);
 	function go(blockNumber){
-		try{
+		//try{
                 var data = []
                         var blockinfo = web3.eth.getBlock(blockNumber, true);
                         blockinfo.transactions.forEach(function(element){
@@ -113,12 +126,14 @@ function sync(){
                                         data.push(element);
                         });
                         console.log("transactionList"+blockNumber/*+data*/);
+			//console.log(data)
 			return data
+			//console.log(data)
                         //res.send(data);
                 //}
-		}
-		catch(error){
+		//}
+		/*catch(error){
 		         console.log("final")
-                        setTimeout(syncGo, 8000);
-		}
+                        setTimeout(go(blockNumber), 15000);
+		}*/
 	}
