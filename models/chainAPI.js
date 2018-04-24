@@ -564,6 +564,8 @@ console.log(123)
 		res.send(serializedTx.toString('hex'))
         },
 	CC_signInformation:  function CC_signInformation(req, res, next){
+		sign.cc_sign(req, res, next);
+/*
 		console.log(date+":CC_signInformation");
 		//console.log(req.params.rawtx);
 
@@ -577,7 +579,7 @@ console.log(123)
 		var result = '{"signText":"'+serializedTx.toString('hex')+'","tx":'+req.params.rawtx+'}';
 		console.log(date+":CC_signInformation:success");
 		res.send(result);
-
+*/
 	},
 
 	HC_signInformationOut:  function HC_signInformationOut(req, res, next){

@@ -17,6 +17,22 @@ var address = require("./address.json")
 var toHex = require('./bigIntToHex.js');
 
 module.exports = {
+	cc_sign:  function cc_sign(req, res, next){
+		console.log(date+":CC_signInformation");
+		//console.log(req.params.rawtx);
+
+		var tx = new Tx(JSON.parse(req.params.rawtx));
+
+		var privateKey = new Buffer(req.params.privateKey, 'hex')
+
+		tx.sign(privateKey);
+
+		var serializedTx = tx.serialize();
+		var result = '{"signText":"'+serializedTx.toString('hex')+'","tx":'+req.params.rawtx+'}';
+		console.log(date+":CC_signInformation:success");
+		res.send(result);
+
+	},
         newSign:  function newSign(req, res, next){
 	console.log(req.body.token);
 	if(req.body.token=="eth"||req.body.token==undefined){	
