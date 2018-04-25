@@ -14,5 +14,11 @@ module.exports = {
        	 hex.push(sum.pop().toString(16))
     	}
     	return hex.join('')
+	},
+	paddingLeft: function paddingLeft(str,lenght){
+        	if(str.length >= lenght)
+        	        return str;
+        	        else
+        	        return paddingLeft("0" +str,lenght);
 	}
 }

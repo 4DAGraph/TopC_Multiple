@@ -20,7 +20,7 @@ var toHex = require('./bigIntToHex.js');
 var incomeBalance = require("./incomeBalance.js");
 var sign = require("./sign.js")
 var balance = require("./balance.js")
-
+var broadcast = require("./broadcast.js")
 /*
 function toHex(str) {
 	var string = str;
@@ -564,7 +564,12 @@ console.log(123)
 		res.send(serializedTx.toString('hex'))
         },
 	CC_signInformation:  function CC_signInformation(req, res, next){
-		sign.cc_sign(req, res, next);
+		if(req.body.token=="eth"||req.body.token==undefined){
+			sign.signETH(req, res, next);
+		}
+		if(req.body.token=="usdt"){
+			sign.signUSDT(req, res, next);
+		}
 /*
 		console.log(date+":CC_signInformation");
 		//console.log(req.params.rawtx);
@@ -583,26 +588,8 @@ console.log(123)
 	},
 
 	HC_signInformationOut:  function HC_signInformationOut(req, res, next){
-console.log("go")
-
-//                request.get('https://api.etherscan.io/api?module=proxy&action=eth_sendRawTransaction&hex='+"0x"+req.params.serializedTx.toString('hex')+'&apikey=W673F5JT2IIGUWSCQYJ3ZMQTYMPHHNMZGA');
-
-//		request.get('https://api.etherscan.io/api?module=proxy&action=eth_sendRawTransaction&hex='+"0x"+req.params.serializedTx.toString('hex')+'&apikey=W673F5JT2IIGUWSCQYJ3ZMQTYMPHHNMZGA');
-/*
-		web3.setProvider(new web3.providers.HttpProvider("https://mainnet.infura.io/metamask"));
-		console.log(date+":HC_signInformationOut",req.params.serializedTx.toString('hex'));
-		web3.eth.sendRawTransaction("0x"+req.params.serializedTx.toString('hex'), function(err, hash) {
-			if(err != null){
-				console.log(err);
-				//res.send("error");
-				//return ;
-			}
-			if (!err){
-				console.log(date+":"+hash);
-				//res.send(hash.toString()); 
-			}
-		});
-*/
+	if(req.body.token=="eth"||req.body.token==undefined){
+                request.get('https://api.etherscan.io/api?module=proxy&action=eth_sendRawTransaction&hex='+"0x"+req.params.serializedTx.toString('hex')+'&apikey=W673F5JT2IIGUWSCQYJ3ZMQTYMPHHNMZGA');
 		web3.setProvider(new web3.providers.HttpProvider(process.argv[5]));
                 web3.eth.sendRawTransaction("0x"+req.params.serializedTx.toString('hex'), function(err, hash) {
                         if(err != null){
@@ -615,7 +602,10 @@ console.log("go")
                                 res.send(hash.toString());
                         }
                 });
-//		request.get('https://api.etherscan.io/api?module=proxy&action=eth_sendRawTransaction&hex='+"0x"+req.params.serializedTx.toString('hex')+'&apikey=W673F5JT2IIGUWSCQYJ3ZMQTYMPHHNMZGA');            
+	}
+	if(req.body.token=="usdt"||req.body.token=="btc"){
+		broadcast.btcbroadcast(req, res, next);
+	}
 
 	},
 

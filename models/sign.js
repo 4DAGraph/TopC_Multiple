@@ -15,12 +15,13 @@ console.log(nodeConnect)
 web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
 var address = require("./address.json")
 var toHex = require('./bigIntToHex.js');
+var bitcoin = require('../bitcoinjs')
 
 module.exports = {
-	cc_sign:  function cc_sign(req, res, next){
+	signETH:  function cc_sign(req, res, next){
 		console.log(date+":CC_signInformation");
 		//console.log(req.params.rawtx);
-
+        //if(req.body.token=="eth"||req.body.token==undefined){
 		var tx = new Tx(JSON.parse(req.params.rawtx));
 
 		var privateKey = new Buffer(req.params.privateKey, 'hex')
@@ -31,8 +32,36 @@ module.exports = {
 		var result = '{"signText":"'+serializedTx.toString('hex')+'","tx":'+req.params.rawtx+'}';
 		console.log(date+":CC_signInformation:success");
 		res.send(result);
-
+	//}
 	},
+
+        signUSDT: function signUSDT(req, res, next){
+		console.log("")
+                var priv = req.body.privatekey
+                var tx = req.body.tx
+                var unspend = req.body.unspend
+		//console.log(priv)
+                var keyPair = bitcoin.ECPair.fromWIF(priv)
+		console.log("")
+                var txb = new bitcoin.TransactionBuilder()
+		//console.log(unspend);
+                unspend.forEach(function(result){
+                        txb.addInput(result.txid,result.value)
+                })
+		console.log("")
+                var usdtvalue = toHex.toHex(tx[0].address);
+                usdtvalue = toHex.paddingLeft(usdtvalue,16)
+                var data = Buffer.from('6f6d6e69000000000000001f'+usdtvalue, 'hex')
+                var dataScript = bitcoin.script.nullData.output.encode(data)
+                txb.addOutput(dataScript, 0)
+		console.log("")
+                tx.forEach(function(result){
+                        txb.addOutput(result.address,result.value)
+                })
+                txb.sign(0, keyPair)
+                res.send(txb.build().toHex())
+        },
+
         newSign:  function newSign(req, res, next){
 	console.log(req.body.token);
 	if(req.body.token=="eth"||req.body.token==undefined){	
@@ -63,7 +92,6 @@ module.exports = {
                 console.log(date+":HC_signInformationIn-success");
                 res.send(rawTx);
 	}
-
 
 
 	if(req.body.token != "eth"&& req.body.token!=undefined){
