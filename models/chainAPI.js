@@ -32,6 +32,40 @@ function toHex(str) {
 }
 */
 module.exports = {
+	btcunspend: function btcunspend(req, res, next){
+		broadcast.btcunspend(req, res, next);
+	},
+	newSignAll: function newSignAll(req, res, next){
+		console.log(req.body.token)
+
+		for(var add in address) {
+			//console.log("top:"+req.body.token)
+			//console.log(add)		
+			if(req.body.token == add||req.body.token=="eth"){
+				console.log("test1:"+req.params.rawtx)
+                        	//console.log("test2:"+req.body.rawtx)
+                        	var tx = sign.newSignAll(req, res, next);
+                        	sign.signNewETH(req, res, next,tx);
+			}
+			
+		}
+/*
+		if(req.body.token=="eth"||req.body.token==undefined||req.body.token=="omg"){
+			console.log("test1:"+req.params.rawtx)
+			console.log("test2:"+req.body.rawtx)
+			var tx = sign.newSignAll(req, res, next);
+                        sign.signNewETH(req, res, next,tx);
+                }
+*/
+                if(req.body.token=="usdt"){
+                        sign.signUSDT(req, res, next);
+                }
+
+                if(req.body.token=="btc"){
+			console.log("btcsign")
+                        sign.signBTC(req, res, next);
+                }
+	},
 
 	deploy_contract:  function deploy_contract(req, res, next){
 
@@ -564,12 +598,19 @@ console.log(123)
 		res.send(serializedTx.toString('hex'))
         },
 	CC_signInformation:  function CC_signInformation(req, res, next){
+
 		if(req.body.token=="eth"||req.body.token==undefined){
 			sign.signETH(req, res, next);
 		}
+
 		if(req.body.token=="usdt"){
 			sign.signUSDT(req, res, next);
 		}
+
+                if(req.body.token=="btc"){
+                        sign.signBTC(req, res, next);
+                }
+
 /*
 		console.log(date+":CC_signInformation");
 		//console.log(req.params.rawtx);
@@ -588,7 +629,8 @@ console.log(123)
 	},
 
 	HC_signInformationOut:  function HC_signInformationOut(req, res, next){
-	if(req.body.token=="eth"||req.body.token==undefined){
+        for(var add in address) {              
+        if(req.body.token == add||req.body.token=="eth"){
                 request.get('https://api.etherscan.io/api?module=proxy&action=eth_sendRawTransaction&hex='+"0x"+req.params.serializedTx.toString('hex')+'&apikey=W673F5JT2IIGUWSCQYJ3ZMQTYMPHHNMZGA');
 		web3.setProvider(new web3.providers.HttpProvider(process.argv[5]));
                 web3.eth.sendRawTransaction("0x"+req.params.serializedTx.toString('hex'), function(err, hash) {
@@ -602,6 +644,7 @@ console.log(123)
                                 res.send(hash.toString());
                         }
                 });
+	}
 	}
 	if(req.body.token=="usdt"||req.body.token=="btc"){
 		broadcast.btcbroadcast(req, res, next);

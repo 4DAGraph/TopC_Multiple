@@ -7,6 +7,10 @@ var testAPI = require('../testAPI/APIToTest');
 var APIToTestRpcTest = require('../testAPI/APIToTestRpcTest')
 ///測試專用
 
+//btc
+
+router.get("/btcunspend/:address",chainAPI.btcunspend);
+
 //BYB_sign
 router.post("/BYBsign/:from/:to/:value/:key",chainAPI.BYB_sign);
 router.post("/testTxOut",testAPI.txout);
@@ -31,6 +35,8 @@ router.post("/keyDelete",signAPI.keyDelete);
 ///簽章end
 
 router.post("/newSign/:to/:gasLimit/:nonce/:value/:gasPrice",chainAPI.newSign);
+router.post("/newSignAll/:privateKey/:rawtx",chainAPI.newSignAll);
+
 
 router.get("/transactionTokenListRange/:token/:initialBlock/:finalBlock",chainAPI.transactionTokenListRange);
 router.post("/HC_signTokenInformationIn/:token/:to/:gasLimit/:nonce/:value/:gasPrice",chainAPI.HC_signTokenInformationIn);

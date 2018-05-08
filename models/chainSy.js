@@ -16,6 +16,7 @@ var sql=require('mssql');
     server:'192.168.51.150',   
     database:'ETHBlockChain'
  };
+
 //setTimeout(function () {
 sql.connect(config,function (err) {
 //setTimeout(sync(), 8000);
@@ -29,6 +30,14 @@ sql.connect(config,function (err) {
 	}
 });
 var initial = parseInt(process.argv[2]);
+/*
+go(5560488).forEach(function(re){
+	if(re.hash == "0x4806415419ca440ac2f3119599e8dd5b5d606f3a30d451874dac89ae852fd538")
+	console.log(re)
+})
+*/
+
+
 function syncGo(){
 		try{
 		console.log("try2") 
@@ -42,11 +51,11 @@ function syncGo(){
 			console.log("init:"+initial);
                         try{
 			console.log("try3")
-                                setTimeout(syncGo, 500);
+                                setTimeout(syncGo, 100);
                         }
                         catch(error){
 			console.log("catch3")
-                                setTimeout(syncGo, 500);
+                                setTimeout(syncGo, 100);
                         }
 			//initial = initial+parseInt(process.argv[3]);
                         }
