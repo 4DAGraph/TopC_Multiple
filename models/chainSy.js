@@ -42,7 +42,7 @@ function syncGo(){
 		try{
 		console.log("try2") 
                 var request=new sql.Request();
-                request.query("SELECT MAX(BlockNumber) FROM TransactionInfo",function(err,result){
+                request.query("SELECT MAX(BlockNumber) FROM TransactionInfo WHERE [ChainName]='ETH'",function(err,result){
                         //console.log(web3.eth.blockNumber)
                         if(result.recordset[0][""]<parseInt(web3.eth.blockNumber)){
                         request.query("INSERT [TransactionInfo] ([TransactionInfo], [BlockNumber], [ChainName]) VALUES ('"+JSON.stringify(go(initial+parseInt(process.argv[3])))+"',"+(initial+parseInt(process.argv[3]))+",'ETH')")
@@ -81,7 +81,7 @@ function sync(){
 	//try{
 		console.log("sync"); 
 		var request=new sql.Request();
-		request.query("SELECT MAX(BlockNumber) FROM TransactionInfo",function(err,result){
+		request.query("SELECT MAX(BlockNumber) FROM TransactionInfo WHERE [ChainName]='ETH'",function(err,result){
 			//console.log(web3.eth.blockNumber)
 			var num = parseInt(web3.eth.blockNumber-18);
 			console.log(num)

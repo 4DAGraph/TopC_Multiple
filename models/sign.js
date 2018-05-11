@@ -52,7 +52,7 @@ module.exports = {
         //}
         },
         signUSDT: function signUSDT(req, res, next){
-		console.log("")
+		console.log("signusdt")
                 var priv = req.body.privatekey
                 var tx = req.body.tx
                 var unspend = req.body.unspend
@@ -63,20 +63,34 @@ module.exports = {
 		//console.log(unspend);
                 unspend.forEach(function(result){
                         txb.addInput(result.txid,result.value)
+                //console.log(result.txid)
+                //console.log(result.value)
                 })
+		//console.log(result.txid)
+		//console.log(result.value)
                 var usdtvalue = toHex.toHex(tx[0].value);
                 usdtvalue = toHex.paddingLeft(usdtvalue,16)
+		console.log(1)
                 var data = Buffer.from('6f6d6e69000000000000001f'+usdtvalue, 'hex')
                 var dataScript = bitcoin.script.nullData.output.encode(data)
+		console.log(2)
+		console.log(tx)
                 txb.addOutput(dataScript, 0)
+                console.log(3)
+                console.log(tx[1].address)
+                txb.addOutput(tx[1].address,tx[1].value)
+                console.log(4)
                 txb.addOutput(tx[0].address,7430)
-		txb.addOutput(tx[1].address,tx[1].value)
+		//txb.addOutput(tx[1].address,tx[1].value)
+		console.log(3)
 /*
                 tx.forEach(function(result){
                         txb.addOutput(result.address,result.value)
                 })
 */
                 txb.sign(0, keyPair)
+		console.log(4)
+                //console.log('{"signText":"'+txb.build().toHex()+'"}')
                 res.send('{"signText":"'+txb.build().toHex()+'"}')
         },
 
