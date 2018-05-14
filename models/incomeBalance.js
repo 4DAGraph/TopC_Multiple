@@ -18,6 +18,7 @@ var toHex = require('./bigIntToHex.js');
 
 module.exports = {
         transactionList:  function transactionList(req, res, next){
+console.log(123)
 		//if(req.params.token == "eth"){
                 var data = []
                         var blockinfo = web3.eth.getBlock(req.params.blockNumber, true);
@@ -30,10 +31,11 @@ module.exports = {
                                                 
                                                 element.to = "0x"+element.input.substr(34,40);
                                                 //element.value = parseInt(element.input.substr(74,64),16).toString();
-                                                if(element.logs[0].blockNumber>0){
-                                                element.value = parseInt(element.input.substr(74,64),16).toString();
-                                                }
-                                                else{element.value="0"}
+                                                //if(element.logs[0].blockNumber){
+                                                //element.value = parseInt(element.input.substr(74,64),16).toString();
+                                                //}
+                                                //console.log(element)
+                                                //else{element.value="0"}
                                         }
                                 }
                         }
@@ -42,10 +44,10 @@ module.exports = {
                                          if(element.input.substr(0,10) == "0xa9059cbb"){
                                                 element.token = a;
                                                  element.to = "0x"+element.input.substr(34,40);
-                                                if(element.logs[0].blockNumber>0){
+                                                //if(element.logs[0].blockNumber>0){
                                                 element.value = parseInt(element.input.substr(74,64),16).toString();
-                                                }
-                                                else{element.value="0"}
+                                                //}
+                                                //else{element.value="0"}
                                                  //console.log(element)
                                                  //data.push(element);
 
