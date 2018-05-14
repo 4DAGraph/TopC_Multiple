@@ -413,7 +413,11 @@ console.log(123)
 		}
 */
 	},
-
+        transaction:  function transactionReceipt(req, res, next){
+                console.log(date+":transactionReceipt");
+                var result = web3.eth.getTransactionReceipt(req.params.address);
+                res.send(result);
+        },
         transactionTokenReceipt:  function transactionTokenReceipt(req, res, next){
                 console.log(date+":transactionReceipt");
 		var result = web3.eth.getTransaction(req.params.address);

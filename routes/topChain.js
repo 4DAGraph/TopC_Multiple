@@ -58,6 +58,8 @@ router.post("/HC_signInformationOut/:serializedTx",chainAPI.HC_signInformationOu
 router.get("/transactionCount/:address",chainAPI.transactionCount);
 router.get("/transactionReceipt/:address",chainAPI.transactionReceipt);
 
+router.get("/transaction/:address",chainAPI.transaction);
+
 router.get("/checkTransactionResult",chainAPI.key_publish);
 //f27e74d12f75129ed3f8fa059dcc6a430420277775138ea8ccaadd9262c642a1
 router.get("/key_publish/:amounts",chainAPI.key_publish);
