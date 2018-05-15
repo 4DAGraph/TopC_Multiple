@@ -640,21 +640,21 @@ console.log(123)
 
 	HC_signInformationOut:  function HC_signInformationOut(req, res, next){
         for(var add in address) {              
-        if(req.body.token == add||req.body.token=="eth"){
-                request.get('https://api.etherscan.io/api?module=proxy&action=eth_sendRawTransaction&hex='+"0x"+req.params.serializedTx.toString('hex')+'&apikey=W673F5JT2IIGUWSCQYJ3ZMQTYMPHHNMZGA');
-		web3.setProvider(new web3.providers.HttpProvider(process.argv[5]));
-                web3.eth.sendRawTransaction("0x"+req.params.serializedTx.toString('hex'), function(err, hash) {
-                        if(err != null){
-                                console.log(err);
-                                res.send("error");
-                                return ;
-                        }
-                        if (!err){
-                                console.log(date+":"+hash);
-                                res.send(hash.toString());
-                        }
-                });
-	}
+	        if(req.body.token == add||req.body.token=="eth"||req.body.token==undefined){
+	                request.get('https://api.etherscan.io/api?module=proxy&action=eth_sendRawTransaction&hex='+"0x"+req.params.serializedTx.toString('hex')+'&apikey=W673F5JT2IIGUWSCQYJ3ZMQTYMPHHNMZGA');
+			web3.setProvider(new web3.providers.HttpProvider(process.argv[5]));
+	                web3.eth.sendRawTransaction("0x"+req.params.serializedTx.toString('hex'), function(err, hash) {
+	                        if(err != null){
+	                                console.log(err);
+	                                res.send("error");
+	                                return ;
+	                        }
+	                        if (!err){
+	                                console.log(date+":"+hash);
+	                                res.send(hash.toString());
+	                        }
+	                });
+		}
 	}
 	if(req.body.token=="usdt"||req.body.token=="btc"){
 		broadcast.btcbroadcast(req, res, next);
