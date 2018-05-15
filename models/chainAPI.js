@@ -416,7 +416,13 @@ console.log(123)
         transaction:  function transactionReceipt(req, res, next){
                 console.log(date+":transactionReceipt");
                 var result = web3.eth.getTransactionReceipt(req.params.address);
-                res.send(result);
+                var address = result.logs[0].topics[1];
+                address = address.substr(26,66);
+		var value = result.logs[0].data;
+		//console.log(value)
+                value = parseInt(value.substr(2,66),16);
+                var json = {"address":address,"value":value}
+                res.send(json);
         },
         transactionTokenReceipt:  function transactionTokenReceipt(req, res, next){
                 console.log(date+":transactionReceipt");

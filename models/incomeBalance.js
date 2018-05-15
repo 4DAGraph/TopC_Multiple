@@ -22,6 +22,7 @@ console.log(123)
 		//if(req.params.token == "eth"){
                 var data = []
                         var blockinfo = web3.eth.getBlock(req.params.blockNumber, true);
+                        console.log(blockinfo);
                         blockinfo.transactions.forEach(function(element){
                         element.token = "eth"
                         if (element.value == 0){
