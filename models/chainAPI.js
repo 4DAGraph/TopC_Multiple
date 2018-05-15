@@ -417,7 +417,7 @@ console.log(123)
                 console.log(date+":transactionReceipt");
                 var result = web3.eth.getTransactionReceipt(req.params.address);
                 var address = result.logs[0].topics[1];
-                address = address.substr(26,66);
+                address = "0x"+address.substr(26,66);
 		var value = result.logs[0].data;
 		//console.log(value)
                 value = parseInt(value.substr(2,66),16);
