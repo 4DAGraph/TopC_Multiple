@@ -649,7 +649,7 @@ console.log(123)
 	                                res.send("error");
 	                                return ;
 	                        }
-	                        if (!err){
+	                        else{
 	                                console.log(date+":"+hash);
 	                                res.send(hash.toString());
 	                        }
