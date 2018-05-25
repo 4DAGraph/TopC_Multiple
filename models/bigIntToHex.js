@@ -18,7 +18,7 @@ module.exports = {
 			}
 			return x;
 		}
-		str = toFixed(str)
+		str = toFixed(parseInt(str))
 		var dec = str.toString().split(''), sum = [], hex = [], i, s
 		while(dec.length){
 		s = 1 * dec.shift()
