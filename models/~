@@ -38,7 +38,6 @@ module.exports = {
                 //console.log(rawtx);
         //if(req.body.token=="eth"||req.body.token==undefined){
 		//console.log("top")
-                console.log(rawtx);
 		console.log("test:"+rawtx.gasPrice)
                 var tx = new Tx(rawtx);
                 var privateKey = new Buffer(req.body.privateKey, 'hex')
@@ -105,21 +104,22 @@ module.exports = {
 		console.log(123)
 	        unspend.forEach(function(result){
 	                txb.addInput(result.txid,result.value)
-                console.log(result.txid)
-                console.log(result.value)
 	        })
+console.log(456)
 	        tx.forEach(function(result){
 	                txb.addOutput(result.address,result.value)
 	        })
+console.log(789)
 	        txb.sign(0, keyPair)
-               
-		var re = '{"signText":"'+txb.build().toHex()+'"}'
+console.log(111)
+                console.log(txb)
+		var re = {signText:txb.build().toHex()}
 		console.log(123)
 		res.send(re)
 		//res.send('{"signText":"'+txb.build().toHex()+'"}')
 	},
 
-        newSignAll:  function newSignAll(req, res, next){
+        newSignAll:  function newSign(req, res, next){
         console.log(req.body.token);
 	console.log("test3"+req.params.rawtx)
 	//console.log(rawtx.to);
