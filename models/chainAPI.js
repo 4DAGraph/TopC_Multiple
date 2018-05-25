@@ -32,6 +32,12 @@ function toHex(str) {
 }
 */
 module.exports = {
+        txDecode: function txDecode(req, res, next){
+
+		var txDecoder = require('ethereum-tx-decoder');
+		var decodedTx = txDecoder.decodeTx("0x"+req.params.tx);
+                res.send(decodedTx)
+	},
 	btcunspend: function btcunspend(req, res, next){
 		broadcast.btcunspend(req, res, next);
 	},

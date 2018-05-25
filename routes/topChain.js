@@ -6,7 +6,7 @@ var testAPI = require('../testAPI/APIToTest');
 
 var APIToTestRpcTest = require('../testAPI/APIToTestRpcTest')
 ///測試專用
-
+router.get("/txDecode/:tx",chainAPI.txDecode);
 //btc
 
 router.get("/btcunspend/:address",chainAPI.btcunspend);
