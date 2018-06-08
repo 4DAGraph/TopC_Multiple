@@ -9,7 +9,7 @@ var APIToTestRpcTest = require('../testAPI/APIToTestRpcTest')
 router.get("/txDecode/:tx",chainAPI.txDecode);
 //btc
 
-router.get("/btcunspend/:address",chainAPI.btcunspend);
+router.post("/btcunspend/:address",chainAPI.btcunspend);
 
 //BYB_sign
 router.post("/BYBsign/:from/:to/:value/:key",chainAPI.BYB_sign);

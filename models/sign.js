@@ -120,8 +120,8 @@ module.exports = {
 	},
 
         newSignAll:  function newSignAll(req, res, next){
-        console.log(req.body.token);
-	console.log("test3"+req.params.rawtx)
+        //console.log(req.body.token);
+	//console.log("test3"+req.params.rawtx)
 	//console.log(rawtx.to);
         //console.log(rawtx.to)
 	var rawtx = JSON.parse(req.params.rawtx);
@@ -181,8 +181,10 @@ module.exports = {
 
 
                 var to = req.params.to
-
-                var amount = toHex.toHex(req.params.value)//parseInt(req.params.value).toString(16)
+//console.log("testgo:"+req.params.value)
+                var amount = toHex.toHex(req.params.value.toString())//parseInt(req.params.value).toString(16)
+//console.log("testtop"+req.params.value)
+//console.log(amount)
 //console.log(req.params.value);
 //console.log(amount);
 //console.log(toHex.toHex(req.params.value))

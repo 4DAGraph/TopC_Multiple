@@ -83,8 +83,10 @@ function sync(){
 		var request=new sql.Request();
 		request.query("SELECT MAX(BlockNumber) FROM TransactionInfo WHERE [ChainName]='ETH'",function(err,result){
 			//console.log(web3.eth.blockNumber)
+console.log(result)
 			var num = parseInt(web3.eth.blockNumber-18);
 			console.log(num)
+                        console.log(result.recordset[0][""])
 			if(parseInt(result.recordset[0][""])<num){
 			request.query("INSERT [TransactionInfo] ([TransactionInfo], [BlockNumber], [ChainName]) VALUES ('"+JSON.stringify(go(result.recordset[0][""]+1))+"',"+(result.recordset[0][""]+1)+",'ETH')")
 				if(parseInt(result.recordset[0][""]+1)==num)setTimeout(sync, 20000);

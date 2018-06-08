@@ -543,7 +543,7 @@ console.log(123)
 
 		var to = req.params.to
 
-		var amount = toHex.toHex(req.params.value)//parseInt(req.params.value).toString(16)
+		var amount = toHex.toHex(req.params.value.toString())//parseInt(req.params.value).toString(16)
 //console.log(req.params.value);
 //console.log(amount);
 //console.log(toHex.toHex(req.params.value))

@@ -6,7 +6,7 @@ var request = require('request');
 var config = require('../config/default.js');
 //var nodeConnect = config.nodeRpc;
 //console.log(nodeConnect)
-web3.setProvider(new web3.providers.HttpProvider("http://192.168.51.204:9500"));
+web3.setProvider(new web3.providers.HttpProvider("http://10.0.7.16:9500"));
 var address = require("./address.json")
 var sql=require('mssql');
 //console.log(process.argv[3])
@@ -87,7 +87,7 @@ function sync(){
                         //result.recordset[0][""]=1041645
 			//console.log(web3.eth.blockNumber)
 			var num = parseInt(web3.eth.blockNumber-18);
-			console.log(num)
+			console.log("nowblock",num)
 			if(parseInt(result.recordset[0][""])<num){
 			request.query("INSERT [TransactionInfo] ([TransactionInfo], [BlockNumber], [ChainName]) VALUES ('"+JSON.stringify(go(result.recordset[0][""]+1))+"',"+(result.recordset[0][""]+1)+",'BYB')")
 				if(parseInt(result.recordset[0][""]+1)==num)setTimeout(sync, 20000);

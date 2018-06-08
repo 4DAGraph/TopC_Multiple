@@ -32,12 +32,15 @@ var initial = parseInt(process.argv[2]);
 function syncGo(){
 		try{
 		console.log("try2") 
+		console.log(initial)
                 var request=new sql.Request();
-                request.query("SELECT MAX(BlockNumber) FROM TransactionInfo",function(err,result){
-                        //console.log(web3.eth.blockNumber)
+                request.query("SELECT MAX(BlockNumber) FROM TransactionInfo WHERE [ChainName]='ETH'",function(err,result){
+                        console.log(web3.eth.blockNumber)
+                        result.recordset[0][""]=0
                         if(result.recordset[0][""]<parseInt(web3.eth.blockNumber)){
                         request.query("INSERT [TransactionInfo] ([TransactionInfo], [BlockNumber], [ChainName]) VALUES ('"+JSON.stringify(go(initial+parseInt(process.argv[3])))+"',"+(initial+parseInt(process.argv[3]))+",'ETH')")
 			initial = initial+parseInt(process.argv[3]);
+console.log(initial)
                         try{
 			console.log("try3")
                                 setTimeout(syncGo, 500);
