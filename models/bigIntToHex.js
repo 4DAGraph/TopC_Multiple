@@ -18,7 +18,7 @@ module.exports = {
 			}
 			return x;
 		}
-		console.log(str)
+		//console.log(str)
 		str = toFixed(parseInt(str))
 		var dec = str.toString().split(''), sum = [], hex = [], i, s
 		while(dec.length){
