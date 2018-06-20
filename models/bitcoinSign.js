@@ -27,7 +27,7 @@ tx.forEach(function(result){
 //console.log(tx[0])
 //signUSDT("L1uyy5qTuGrVXrmrsvHWHgVzW9kKdrp27wBC7Vs6nZDTF2BRUVwy",tx,unspend)
 signBTC("L1uyy5qTuGrVXrmrsvHWHgVzW9kKdrp27wBC7Vs6nZDTF2BRUVwy",tx,unspend)
-
+//signBTC("xpub6A5Fz4JZg4kd8pLTTaMBKsvVgzRBrvai6ChoxWNTtYQ3UDVG1VyAWQqi6SNqkpsfsx9F8pRqwtKUbU4j4gqpuN2gpgQs4DiJxsJQvTjdzfA",tx,unspend)
 function signUSDT(priv,tx,unspend){
         var keyPair = bitcoin.ECPair.fromWIF(priv)
         var txb = new bitcoin.TransactionBuilder()
