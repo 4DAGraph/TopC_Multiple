@@ -90,7 +90,7 @@ module.exports = {
                 })
 */
                 txb.sign(0, keyPair)
-		console.log(4)
+		//console.log(4)
                 //console.log('{"signText":"'+txb.build().toHex()+'"}')
                 res.send('{"signText":"'+txb.build().toHex()+'"}')
         },
@@ -102,19 +102,29 @@ module.exports = {
 	        var keyPair = bitcoin.ECPair.fromWIF(priv)
 	        var txb = new bitcoin.TransactionBuilder()
 	        //txb.addInput('6c215b731831dceed69f2a36312ef1b305df8ad3af57df37609b571b9727e42d', 0)
-		console.log(123)
+		//console.log(123)
+                console.log(unspend)
 	        unspend.forEach(function(result){
 	                txb.addInput(result.txid,result.value)
-                console.log(result.txid)
-                console.log(result.value)
+			//txb.addInput('b5bb9d8014a0f9b1d61e21e796d78dccdf1352f23cd32812f4850b878ae4944c', 6)
+                	console.log(result.txid)
+                	//console.log(result.value)
 	        })
+		//txb.addInput('b5bb9d8014a0f9b1d61e21e796d78dccdf1352f23cd32812f4850b878ae4944c', 6)
 	        tx.forEach(function(result){
 	                txb.addOutput(result.address,result.value)
-	        })
-	        txb.sign(0, keyPair)
-               
+			console.log(result)
+	   	}) 
+	        //txb.sign(0, keyPair) 
+		var inputs_t = 0;
+		unspend.forEach(function(result){
+			//console.log()
+			txb.sign(inputs_t, keyPair);
+			inputs_t = inputs_t+1;
+		})
+		//console.log(txb.build())
 		var re = '{"signText":"'+txb.build().toHex()+'"}'
-		console.log(123)
+		//console.log(123)
 		res.send(re)
 		//res.send('{"signText":"'+txb.build().toHex()+'"}')
 	},
@@ -221,7 +231,7 @@ module.exports = {
 	if(req.body.token=="eth"||req.body.token==undefined){	
                 console.log(date+":HC_signInformationIn");
                 //const gasPrice = web3.eth.gasPrice;
-console.log(123);
+//console.log(123);
                 const gasPriceHex = "0x"+toHex.toHex(req.params.gasPrice);
 
                 const gasLimitHex = "0x"+parseInt(req.params.gasLimit).toString(16);

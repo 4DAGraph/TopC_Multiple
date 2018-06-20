@@ -1,6 +1,7 @@
 //var assert = require('assert')
 var bitcoin = require('../bitcoinjs')
 var toHex = require('./bigIntToHex.js')
+var bitcoin2 = require('bitcoinjs-lib')
 //var regtestUtils = require('./_regtest')
 //var regtest = regtestUtils.network
 //var util = require('util')
@@ -24,8 +25,8 @@ tx.forEach(function(result){
 })
 */
 //console.log(tx[0])
-signUSDT("L1uyy5qTuGrVXrmrsvHWHgVzW9kKdrp27wBC7Vs6nZDTF2BRUVwy",tx,unspend)
-
+//signUSDT("L1uyy5qTuGrVXrmrsvHWHgVzW9kKdrp27wBC7Vs6nZDTF2BRUVwy",tx,unspend)
+signBTC("L1uyy5qTuGrVXrmrsvHWHgVzW9kKdrp27wBC7Vs6nZDTF2BRUVwy",tx,unspend)
 
 function signUSDT(priv,tx,unspend){
         var keyPair = bitcoin.ECPair.fromWIF(priv)
@@ -50,14 +51,22 @@ function signUSDT(priv,tx,unspend){
 function signBTC(priv,tx,unspend){
         var keyPair = bitcoin.ECPair.fromWIF(priv)
         var txb = new bitcoin.TransactionBuilder()
-        //txb.addInput('6c215b731831dceed69f2a36312ef1b305df8ad3af57df37609b571b9727e42d', 0)
+        //txb.addInput('6c115b731831dceed69f2a36312ef1b305df8ad3af57df37609b571b9727e42d', 0)
 	unspend.forEach(function(result){
 		txb.addInput(result.txid,result.value)
 	})
 	tx.forEach(function(result){
         	txb.addOutput(result.address,result.value)
 	})
-        txb.sign(0, keyPair)
+	var inputs_t = 0;
+	unspend.forEach(function(result){
+		console.log(unspend)
+                txb.sign(inputs_t, keyPair);
+		inputs_t = inputs_t+1;
+        })
+	inputs_t = 0
+        //txb.sign(0, keyPair)
+        
         console.log(txb.build().toHex())
 }
 
