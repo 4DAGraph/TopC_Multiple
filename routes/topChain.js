@@ -3,8 +3,13 @@ var router = express.Router();
 var chainAPI = require('../models/chainAPI');
 var signAPI = require('../models/signAPI');
 var testAPI = require('../testAPI/APIToTest');
+var mnemonic = require('../models/mnemonic');
+
 
 var APIToTestRpcTest = require('../testAPI/APIToTestRpcTest')
+//app
+router.get("/account",mnemonic.account);
+router.get("/accountQT/:amount",mnemonic.accountQT);
 ///測試專用
 router.get("/txDecode/:tx",chainAPI.txDecode);
 //btc

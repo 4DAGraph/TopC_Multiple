@@ -1,0 +1,29 @@
+{
+  "name": "litecore-message",
+  "main": "./litecore-message.min.js",
+  "version": "1.0.2",
+  "homepage": "https://github.com/litecoin-project/litecore-message",
+  "authors": [
+    "BitPay"
+  ],
+  "description": "Litecoin Message Verification and Signing for Litecore",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "litecoin",
+    "litecore",
+    "ltc",
+    "satoshi",
+    "message",
+    "signing"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
