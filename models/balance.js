@@ -37,5 +37,42 @@ module.exports = {
                         console.log(error);
                 });
         	}
-	}
+	},
+        getBalance_app:  function getBalance(req, res, next){
+                console.log(req.query.token);
+                if(req.query.token=="ETH"||req.query.token==undefined){
+                	console.log(date+":getBalance");
+                	console.log(date+":getBalance-success");
+                	res.send({"balance":web3.eth.getBalance(req.params.address),"code":0,"message":"json"});
+                }
+
+                if(req.query.token!="ETH"&&req.query.token!=undefined&&req.query.token!="BTC"){
+                	console.log(date+":Token");
+                	var CoursetroContract = web3.eth.contract(abi["abi"]);
+                	var Coursetro = CoursetroContract.at(address[req.query.token]);
+                	Coursetro.balanceOf(req.params.address,function(error, result) {
+                		if (!error) {
+                        		//console.log(result)
+                        		console.log(date+":getTokenBalance-success");
+                        		res.send({"balance":result,"code":0,"message":"json"});
+                		} else
+                        	console.log(error);
+                	});
+                }
+
+//console.log(req.query.token)		
+		if(req.query.token=="BTC"&&req.query.token!=undefined){
+			console.log("ttest");
+			request.get('https://blockexplorer.com/api/addr/3D2oetdNuZUqQHPJmcMDDHYoqkyNVsFk9r',function(error, response, body){
+				//console.log(body)
+				body = JSON.parse(body);
+				body["code"] = 0
+				body["balance"] = body["balanceSat"]
+				
+				//console.log(JSON.parse(body)["balance"])
+				body["message"] = "json"
+        			res.send(body);
+			});						
+		}
+        },
 }

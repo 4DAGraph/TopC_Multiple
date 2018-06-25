@@ -81,6 +81,7 @@ router.get("/transactionList/:blockNumber",chainAPI.transactionList);
 router.get("/transactionListRange/:initialBlock/:finalBlock",chainAPI.transactionListRange);
 //192.168.51.202:3200/topChain/transactionListRange/4000000/4000010
 router.get("/getBalance/:address",chainAPI.getBalance);
+router.get("/getBalance_app/:address",chainAPI.getBalance_app);
 //change to post
 //127.0.0.1:3200/topChain/getBalance/0x1c2d9e39cdd9a8a57422dc1be6ec9737595ae49f
 

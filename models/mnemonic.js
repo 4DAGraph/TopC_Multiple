@@ -5,6 +5,7 @@ var HDKey = require('hdkey')
 var bitcoinjs = require("bitcoinjs-lib")
 var EthereumBip44 = require('ethereum-bip44');
 var litecore = require('litecore');
+
 /*
 var fs=require("fs");
 
@@ -35,8 +36,7 @@ module.exports = {
 
 		//litecoin
 		//var litecore = require('litecore');
-		var privateKey = new litecore.PrivateKey();
-
+		var privateKey = new litecore.PrivateKey(ethereumKey);
 		var litecoinAddress = privateKey.toAddress().toString();
 		var litecoinKey = privateKey.toString()
 
@@ -65,22 +65,7 @@ module.exports = {
                 	bitcoinKey = child.toWIF()
                 	var key = bitcoin.HDPrivateKey(HDkey);
                         var keyPair = bitcoinjs.ECPair.fromWIF(bitcoinKey)
-                        var bitcoinAddress = keyPair.getAddress()
-
-			/*
-			var mnemonicUSDT = bip39.generateMnemonic()
-                        var seedUSDT = bip39.mnemonicToSeedHex(mnemonicUSDT)
-                        var hdkeyUSDT = HDKeyUSDT.fromMasterSeed(new Buffer(seedUSDT, 'hex'))
-                        var HDkeyUSDT = hdkeyUSDT.privateExtendedKey
-                        var nodeUSDT = bip32.fromBase58(HDkeyUSDT)
-                        var childUSDT = nodeUSDT.derivePath("m/44'/0'/0'/0/0")
-                        bitcoinKeyUSDT = childUSDT.toWIF()
-                        var keyUSDT = bitcoin.HDPrivateKey(HDkeyUSDT);
-                        var keyPairUSDT = bitcoinjs.ECPair.fromWIF(bitcoinKeyUSDT)
-                        var bitcoinAddressUSDT = keyPair.getAddress()
-			console.log(bitcoinAddressUSDT) 
-			*/
-			
+                        var bitcoinAddress = keyPair.getAddress()			
 		//ethereum
                 	var wallet = new EthereumBip44(key);
                 	var ethereumKey = wallet.getPrivateKey(0).toString('hex')
@@ -90,47 +75,33 @@ module.exports = {
 			console.log(ethereumAddress);
                 //litecoin
                 //var litecore = require('litecore');
-                	var privateKey = new litecore.PrivateKey();
-
+                	var privateKey = new litecore.PrivateKey(ethereumKey);
+			console.log(privateKey)
+			//privateKey = privateKey.toWIF();
                 	var litecoinAddress = privateKey.toAddress().toString();
-                	var litecoinKey = privateKey.toString()
-			/*
-                	var re = {
-                       		"version":"0.01","mnemonic":mnemonic,"HDkey":HDkey,
-                                	"litecoin":
-                                	{"privateKey":litecoinKey,"address":litecoinAddress},
-                                	"bitcoin":
-                                	{"privateKey":bitcoinKey,"address":bitcoinAddress},
-                                	"ethereum":{"privateKey":ethereumKey,"address":ethereumAddress}
-                               		}
-			*/
+                	var litecoinKey = privateKey.toWIF()
+
+
+			
+	
                 	var BCCprivateKey = new bitcoin.PrivateKey();
                 	var BCCKey = BCCprivateKey.toWIF();
                 	var BCCpublicKey = BCCprivateKey.toPublicKey();
                 	var BCCAddress = BCCpublicKey.toAddress("mainnet").toString();
-
                         var USDTprivateKey = new bitcoin.PrivateKey();
                         var USDTKey = USDTprivateKey.toWIF();
                         var USDTpublicKey = USDTprivateKey.toPublicKey();
                         var USDTAddress = USDTpublicKey.toAddress("mainnet").toString();
-
 			result.push({"TypeID":20,"coin":"USDT","privateKey":USDTKey,"address":USDTAddress},{"TypeID":3,"coin":"bitcoincash","privateKey":BCCKey,"address":BCCAddress},{"TypeID":2,"coin":"litecoin","privateKey":litecoinKey,"address":litecoinAddress},{"TypeID":1,"coin":"bitcoin","privateKey":bitcoinKey,"address":bitcoinAddress},{type:4,"coin":"ethereum","privateKey":ethereumKey,"address":ethereumAddress})
 		}
 		loop()
 		function loop(){
-                        
-
                                 mn();
-
                                 times++;
 				console.log("keypublish:"+times)
                                 if(times != keyAmounts){
-
                                 loop();
-
                                 }
-
-                        			
 		}
                 	res.send(result);
         }

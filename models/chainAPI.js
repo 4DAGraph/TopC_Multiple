@@ -13,7 +13,7 @@ var request = require('request');
 //var nodeConnect = 'https://mainnet.infura.io/metamask';
 //var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
 var nodeConnect = config.nodeRpc;
-console.log(nodeConnect)
+//console.log(nodeConnect)
 web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
 var address = require("./address.json")
 var toHex = require('./bigIntToHex.js');
@@ -21,6 +21,7 @@ var incomeBalance = require("./incomeBalance.js");
 var sign = require("./sign.js")
 var balance = require("./balance.js")
 var broadcast = require("./broadcast.js")
+
 /*
 function toHex(str) {
 	var string = str;
@@ -48,7 +49,7 @@ module.exports = {
 			//console.log("top:"+req.body.token)
 			//console.log(add)		
 			if(req.body.token == add||req.body.token=="eth"){
-				console.log("test1:"+req.params.rawtx)
+				//console.log("test1:"+req.params.rawtx)
                         	//console.log("test2:"+req.body.rawtx)
                         	var tx = sign.newSignAll(req, res, next);
                         	sign.signNewETH(req, res, next,tx);
@@ -336,9 +337,9 @@ module.exports = {
                 var initialBlock = req.params.initialBlock;
                 var finalBlock = req.params.finalBlock;
                 var a=0;
-console.log(123)
+//console.log(123)
                         for(var leng=parseInt(initialBlock);leng<=parseInt(finalBlock);leng++){
-console.log(123)				
+//console.log(123)				
                                 console.log(date+":transactiontokenListRange","readBlock",leng);
                                 var blockinfo = web3.eth.getBlock(leng, true);
                                 a = a+blockinfo.transactions.length;
@@ -453,7 +454,14 @@ console.log(123)
 		res.send(web3.eth.getBalance(req.params.address));
 		*/
 	},
-
+        getBalance_app:  function getBalance_app(req, res, next){
+                balance.getBalance_app(req, res, next);
+                /*
+                console.log(date+":getBalance");
+                console.log(date+":getBalance-success");
+                res.send(web3.eth.getBalance(req.params.address));
+                */
+        },
         getTokenBalance:  function getTokenBalance(req, res, next){
                 console.log(date+":Token");
 		var CoursetroContract = web3.eth.contract(abi["abi"]);
@@ -625,6 +633,10 @@ console.log(123)
 
                 if(req.body.token=="btc"){
                         sign.signBTC(req, res, next);
+                }
+
+                if(req.body.token=="ethapp"){
+                        sign.signETHapp(req, res, next);
                 }
 
 /*

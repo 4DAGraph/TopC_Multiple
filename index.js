@@ -53,10 +53,10 @@ if (cluster.isMaster) {
 	}
 
 	cluster.on('listening', (worker, address) => {
-		console.log('worker ' + worker.process.pid +', listen: '+address.address+":"+address.port);
+		//console.log('worker ' + worker.process.pid +', listen: '+address.address+":"+address.port);
 	});
 	cluster.on('exit', (worker, code, signal) => {
-		console.log('worker ' + worker.process.pid + ' died');
+		//console.log('worker ' + worker.process.pid + ' died');
 		cluster.fork();
 	});
 } else {
