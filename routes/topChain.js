@@ -8,8 +8,9 @@ var mnemonic = require('../models/mnemonic');
 
 var APIToTestRpcTest = require('../testAPI/APIToTestRpcTest')
 //app
-router.get("/account",mnemonic.account);
+router.post("/account",mnemonic.account);
 router.get("/accountQT/:amount",mnemonic.accountQT);
+router.post("/keyToAddress",mnemonic.keyToAddress)
 ///測試專用
 router.get("/txDecode/:tx",chainAPI.txDecode);
 //btc

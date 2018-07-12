@@ -1,5 +1,5 @@
 const EthereumTx = require('ethereumjs-tx')
-const privateKey = Buffer.from('e331b6d69882b4cb4ea581d88e0b604039a3de5967688d3dcffdd2270c0fd109', 'hex')
+const privateKey = Buffer.from('0000000000000000000000000000000000000000000000000000000000000001', 'hex')
 
 const txParams = {
   nonce: '0x01',
@@ -31,8 +31,8 @@ const createKeccakHash = require('keccak')
 
 console.log("Bytes:",rlpEncodeBytes)
 //var tmp = "e2018609184e72a000822710940000000000000000000000000000000000000009077f";
-console.log(Buffer.from("e2018609184e72a000822710940000000000000000000000000000000000000009077f","hex"))
-var r = createKeccakHash('keccak256').update(Buffer.from("0102", 'hex' )).digest()
+console.log(Buffer.from("02","hex"))
+var r = createKeccakHash('keccak256').update(Buffer.from(rlpEncodeBytes, 'hex' )).digest()
 //var r = createKeccakHash('keccak256').update(rlpEncodeBytes).digest()
 console.log("r:",r.toString("hex"));
 const secp256k1 = require('secp256k1')

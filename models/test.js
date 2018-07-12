@@ -1,6 +1,10 @@
-var toHex = require('./bigIntToHex.js');
-console.log(159500000000000000000)
-var x = 0
-var x = 159500000000000000000
+var bitcoin = require('bitcore-lib')
 
-console.log(toHex.toHex("15950000000000000000000"))
+		var privateKey = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+		
+		if(privateKey.length!=64){
+                var bitcoinprivateKey = new bitcoin.PrivateKey(privateKey);
+                //var bitcoinAddress = bitcoinprivateKey.toAddress().toString();
+                var bitcoinKey = bitcoinprivateKey.toString()
+		console.log(bitcoinKey)
+		}

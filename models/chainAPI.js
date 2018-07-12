@@ -72,6 +72,10 @@ module.exports = {
 			console.log("btcsign")
                         sign.signBTC(req, res, next);
                 }
+                if(req.body.token=="btcrelay"){
+                        console.log("btcrelaysign")
+                        sign.signBTCrelay(req, res, next);
+                }
 	},
 
 	deploy_contract:  function deploy_contract(req, res, next){

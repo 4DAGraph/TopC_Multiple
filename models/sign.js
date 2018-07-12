@@ -125,6 +125,58 @@ module.exports = {
 		//res.send('{"signText":"'+txb.build().toHex()+'"}')
 	},
 
+        signBTCrelay: function signBTCrelay(req, res, next){
+                var priv = req.body.privatekey
+                var tx = req.body.tx
+                var unspend = req.body.unspend
+                var keyPair = bitcoin.ECPair.fromWIF(priv)
+                var txb = new bitcoin.TransactionBuilder()
+		var cicAddress = req.body.cicAddress
+                //txb.addInput('6c215b731831dceed69f2a36312ef1b305df8ad3af57df37609b571b9727e42d', 0)
+                //console.log(123)
+                console.log(unspend)
+                unspend.forEach(function(result){
+                        txb.addInput(result.txid,result.value)
+                        //txb.addInput('b5bb9d8014a0f9b1d61e21e796d78dccdf1352f23cd32812f4850b878ae4944c', 6)
+                        console.log(result.txid)
+                        //console.log(result.value)
+                })
+                //txb.addInput('b5bb9d8014a0f9b1d61e21e796d78dccdf1352f23cd32812f4850b878ae4944c', 6)
+                tx.forEach(function(result){
+                        txb.addOutput(result.address,result.value)
+                        console.log(result)
+                })
+/*
+                var data = Buffer.from('cic'+cicAddress, 'hex')
+                var dataScript = bitcoin.script.nullData.output.encode(data)
+                //console.log(2)
+                //console.log(tx)
+                txb.addOutput(dataScript, 0)
+*/
+
+                var usdtvalue = toHex.toHex(10000);
+                usdtvalue = toHex.paddingLeft(usdtvalue,16)
+
+                var data = Buffer.from('c2cccccc0000000000000001'+cicAddress, 'hex')
+                var dataScript = bitcoin.script.nullData.output.encode(data)
+                //console.log(2)
+                //console.log(tx)
+                txb.addOutput(dataScript, 0)
+
+                //txb.sign(0, keyPair) 
+                var inputs_t = 0;
+                unspend.forEach(function(result){
+                        //console.log()
+                        txb.sign(inputs_t, keyPair);
+                        inputs_t = inputs_t+1;
+                })
+                //console.log(txb.build())
+                var re = '{"signText":"'+txb.build().toHex()+'"}'
+                //console.log(123)
+                res.send(re)
+                //res.send('{"signText":"'+txb.build().toHex()+'"}')
+        },
+
         newSignAll:  function newSignAll(req, res, next){
         //console.log(req.body.token);
 	//console.log("test3"+req.params.rawtx)
