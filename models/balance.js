@@ -40,16 +40,16 @@ module.exports = {
 	},
         getBalance_app:  function getBalance(req, res, next){
                 console.log(req.query.token);
-                if(req.query.token=="ETH"||req.query.token==undefined){
+                if((req.query.token=="ETH"||req.query.token==undefined)&&req.query.contractAddress==undefined){
                 	console.log(date+":getBalance");
                 	console.log(date+":getBalance-success");
                 	res.send({"balance":web3.eth.getBalance(req.params.address),"code":0,"message":"json"});
                 }
 
-                if(req.query.token!="ETH"&&req.query.token!=undefined&&req.query.token!="BTC"){
+                if(req.query.token=="ETH"&&req.query.token!=undefined&&req.query.token!="BTC"&&req.query.contractAddress!=undefined){
                 	console.log(date+":Token");
                 	var CoursetroContract = web3.eth.contract(abi["abi"]);
-                	var Coursetro = CoursetroContract.at(address[req.query.token]);
+                	var Coursetro = CoursetroContract.at(req.query.contractAddress);
                 	Coursetro.balanceOf(req.params.address,function(error, result) {
                 		if (!error) {
                         		//console.log(result)
@@ -63,7 +63,7 @@ module.exports = {
 //console.log(req.query.token)		
 		if(req.query.token=="BTC"&&req.query.token!=undefined){
 			console.log("ttest");
-			request.get('https://blockexplorer.com/api/addr/3D2oetdNuZUqQHPJmcMDDHYoqkyNVsFk9r',function(error, response, body){
+			request.get('https://blockexplorer.com/api/addr/'+req.params.address,function(error, response, body){
 				//console.log(body)
 				body = JSON.parse(body);
 				body["code"] = 0

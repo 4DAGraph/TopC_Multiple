@@ -225,7 +225,7 @@ module.exports = {
                 var rawTx = {
                     nonce: nonceHex,
                     gasLimit: gasLimitHex,
-                    to: address[req.body.token],
+                    to: req.body.contractAddress,
                     value: 0,
                     input: input,
                     gasPrice: gasPriceHex
