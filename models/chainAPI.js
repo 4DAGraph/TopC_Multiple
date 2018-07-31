@@ -44,7 +44,10 @@ module.exports = {
 	},
 	newSignAll: function newSignAll(req, res, next){
 		console.log(req.body.token)
-
+		if(req.body.aes!=undefined){
+			var aesresult = decrypt(req.body.privateKey,passphass)
+			req.body.privateKey = aesresult
+		}
 		for(var add in address) {
 			//console.log("top:"+req.body.token)
 			//console.log(add)		

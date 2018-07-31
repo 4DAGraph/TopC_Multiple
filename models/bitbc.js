@@ -6,7 +6,7 @@ const txHex = '0200000001999539009d0d02f2332d257716faa75cc4c9a8318c153ba6a084c71
 
 client.sendRawTransaction(txHex, (error, response) => {
   if (error) console.log(error);
-  console.log(response);
+  //console.log(response);
 });
 
 

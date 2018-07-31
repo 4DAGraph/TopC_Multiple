@@ -45,7 +45,7 @@ function signUSDT(priv,tx,unspend){
 	        txb.addOutput(result.address,result.value)
         })
         txb.sign(0, keyPair)
-        console.log(txb.build().toHex())
+        //console.log(txb.build().toHex())
 }
 
 function signBTC(priv,tx,unspend){
@@ -67,7 +67,7 @@ function signBTC(priv,tx,unspend){
 	inputs_t = 0
         //txb.sign(0, keyPair)
         
-        console.log(txb.build().toHex())
+        //console.log(txb.build().toHex())
 }
 
 function paddingLeft(str,lenght){
@@ -75,4 +75,8 @@ function paddingLeft(str,lenght){
 		return str;
 		else
 		return paddingLeft("0" +str,lenght);
+		//console.log(date+":CC_signInformation");
+		//console.log(req.params.rawtx);
+		//console.log(date+":CC_signInformation");
+		//console.log(req.params.rawtx);
 }

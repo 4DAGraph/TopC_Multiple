@@ -74,5 +74,16 @@ module.exports = {
         			res.send(body);
 			});						
 		}
+                if(req.query.token=="CIC"&&req.query.token!=undefined){
+                        console.log("CICte");
+                        request.get(
+                                "http://192.168.51.201:9000/"+"getAccount/"+req.params.address,
+                                function (error, response, body) {
+                                                console.log(body.result)
+						
+                                                res.send(JSON.parse(body).result)
+                                }
+                        );
+                }
         },
 }

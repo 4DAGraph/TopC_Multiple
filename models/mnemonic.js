@@ -10,15 +10,7 @@ var ethereum = require('ethereumjs-wallet')
 
 const secp256k1 = require('secp256k1')
 var sha256 = require("sha256")
-/*
-var fs=require("fs");
 
-var x = ["123"];
-
-x.push(account());
-console.log(x)
-fs.writeFileSync("tmp.txt", x.toString())
-*/
 module.exports = {
 	account:function account(req, res, next){
 		//bitcoin
@@ -52,21 +44,11 @@ module.exports = {
                 var bitcoinprivateKey = new bitcoin.PrivateKey(ethereumKey);
                 var btcAddress = bitcoinprivateKey.toAddress().toString();
                 var btcKey = bitcoinprivateKey.toWIF()
-                console.log(bitcoinKey)
-		console.log(bitcoinAddress)		
                 var cic = ethereum.fromPrivateKey(Buffer.from(ethereumKey,"hex"))
                 var cicpub = cic.getPublicKey().toString("hex");
 
-		//var secp256k1 = require('secp256k1')
-		//var privateKey = "97ddae0f3a25b92268175400149d65d6887b9cefaf28ea2c078e05cdc15a3c0a"
 		var re = secp256k1.publicKeyCreate(Buffer.from(ethereumKey,"hex"), false).slice(1)
-		//console.log(re)
-
-		//var cicaddress = secp256k1.publicKeyCreate(Buffer.from(ethereumKey,"hex"))
-		//console.log(cicaddress);
 		var cicAddress = "cx"+sha256("0x"+re.toString("hex")).substr(24,64)
-		//console.log(cicadd)
-		//console.log(cicadd.substr(24,64))
 		
 		var re = {
 			"version":"0.01","mnemonic":mnemonic,"HDkey":HDkey,
@@ -79,7 +61,7 @@ module.exports = {
 				"cic":
 				{"privateKey":ethereumKey,"address":cicAddress}
 				}
-		console.log(re)
+		//console.log(re)
 		res.send(re);
 	},
 	keyToAddress:function keyToAddress(req, res, next){
@@ -97,8 +79,8 @@ module.exports = {
                 var bitcoinprivateKey = new bitcoin.PrivateKey(keyx);
                 var bitcoinAddress = bitcoinprivateKey.toAddress().toString();
                 var bitcoinKey = bitcoinprivateKey.toString()
-		console.log(bitcoinprivateKey.toWIF());
-                console.log(bitcoinAddress)
+
+		var cicAddress = "cx" + sha256(publicKey.toString("hex")).substr(24, 64) 
 
                 //litecoin
                 //var litecore = require('litecore');
@@ -148,8 +130,6 @@ module.exports = {
                 //litecoin
                 //var litecore = require('litecore');
                 	var privateKey = new litecore.PrivateKey(ethereumKey);
-//			console.log(privateKey)
-			//privateKey = privateKey.toWIF();
                 	var litecoinAddress = privateKey.toAddress().toString();
                 	var litecoinKey = privateKey.toWIF();			
 	

@@ -19,8 +19,6 @@ var bitcoin = require('../bitcoinjs')
 
 module.exports = {
 	signETH:  function cc_sign(req, res, next){
-		console.log(date+":CC_signInformation");
-		console.log(req.params.rawtx);
 		var tx = new Tx(JSON.parse(req.params.rawtx));
 		var privateKey = new Buffer(req.params.privateKey, 'hex')
 
@@ -28,14 +26,11 @@ module.exports = {
 
 		var serializedTx = tx.serialize();
 		var result = '{"signText":"'+serializedTx.toString('hex')+'","tx":'+req.params.rawtx+'}';
-		console.log(date+":CC_signInformation:success");
+		//console.log(date+":CC_signInformation:success");
 		res.send(result);
 	},
         signNewETH:  function signNewETH(req, res, next, rawtx){
 
-                console.log(date+":CC_signInformation");
-                console.log(rawtx);
-		console.log("test:"+rawtx.gasPrice)
                 var tx = new Tx(rawtx);
                 var privateKey = new Buffer(req.body.privateKey, 'hex')
                 //var privateKey = new Buffer(req.params.privateKey, 'hex')
@@ -43,8 +38,6 @@ module.exports = {
 
                 var serializedTx = tx.serialize();
                 var result = '{"signText":"'+serializedTx.toString('hex')+'","tx":'+req.params.rawtx+'}';
-                console.log(date+":CC_signInformation:success");
-                console.log(result)
                 res.send(result);
         //}
         },
@@ -60,34 +53,16 @@ module.exports = {
 		//console.log(unspend);
                 unspend.forEach(function(result){
                         txb.addInput(result.txid,result.value)
-                //console.log(result.txid)
-                //console.log(result.value)
                 })
-		//console.log(result.txid)
-		//console.log(result.value)
                 var usdtvalue = toHex.toHex(tx[0].value);
                 usdtvalue = toHex.paddingLeft(usdtvalue,16)
-		//console.log(1)
                 var data = Buffer.from('6f6d6e69000000000000001f'+usdtvalue, 'hex')
                 var dataScript = bitcoin.script.nullData.output.encode(data)
-		//console.log(2)
-		//console.log(tx)
                 txb.addOutput(dataScript, 0)
-                //console.log(3)
-                //console.log(tx[1].address)
                 txb.addOutput(tx[1].address,tx[1].value)
                 //console.log(4)
                 txb.addOutput(tx[0].address,546)
-		//txb.addOutput(tx[1].address,tx[1].value)
-		//console.log(3)
-/*
-                tx.forEach(function(result){
-                        txb.addOutput(result.address,result.value)
-                })
-*/
                 txb.sign(0, keyPair)
-		//console.log(4)
-                //console.log('{"signText":"'+txb.build().toHex()+'"}')
                 res.send('{"signText":"'+txb.build().toHex()+'"}')
         },
 
@@ -97,9 +72,6 @@ module.exports = {
                 var unspend = req.body.unspend
 	        var keyPair = bitcoin.ECPair.fromWIF(priv)
 	        var txb = new bitcoin.TransactionBuilder()
-	        //txb.addInput('6c215b731831dceed69f2a36312ef1b305df8ad3af57df37609b571b9727e42d', 0)
-		//console.log(123)
-                console.log(unspend)
 	        unspend.forEach(function(result){
 	                txb.addInput(result.txid,result.value)
 			//txb.addInput('b5bb9d8014a0f9b1d61e21e796d78dccdf1352f23cd32812f4850b878ae4944c', 6)
@@ -132,58 +104,35 @@ module.exports = {
                 var keyPair = bitcoin.ECPair.fromWIF(priv)
                 var txb = new bitcoin.TransactionBuilder()
 		var cicAddress = req.body.cicAddress
-                //txb.addInput('6c215b731831dceed69f2a36312ef1b305df8ad3af57df37609b571b9727e42d', 0)
-                //console.log(123)
-                console.log(unspend)
                 unspend.forEach(function(result){
                         txb.addInput(result.txid,result.value)
-                        //txb.addInput('b5bb9d8014a0f9b1d61e21e796d78dccdf1352f23cd32812f4850b878ae4944c', 6)
-                        console.log(result.txid)
-                        //console.log(result.value)
                 })
-                //txb.addInput('b5bb9d8014a0f9b1d61e21e796d78dccdf1352f23cd32812f4850b878ae4944c', 6)
                 tx.forEach(function(result){
                         txb.addOutput(result.address,result.value)
-                        console.log(result)
+                        //console.log(result)
                 })
-/*
-                var data = Buffer.from('cic'+cicAddress, 'hex')
-                var dataScript = bitcoin.script.nullData.output.encode(data)
-                //console.log(2)
-                //console.log(tx)
-                txb.addOutput(dataScript, 0)
-*/
-
                 var usdtvalue = toHex.toHex(10000);
                 usdtvalue = toHex.paddingLeft(usdtvalue,16)
 
                 var data = Buffer.from('c2cccccc0000000000000001'+cicAddress, 'hex')
                 var dataScript = bitcoin.script.nullData.output.encode(data)
-                //console.log(2)
-                //console.log(tx)
                 txb.addOutput(dataScript, 0)
 
-                //txb.sign(0, keyPair) 
                 var inputs_t = 0;
                 unspend.forEach(function(result){
                         //console.log()
                         txb.sign(inputs_t, keyPair);
                         inputs_t = inputs_t+1;
                 })
-                //console.log(txb.build())
+                
                 var re = '{"signText":"'+txb.build().toHex()+'"}'
-                //console.log(123)
+                
                 res.send(re)
-                //res.send('{"signText":"'+txb.build().toHex()+'"}')
+                
         },
 
         newSignAll:  function newSignAll(req, res, next){
-        //console.log(req.body.token);
-	//console.log("test3"+req.params.rawtx)
-	//console.log(rawtx.to);
-        //console.log(rawtx.to)
 	var rawtx = JSON.parse(req.params.rawtx);
-	console.log("test10"+rawtx.gasPrice)
 	if(req.body.to==undefined){
 		req.params.gasPrice = rawtx.gasPrice
 		req.params.gasLimit = rawtx.gasLimit
@@ -192,9 +141,7 @@ module.exports = {
 		console.log(req.params.to);
 		req.params.value = rawtx.value
 	}
-        if(req.body.token=="eth"||req.body.token==undefined){
-                console.log(date+":HC_signInformationIn");
-                //const gasPrice = web3.eth.gasPrice;
+        if((req.body.token=="eth"||req.body.token==undefined)&& req.body.contractAddress==undefined){
                 const gasPriceHex = "0x"+toHex.toHex(req.params.gasPrice);
                 const gasLimitHex = "0x"+parseInt(req.params.gasLimit).toString(16);
                 const nonce = req.params.nonce;
@@ -206,14 +153,11 @@ module.exports = {
                     value: parseInt(req.params.value),
                     gasPrice: gasPriceHex
                 }
-                console.log(date+":HC_signInformationIn-success");
                 return rawTx;
         }
 
 
-        if(req.body.token != "eth"&& req.body.token!=undefined){
-                console.log(date+":HC_signInformationIn");
-                //const gasPrice = web3.eth.gasPrice;
+        if(req.body.token!=undefined && req.body.contractAddress!=undefined){
                 const gasPriceHex = "0x"+parseInt(req.params.gasPrice).toString(16);
                 const gasLimitHex = "0x"+parseInt(req.params.gasLimit).toString(16);
                 const nonce = req.params.nonce;
@@ -230,11 +174,6 @@ module.exports = {
                     input: input,
                     gasPrice: gasPriceHex
                 }
-		console.log(rawTx)
-                console.log(date+":HC_signInformationIn-success");
-		console.log("top")
-		//console.log(input)
-		//console.log(rawTx);
                 return rawTx;
                 function paddingLeft(str,lenght){
                         if(str.length >= lenght)
@@ -245,11 +184,7 @@ module.exports = {
         }
         },
 	newSign:  function newSign(req, res, next){
-	console.log(req.body.token);
 	if(req.body.token=="eth"||req.body.token==undefined){	
-                console.log(date+":HC_signInformationIn");
-                //const gasPrice = web3.eth.gasPrice;
-//console.log(123);
                 const gasPriceHex = "0x"+toHex.toHex(req.params.gasPrice);
                 const gasLimitHex = "0x"+parseInt(req.params.gasLimit).toString(16);
                 const nonce = req.params.nonce;
@@ -261,14 +196,11 @@ module.exports = {
                     value: parseInt(req.params.value),
                     gasPrice: gasPriceHex
                 }
-                console.log(date+":HC_signInformationIn-success");
                 res.send(rawTx);
 	}
 
 
 	if(req.body.token != "eth"&& req.body.token!=undefined){
-                console.log(date+":HC_signInformationIn");
-                //const gasPrice = web3.eth.gasPrice;
 
                 const gasPriceHex = "0x"+parseInt(req.params.gasPrice).toString(16);
 
@@ -286,9 +218,6 @@ module.exports = {
                 var to = req.params.to
 
                 var amount = toHex.toHex(req.params.value)//parseInt(req.params.value).toString(16)
-//console.log(req.params.value);
-//console.log(amount);
-//console.log(toHex.toHex(req.params.value))
                 var input = func+to.substr(2)+paddingLeft(amount,64);
 
                 var rawTx = {
@@ -305,8 +234,6 @@ module.exports = {
 
                     gasPrice: gasPriceHex
                 }
-                console.log(date+":HC_signInformationIn-success");
-                //res.send(rawTx);
                 function paddingLeft(str,lenght){
                         if(str.length >= lenght)
                         return str;
