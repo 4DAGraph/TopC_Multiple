@@ -36,14 +36,19 @@ app.use(flash());
 
 routes(app);
 
-app.use(function (err, req, res, next) {
+/*app.use(function (err, req, res, next) {
   res.render('error', {
     error: err
   });
-});
+});*/
+
+app.use(function (err, req, res, next) {
+        //console.error(err.stack)
+        res.status(500).send({"error":"error parameter","status":"1","message":err.stack})
+})
 
 app.set('port', config.port);
-
+/*
 var cluster = require('cluster');
 var http = require('http');
 var numCPUs = process.argv[2] || require('os').cpus().length;
@@ -62,8 +67,8 @@ if (cluster.isMaster) {
 } else {
 	app.listen(app.get('port'));
 }
+*/
 
-/*
 if (module.parent) {
   module.exports = app;
 } else {
@@ -71,4 +76,4 @@ if (module.parent) {
     console.log(`${pkg.name} listening on port ${config.port}`);
   });
 }
-*/
+

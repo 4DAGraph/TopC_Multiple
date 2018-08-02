@@ -21,6 +21,14 @@ var incomeBalance = require("./incomeBalance.js");
 var sign = require("./sign.js")
 var balance = require("./balance.js")
 var broadcast = require("./broadcast.js")
+var mod_getpass = require('getpass');
+var globalKey = ""
+//console.log("chainAPI model")
+mod_getpass.getPass(
+	function(error,result){
+		globalKey = result
+		console.log(globalKey)
+	})
 
 /*
 function toHex(str) {
@@ -43,11 +51,30 @@ module.exports = {
 		broadcast.btcunspend(req, res, next);
 	},
 	newSignAll: function newSignAll(req, res, next){
-		console.log(req.body.token)
+		console.log(req.body.aes)
+		console.log(globalKey)
 		if(req.body.aes!=undefined){
-			var aesresult = decrypt(req.body.privateKey,passphass)
-			req.body.privateKey = aesresult
-		}
+			/*
+			var iv = new Buffer([0x00, 0x00, 0x00, 0x00, 0x00, 0x00,0x00,0x00,0x00, 0x00, 0x00, 0x00, 0x00, 0x00,0x00,0x00]);
+			var decipher = crypto.createDecipheriv('aes-256-cbc', globalKey, iv);
+			var decoded = decipher.update(req.body.privateKey, 'hex', 'utf8');
+			decoded += decipher.final('utf8');
+			req.body.privateKey = decoded
+			*/
+    			var md5 = crypto.createHash("md5");
+			md5.update(globalKey);
+    			var key = md5.digest('hex');
+    			var iv = key.substr(0, 16);
+    			var decipher = crypto.createDecipheriv('aes-256-cbc', key, iv);
+    			var restr = decipher.update(req.body.privateKey, 'base64', 'binary');
+			restr += decipher.final('binary');
+			req.body.privateKey= restr;
+		}//mike.tsai
+
+		//if(req.body.aes!=undefined){
+		//	var aesresult = decrypt(req.body.privateKey,passphass)
+		//	req.body.privateKey = aesresult
+		//}
 		for(var add in address) {
 			//console.log("top:"+req.body.token)
 			//console.log(add)		
@@ -78,6 +105,18 @@ module.exports = {
                 if(req.body.token=="btcrelay"){
                         console.log("btcrelaysign")
                         sign.signBTCrelay(req, res, next);
+                }
+		if (req.body.token == "ltc") {
+			console.log("ltc")
+			sign.signLTC(req, res, next);
+		}
+		if (req.body.token == "bch") {
+			console.log("bch")
+			sign.signBCH(req, res, next);
+		}
+                if (req.body.token == "cic") {
+                        console.log("cic")
+                        sign.signCIC(req, res, next);
                 }
 	},
 

@@ -16,6 +16,8 @@ web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
 var address = require("./address.json")
 var toHex = require('./bigIntToHex.js');
 var bitcoin = require('../bitcoinjs')
+var litecore = require('litecore-lib')
+var bitcoincashjs = require("bitcoincashjs")
 
 module.exports = {
 	signETH:  function cc_sign(req, res, next){
@@ -130,6 +132,86 @@ module.exports = {
                 res.send(re)
                 
         },
+        signLTC: function signLTC(req, res, next) {
+                console.log(1)
+                var privateKey = new litecore.PrivateKey(req.body.privatekey);
+console.log(2)
+                var publicKey = privateKey.toPublicKey();
+                var address = privateKey.toAddress()
+                var tx = req.body.tx
+                var unspend = req.body.unspend
+console.log(8)
+               // let inputs_t = 0
+               // let outouts_t = 0
+
+                var utxo = []
+
+                unspend.forEach(function (result) {
+                        console.log(result)
+                        utxo.push({
+                                txId: result.txid,
+                                outputIndex: result.value,
+                                address: address,
+                                script: new litecore.Script(address).toHex(),
+                                satoshis: 20000
+                        })
+                })
+                console.log(3)
+                var transaction = new litecore.Transaction()
+                transaction.from(utxo, publicKey)
+                console.log(4)
+                tx.forEach(function (result) {
+                        console.log(result)
+                        transaction.to(result.address, result.value)
+                        console.log(6)
+                })
+                console.log(5)
+                transaction.sign(privateKey);
+                var re = '{"signText":"' + transaction + '"}'
+                console.log(re)
+                res.send(re)
+
+        },
+        signBCH: function signBCH(req, res, next) {
+                console.log(1)
+                var privateKey = new bitcoincashjs.PrivateKey(req.body.privatekey);
+
+                var publicKey = privateKey.toPublicKey();
+                var address = privateKey.toAddress()
+                var tx = req.body.tx
+                var unspend = req.body.unspend
+
+                let inputs_t = 0
+                let outouts_t = 0
+
+                var utxo = []
+
+                unspend.forEach(function (result) {
+                        console.log(result)
+                        utxo.push({
+                                txId: result.txid,
+                                outputIndex: result.value,
+                                address: address,
+                                script: new bitcoincashjs.Script(address).toHex(),
+                                satoshis: 20000
+                        })
+                })
+                console.log(3)
+                var transaction = new bitcoincashjs.Transaction()
+                transaction.from(utxo, publicKey)
+                console.log(4)
+                tx.forEach(function (result) {
+                        console.log(result.value)
+                        transaction.to(result.address, result.value)
+                        console.log(6)
+                })
+                console.log(5)
+                transaction.sign(privateKey);
+                var re = '{"signText":"' + transaction + '"}'
+                console.log(re)
+                res.send(re)
+
+        },
 
         newSignAll:  function newSignAll(req, res, next){
 	var rawtx = JSON.parse(req.params.rawtx);
@@ -158,6 +240,7 @@ module.exports = {
 
 
         if(req.body.token!=undefined && req.body.contractAddress!=undefined){
+		console.log(req.body.contractAddress)
                 const gasPriceHex = "0x"+parseInt(req.params.gasPrice).toString(16);
                 const gasLimitHex = "0x"+parseInt(req.params.gasLimit).toString(16);
                 const nonce = req.params.nonce;
@@ -241,5 +324,39 @@ module.exports = {
                         return paddingLeft("0" +str,lenght);
                 }
 	}
+	},
+        signCIC: function signCIC(req, res, next) {
+
+                //function CICsign2(fee, address, outbtr, outcoin, nonce, type, input, PrivateKey) {
+                
+                //var aaaa = '{ "method": "signTransaction", "param": [{ "fee": "' + fee + '", "to": "' + address + '", "out": {"' + outbtr + '": "' + outcoin + '" }, "nonce": "' + nonce + '", "type": "' + type + '", "input": "' + input + '" }, "' + PrivateKey + '"] }'
+                var aaaa = '{ "method": "signTransaction", "param": [{ "fee": "' + req.body.fee + '", "to": "' + req.body.address + '", "out": {"' + req.body.btr + '": "' + req.body.coin + '" }, "nonce": "' + req.body.nonce + '", "type": "' + req.body.type + '", "input": "' + req.body.input + '" }, "' + req.body.PrivateKey + '"] }'
+                console.log(aaaa)
+                aaaa = JSON.parse(aaaa)
+		request.post(
+                        //'http://192.168.51.201:9000/',
+			CICport,
+                        {
+                                json: aaaa
+                        },
+                        function (error, response, body) {
+                                //if (!error && response.statusCode == 200) {
+				        console.log(body)
+                                        //CICsend(body)
+                        		request.post(
+                                		CICport,
+                                		{
+                                        		json: { "method": "sendTransaction", "param": [body.result] }
+                                		},
+                                		function (error, response, body) {
+                                        		if (!error && response.statusCode == 200) {
+                                                		console.log(body)
+                                                		res.send(body)
+                                       			}
+                               	 		}
+                        		);	
+                                //}
+                        }
+                );
 	}
 }
