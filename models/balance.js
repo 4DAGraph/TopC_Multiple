@@ -40,7 +40,7 @@ module.exports = {
 	},
         getBalance_app:  function getBalance(req, res, next){
                 console.log(req.query.token);
-                if((req.query.token=="ETH"||req.query.token==undefined)&&req.query.contractAddress==undefined){
+		if((req.query.token=="ETH"||req.query.token==undefined)&&req.query.contractAddress==undefined){
                 	console.log(date+":getBalance");
                 	console.log(date+":getBalance-success");
                 	res.send({"balance":web3.eth.getBalance(req.params.address),"code":0,"message":"json"});

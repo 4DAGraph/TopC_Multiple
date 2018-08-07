@@ -48,7 +48,7 @@ app.use(function (err, req, res, next) {
 })
 
 app.set('port', config.port);
-/*
+
 var cluster = require('cluster');
 var http = require('http');
 var numCPUs = process.argv[2] || require('os').cpus().length;
@@ -67,8 +67,8 @@ if (cluster.isMaster) {
 } else {
 	app.listen(app.get('port'));
 }
-*/
 
+/*
 if (module.parent) {
   module.exports = app;
 } else {
@@ -76,4 +76,4 @@ if (module.parent) {
     console.log(`${pkg.name} listening on port ${config.port}`);
   });
 }
-
+*/
