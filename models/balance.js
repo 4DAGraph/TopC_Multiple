@@ -78,8 +78,8 @@ module.exports = {
                 if(req.query.token=="CIC"&&req.query.token!=undefined){
                         console.log("CICte");
                         request.get(
-                                //"http://192.168.51.201:9000/"+"getAccount/"+req.params.address,
-				CICport+"getAccount/"+req.params.address,
+                                "http://192.168.51.201:9000/"+"getAccount/"+req.params.address,
+				//CICport+"getAccount/"+req.params.address,
                                 function (error, response, body) {
                                                 console.log(body.result)
 						

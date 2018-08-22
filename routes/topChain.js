@@ -13,6 +13,7 @@ router.get("/accountQT/:amount",mnemonic.accountQT);
 router.post("/keyToAddress",mnemonic.keyToAddress)
 ///測試專用
 router.get("/txDecode/:tx",chainAPI.txDecode);
+router.get("/ETHtxDecode/:tx",chainAPI.ETHtxDecode);
 //btc
 
 router.post("/btcunspend/:address",chainAPI.btcunspend);
@@ -75,6 +76,9 @@ router.get("/keyStore_publish",chainAPI.keyStore_publish);
 
 //key exports formate [{address:$,publicKey:$,privateKey:$}]
 router.get("/blockNumber",chainAPI.blockNumber);
+
+router.get("/block/:number",chainAPI.block);
+
 //127.0.0.1:3200/topChain/blockNumber
 router.get("/transactionList/:blockNumber",chainAPI.transactionList);
 //127.0.0.1:3200/topChain/transactionList/4000000
@@ -90,5 +94,6 @@ router.get("/getBalance_app/:address",chainAPI.getBalance_app);
 router.get("/transactionList_to/:blockInitial/:blockFinal/:address",chainAPI.transactionList_to);
 
 router.get("/transactionList_from/:blockInitial/:blockFinal/:address",chainAPI.transactionList_from);
+
 
 module.exports = router;

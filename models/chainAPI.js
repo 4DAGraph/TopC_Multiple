@@ -23,6 +23,7 @@ var balance = require("./balance.js")
 var broadcast = require("./broadcast.js")
 var mod_getpass = require('getpass');
 var globalKey = ""
+var Transaction = require('ethereumjs-tx')
 //console.log("chainAPI model")
 mod_getpass.getPass(
 	function(error,result){
@@ -46,6 +47,12 @@ module.exports = {
 		var txDecoder = require('ethereum-tx-decoder');
 		var decodedTx = txDecoder.decodeTx("0x"+req.params.tx);
                 res.send(decodedTx)
+	},
+	ETHtxDecode: function ETHtxDecode(req, res, next){
+		var tx = new Transaction(req.params.tx);
+		var ETHAddress = { "EthereumAddress:":tx.getSenderAddress().toString('hex')}
+		console.log('Senders Address: ' + tx.getSenderAddress().toString('hex'))
+		res.send(ETHAddress)
 	},
 	btcunspend: function btcunspend(req, res, next){
 		broadcast.btcunspend(req, res, next);
@@ -422,6 +429,10 @@ module.exports = {
 
 	transactionList:  function transactionList(req, res, next){
 		incomeBalance.transactionList(req, res, next);
+	},
+    block:  function block(req, res, next){
+	    var result = web3.eth.getBlock(req.params.number);
+		res.send(result)
 	},
 
         newSign:  function newSign(req, res, next){

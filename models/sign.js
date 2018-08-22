@@ -74,7 +74,10 @@ module.exports = {
                 var unspend = req.body.unspend
 	        var keyPair = bitcoin.ECPair.fromWIF(priv)
 	        var txb = new bitcoin.TransactionBuilder()
-	        unspend.forEach(function(result){
+			if(req.body.compressed != undefined)
+				keyPair["compressed"] = req.body.compressed
+
+			unspend.forEach(function(result){
 	                txb.addInput(result.txid,result.value)
 			//txb.addInput('b5bb9d8014a0f9b1d61e21e796d78dccdf1352f23cd32812f4850b878ae4944c', 6)
                 	console.log(result.txid)
@@ -105,7 +108,9 @@ module.exports = {
                 var unspend = req.body.unspend
                 var keyPair = bitcoin.ECPair.fromWIF(priv)
                 var txb = new bitcoin.TransactionBuilder()
-		var cicAddress = req.body.cicAddress
+				if(req.body.compressed != undefined)
+					keyPair["compressed"] = req.body.compressed
+				var cicAddress = req.body.cicAddress
                 unspend.forEach(function(result){
                         txb.addInput(result.txid,result.value)
                 })
