@@ -11,13 +11,19 @@ var ethereum = require('ethereumjs-wallet')
 const secp256k1 = require('secp256k1')
 var sha256 = require("sha256")
 
+var crypto = require('crypto');
+var encrypto = require('../../../../homework/firstclass');
 module.exports = {
 	account:function account(req, res, next){
 		//bitcoin
+		console.log(12345)
 		if(req.body.mnemonic!=undefined){
-		var mnemonic = req.body.mnemonic;
+			var mnemonic = req.body.mnemonic;
+            if (req.body.encry != undefined && req.body.encry == true){
+                mnemonic = encrypto.decrypt(mnemonic)
+            }
 		}else{
-		var mnemonic = bip39.generateMnemonic()
+			var mnemonic = bip39.generateMnemonic()
 		}
 		var seed = bip39.mnemonicToSeedHex(mnemonic)
 		var hdkey = HDKey.fromMasterSeed(new Buffer(seed, 'hex'))
@@ -62,47 +68,65 @@ module.exports = {
 				{"privateKey":ethereumKey,"address":cicAddress}
 				}
 		//console.log(re)
-		res.send(re);
+        if(req.body.encry != undefined && req.body.encry == true){
+            var stringre = JSON.stringify(re)
+            var crypted = encrypto.encrypt(stringre)
+            res.send({"eprivatekey":crypted})
+        }
+        else{
+            res.send(re);
+        }
 	},
 	keyToAddress:function keyToAddress(req, res, next){
+        var privateKey = req.body.privateKey
+        if (req.body.encry != undefined && req.body.encry == true){
+            privateKey = encrypto.decrypt(privateKey)
+        }
 
-		var keyx = req.body.key
+        var bitcoinprivateKey = new bitcoin.PrivateKey(privateKey);
 
-                if(keyx.length!=64){
-                var bitcoinprivateKey = new bitcoin.PrivateKey(keyx);
-                keyx = bitcoinprivateKey.toString()
-                }
+        //var LTCprivateKey = new litecore.PrivateKey("6760fa752de1a78d298b60a87ff28c5c9d3079fadce05db8d1f70501761e9890");
+        //var litecoinAddress = LTCprivateKey.toAddress().toString();
 
-                //var bitcoinAddress = keyPair.getAddress()
+        var privateKey = bitcoinprivateKey.toString()
+        var privateKey = Buffer.from(privateKey, 'hex');
+
+        var G = ec.g; // Generator point
+        var pk = new BN(privateKey); // private key as big number
+
+        var pubPoint = G.mul(pk); // EC multiplication to determine public point
+
+        var x = pubPoint.getX().toBuffer(); //32 bit x co-ordinate of public point
+        var y = pubPoint.getY().toBuffer(); //32 bit y co-ordinate of public point 
+
+        var publicKey = Buffer.concat([x, y])
+
+        //console.log("public key::" + publicKey.toString('hex'))
+        //console.log(keccak256)
+        const address = keccak256(publicKey) // keccak256 hash of  publicKey
+        const buf2 = Buffer.from(address, 'hex');
+
+        var bitcoinAddress = bitcoinprivateKey.toAddress().toString();//bitcoin address
+        var bitcoinpublicKey = new bitcoin.PublicKey('04' + publicKey.toString('hex'));
+        var bitcoinAddUnCompress = bitcoinpublicKey.toAddress().toString()
 
 
-                var bitcoinprivateKey = new bitcoin.PrivateKey(keyx);
-                var bitcoinAddress = bitcoinprivateKey.toAddress().toString();
-                var bitcoinKey = bitcoinprivateKey.toString()
+        var cicAddress = "cx" + sha256(publicKey.toString("hex")).substr(24, 64)
 
-		var cicAddress = "cx" + sha256(publicKey.toString("hex")).substr(24, 64) 
+        var re = {
+            "publickey:":
+                publicKey.toString('hex'),
+            "EthereumAddress:":
+                "0x" + buf2.slice(-20).toString('hex'),
+            "BitcoinAddress:":
+                bitcoinAddress,
+            "BitcoinAddressUncompress:":
+                bitcoinAddUnCompress,
+            "CICAddress:":
+                cicAddress
+        }
+        res.send(re);
 
-                //litecoin
-                //var litecore = require('litecore');
-/*
-                var privateKey = new litecore.PrivateKey(keyx);
-                var litecoinAddress = privateKey.toAddress().toString();
-                var litecoinKey = privateKey.toString()
-
-                console.log(litecoinAddress)
-*/
-                var x = ethereum.fromPrivateKey(Buffer.from(keyx,"hex"))
-                ethereumAddress = x.getAddress().toString("hex");
-                var re = {
-                        "version":"0.01",
-                                /*"litecoin":
-                                {"address":litecoinAddress},*/
-                                "bitcoin":
-                                {"address":bitcoinAddress},
-                                "ethereum":
-				{"address":ethereumAddress}
-                                }
-		res.send(re)
 	},
         accountQT:function accountQT(req, res, next){		
 		var result = [];

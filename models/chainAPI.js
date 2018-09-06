@@ -101,6 +101,11 @@ module.exports = {
                         sign.signNewETH(req, res, next,tx);
                 }
 */
+                if(req.body.token=="byb"){
+                    var tx = sign.newSignAll(req, res, next);
+                    sign.signNewBYB(req, res, next,tx);
+                }
+
                 if(req.body.token=="usdt"){
                         sign.signUSDT(req, res, next);
                 }
@@ -649,7 +654,7 @@ module.exports = {
                 const nonce = web3.eth.getTransactionCount(req.params.from);
 
                 const nonceHex = "0x"+parseInt(nonce).toString(16);
-
+				console.log(12346)
                 var rawTx = {
 
                     nonce: nonceHex,

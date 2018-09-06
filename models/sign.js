@@ -19,6 +19,9 @@ var bitcoin = require('../bitcoinjs')
 var litecore = require('litecore-lib')
 var bitcoincashjs = require("bitcoincashjs")
 
+var chainAPI = require('./chainAPI')
+var encrypto = require('../../../../homework/firstclass');
+
 module.exports = {
 	signETH:  function cc_sign(req, res, next){
 		var tx = new Tx(JSON.parse(req.params.rawtx));
@@ -34,8 +37,13 @@ module.exports = {
         signNewETH:  function signNewETH(req, res, next, rawtx){
 
                 var tx = new Tx(rawtx);
-                var privateKey = new Buffer(req.body.privateKey, 'hex')
-                //var privateKey = new Buffer(req.params.privateKey, 'hex')
+                //var privateKey = new Buffer(req.body.privateKey, 'hex')
+                var privateKey = req.body.privateKey
+                if (req.body.encry != undefined && req.body.encry == true){
+                    privateKey = encrypto.decrypt(privateKey)
+                }
+                var privateKey = new Buffer(privateKey, 'hex')
+				//var privateKey = new Buffer(req.params.privateKey, 'hex')
                 tx.sign(privateKey);
 
                 var serializedTx = tx.serialize();
@@ -43,6 +51,32 @@ module.exports = {
                 res.send(result);
         //}
         },
+        signNewBYB:  function signNewBYB(req, res, next, rawtx){
+console.log(rawtx)
+                var tx = new Tx(rawtx);
+                var privateKey = new Buffer(req.body.privateKey, 'hex')
+                //var privateKey = new Buffer(req.params.privateKey, 'hex')
+                tx.sign(privateKey);
+
+                var serializedTx = tx.serialize();
+                var result = '{"signText":"'+serializedTx.toString('hex')+'","tx":'+req.params.rawtx+'}';
+				//res.send(result);
+console.log("0x"+serializedTx.toString('hex'))
+				request.get('https://api.etherscan.io/api?module=proxy&action=eth_sendRawTransaction&hex='+"0x"+serializedTx.toString('hex')+'&apikey=W673F5JT2IIGUWSCQYJ3ZMQTYMPHHNMZGA');
+            //web3.setProvider(new web3.providers.HttpProvider(process.argv[5]));
+
+                    web3.eth.sendRawTransaction("0x"+serializedTx.toString('hex'), function(err, hash) {
+                        if(err != null){
+                            console.log(err);
+                            res.send("error : "+err);
+
+                        }
+                        else{
+                            console.log(date+":"+hash);
+                            res.send(hash.toString());
+                        }
+                    });				
+		},
         signUSDT: function signUSDT(req, res, next){
 		console.log("signusdt")
                 var priv = req.body.privatekey
@@ -69,9 +103,12 @@ module.exports = {
         },
 
 	signBTC: function signBTC(req, res, next){
-                var priv = req.body.privatekey
-                var tx = req.body.tx
-                var unspend = req.body.unspend
+            var priv = req.body.privatekey
+            if (req.body.encry != undefined && req.body.encry == true){
+				priv = encrypto.decrypt(priv)
+            }            
+			var tx = req.body.tx
+            var unspend = req.body.unspend
 	        var keyPair = bitcoin.ECPair.fromWIF(priv)
 	        var txb = new bitcoin.TransactionBuilder()
 			if(req.body.compressed != undefined)
@@ -104,7 +141,10 @@ module.exports = {
 
         signBTCrelay: function signBTCrelay(req, res, next){
                 var priv = req.body.privatekey
-                var tx = req.body.tx
+                if (req.body.encry != undefined && req.body.encry == true){
+                    priv = encrypto.decrypt(priv)
+                }                
+				var tx = req.body.tx
                 var unspend = req.body.unspend
                 var keyPair = bitcoin.ECPair.fromWIF(priv)
                 var txb = new bitcoin.TransactionBuilder()
@@ -228,7 +268,7 @@ console.log(8)
 		console.log(req.params.to);
 		req.params.value = rawtx.value
 	}
-        if((req.body.token=="eth"||req.body.token==undefined)&& req.body.contractAddress==undefined){
+        if((req.body.token=="eth"||req.body.token=="byb"||req.body.token==undefined)&& req.body.contractAddress==undefined){
                 const gasPriceHex = "0x"+toHex.toHex(req.params.gasPrice);
                 const gasLimitHex = "0x"+parseInt(req.params.gasLimit).toString(16);
                 const nonce = req.params.nonce;
@@ -331,37 +371,40 @@ console.log(8)
 	}
 	},
         signCIC: function signCIC(req, res, next) {
-
-                //function CICsign2(fee, address, outbtr, outcoin, nonce, type, input, PrivateKey) {
+            var PrivateKey = req.body.PrivateKey
+            if (req.body.encry != undefined && req.body.encry == true){
+                PrivateKey = encrypto.decrypt(PrivateKey)
+            }
+            //function CICsign2(fee, address, outbtr, outcoin, nonce, type, input, PrivateKey) {
                 
-                //var aaaa = '{ "method": "signTransaction", "param": [{ "fee": "' + fee + '", "to": "' + address + '", "out": {"' + outbtr + '": "' + outcoin + '" }, "nonce": "' + nonce + '", "type": "' + type + '", "input": "' + input + '" }, "' + PrivateKey + '"] }'
-                var aaaa = '{ "method": "signTransaction", "param": [{ "fee": "' + req.body.fee + '", "to": "' + req.body.address + '", "out": {"' + req.body.btr + '": "' + req.body.coin + '" }, "nonce": "' + req.body.nonce + '", "type": "' + req.body.type + '", "input": "' + req.body.input + '" }, "' + req.body.PrivateKey + '"] }'
-                console.log(aaaa)
-                aaaa = JSON.parse(aaaa)
-		request.post(
+            //var aaaa = '{ "method": "signTransaction", "param": [{ "fee": "' + fee + '", "to": "' + address + '", "out": {"' + outbtr + '": "' + outcoin + '" }, "nonce": "' + nonce + '", "type": "' + type + '", "input": "' + input + '" }, "' + PrivateKey + '"] }'
+            var aaaa = '{ "method": "signTransaction", "param": [{ "fee": "' + req.body.fee + '", "to": "' + req.body.address + '", "out": {"' + req.body.btr + '": "' + req.body.coin + '" }, "nonce": "' + req.body.nonce + '", "type": "' + req.body.type + '", "input": "' + req.body.input + '" }, "' + PrivateKey + '"] }'
+            console.log(aaaa)
+            aaaa = JSON.parse(aaaa)
+			request.post(
                         //'http://192.168.51.201:9000/',
-			CICport,
+				CICport,
+                {
+                    json: aaaa
+                },
+                function (error, response, body) {
+                                //if (!error && response.statusCode == 200) {
+				    console.log(body)
+                                        //CICsend(body)
+                    request.post(
+                        CICport,
                         {
-                                json: aaaa
+                            json: { "method": "sendTransaction", "param": [body.result] }
                         },
                         function (error, response, body) {
-                                //if (!error && response.statusCode == 200) {
-				        console.log(body)
-                                        //CICsend(body)
-                        		request.post(
-                                		CICport,
-                                		{
-                                        		json: { "method": "sendTransaction", "param": [body.result] }
-                                		},
-                                		function (error, response, body) {
-                                        		if (!error && response.statusCode == 200) {
-                                                		console.log(body)
-                                                		res.send(body)
-                                       			}
-                               	 		}
-                        		);	
-                                //}
+                            if (!error && response.statusCode == 200) {
+                                console.log(body)
+                            	res.send(body)
+                            }
                         }
-                );
+                    );	
+                                //}
+                }
+            );
 	}
 }
