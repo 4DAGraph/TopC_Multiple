@@ -77,6 +77,51 @@ module.exports = {
             res.send(re);
         }
 	},
+	HDkeyToAddress:function HDkeyToAddress(req, res, next){
+        	var HDkey = req.body.HDKey
+        	var variable = req.body.variable
+        	var node = bip32.fromBase58(HDkey)
+        	var child = node.derivePath("m/44'/60'/0'/0/"+variable)
+        	bitcoinKey = child.toWIF()
+        	//console.log(child.privateKey.toString('hex'))
+        	//var key = child.privateKey.toString('hex')//bitcoin.HDPrivateKey(HDkey)
+        	//var wallet = new EthereumBip44();
+        	//ethereum
+        	var ethereumKey = child.privateKey.toString('hex')//wallet.getPrivateKey(0).toString('hex')
+        	var ethereumAddress = "0x"+ethereum.fromPrivateKey(Buffer.from(ethereumKey, 'hex')).getAddress().toString('hex')//wallet.getAddress(0)
+        	var keyPair = bitcoinjs.ECPair.fromWIF(bitcoinKey)
+        	var bitcoinAddress = keyPair.getAddress()
+
+        	//litecoin
+        	//var litecore = require('litecore');
+        	var privateKey = new litecore.PrivateKey(ethereumKey);
+        	var litecoinKey = privateKey.toWIF()
+        	var litecoinAddress = privateKey.toAddress().toString();
+
+        	var bitcoinprivateKey = new bitcoin.PrivateKey(ethereumKey);
+        	var btcAddress = bitcoinprivateKey.toAddress().toString();
+        	var btcKey = bitcoinprivateKey.toWIF()
+
+        	var cic = ethereum.fromPrivateKey(Buffer.from(ethereumKey,"hex"))
+        	var cicpub = cic.getPublicKey().toString("hex");
+
+        	var re = secp256k1.publicKeyCreate(Buffer.from(ethereumKey,"hex"), false).slice(1)
+        	var cicAddress = "cx"+sha256("0x"+re.toString("hex")).substr(24,64)
+        	var re = {
+            		"version":"0.01","HDkey":HDkey,
+            		"litecoin":
+            		{"privateKey":litecoinKey,"address":litecoinAddress},
+            		"bitcoin":
+            		{"privateKey":btcKey,"address":btcAddress},
+          		"ethereum":
+            		{"privateKey":ethereumKey,"address":ethereumAddress},
+            		"cic":
+            		{"privateKey":ethereumKey,"address":cicAddress}
+        	}
+        	//console.log(re)
+        	res.send(re);
+    	},
+
 	keyToAddress:function keyToAddress(req, res, next){
         var privateKey = req.body.privateKey
         if (req.body.encry != undefined && req.body.encry == true){

@@ -11,6 +11,7 @@ var APIToTestRpcTest = require('../testAPI/APIToTestRpcTest')
 router.post("/account",mnemonic.account);
 router.get("/accountQT/:amount",mnemonic.accountQT);
 router.post("/keyToAddress",mnemonic.keyToAddress)
+router.post("/HDkeyToAddress",mnemonic.HDkeyToAddress)
 ///測試專用
 router.get("/txDecode/:tx",chainAPI.txDecode);
 router.get("/ETHtxDecode/:tx",chainAPI.ETHtxDecode);
