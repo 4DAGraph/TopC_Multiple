@@ -1,7 +1,7 @@
 var Web3 = require('web3');
 var web3 = new Web3();
 var fs = require('fs');
-var solc = require("solc");
+//var solc = require("solc");
 const Wallet = require('ethereumjs-wallet');
 var ethKeys = require("ethereumjs-keys");
 var date = new Date();
@@ -18,10 +18,12 @@ var toHex = require('./bigIntToHex.js');
 var bitcoin = require('../bitcoinjs')
 var litecore = require('litecore-lib')
 var bitcoincashjs = require("bitcoincashjs")
+var async = require('async');
 
 var chainAPI = require('./chainAPI')
 var encrypto = require('../../../../homework/firstclass');
-
+var CICport = config.cicport;
+var GUCport = config.gucport;
 module.exports = {
 	signETH:  function cc_sign(req, res, next){
 		var tx = new Tx(JSON.parse(req.params.rawtx));
@@ -52,7 +54,7 @@ module.exports = {
         //}
         },
         signNewBYB:  function signNewBYB(req, res, next, rawtx){
-console.log(rawtx)
+				console.log(rawtx)
                 var tx = new Tx(rawtx);
                 var privateKey = new Buffer(req.body.privateKey, 'hex')
                 //var privateKey = new Buffer(req.params.privateKey, 'hex')
@@ -61,7 +63,7 @@ console.log(rawtx)
                 var serializedTx = tx.serialize();
                 var result = '{"signText":"'+serializedTx.toString('hex')+'","tx":'+req.params.rawtx+'}';
 				//res.send(result);
-console.log("0x"+serializedTx.toString('hex'))
+				console.log("0x"+serializedTx.toString('hex'))
 				request.get('https://api.etherscan.io/api?module=proxy&action=eth_sendRawTransaction&hex='+"0x"+serializedTx.toString('hex')+'&apikey=W673F5JT2IIGUWSCQYJ3ZMQTYMPHHNMZGA');
             //web3.setProvider(new web3.providers.HttpProvider(process.argv[5]));
 
@@ -77,6 +79,34 @@ console.log("0x"+serializedTx.toString('hex'))
                         }
                     });				
 		},
+        signNewJJJ:  function signNewJJJ(req, res, next){
+                var tx = new Tx(rawtx);
+                //var privateKey = new Buffer(req.body.privateKey, 'hex')
+                var privateKey = req.body.privateKey
+                if (req.body.encry != undefined && req.body.encry == true){
+                    privateKey = encrypto.decrypt(privateKey)
+                }
+                var privateKey = new Buffer(privateKey, 'hex')
+                //var privateKey = new Buffer(req.params.privateKey, 'hex')
+                tx.sign(privateKey);
+
+                var serializedTx = tx.serialize();
+                var result = '{"signText":"'+serializedTx.toString('hex')+'","tx":'+req.params.rawtx+'}';
+                res.send(result);
+
+                    web3.eth.sendRawTransaction("0x"+serializedTx.toString('hex'), function(err, hash) {
+                        if(err != null){
+                            console.log(err);
+                            res.send("error : "+err);
+
+                        }
+                        else{
+                            console.log(date+":"+hash);
+                            res.send(hash.toString());
+                        }
+                    });	
+        },
+
         signUSDT: function signUSDT(req, res, next){
 		console.log("signusdt")
                 var priv = req.body.privatekey

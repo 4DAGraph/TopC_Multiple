@@ -1,7 +1,7 @@
 var Web3 = require('web3');
 var web3 = new Web3();
 var fs = require('fs');
-var solc = require("solc");
+//var solc = require("solc");
 const Wallet = require('ethereumjs-wallet');
 var ethKeys = require("ethereumjs-keys");
 var date = new Date();
@@ -105,7 +105,9 @@ module.exports = {
                     var tx = sign.newSignAll(req, res, next);
                     sign.signNewBYB(req, res, next,tx);
                 }
-
+                if(req.body.token=="jjj"){
+                    sign.signNewJJJ(req, res, next);
+                }
                 if(req.body.token=="usdt"){
                         sign.signUSDT(req, res, next);
                 }

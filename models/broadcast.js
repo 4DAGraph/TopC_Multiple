@@ -4,7 +4,7 @@ const Client = require('bitcoin-core');
 module.exports = {
 	btcbroadcast:function btcbroadcast(req, res, next){
                 //const client = new Client({host:'192.168.51.179',port:'8778' ,username: 'bitcoinrpc', password: 'bitcoinrpctest', network: 'mainnet'})
-                const client = new Client({host:'192.168.51.33',port:'8332' ,username: 'bitcoinrpc', password: 'bitcoinrpctest', network: 'regtest'})
+                const client = new Client({host:'192.168.51.156',port:'8332' ,username: 'bitcoinrpc', password: 'bitcoinrpctest', network: 'regtest'})
 		//const Client = require('bitcoin-core');
 		//const client = new Client({host:'192.168.51.33',port:'8332' ,username: 'bitcoinrpc', password: 'bitcoinrpctest', network: 'regtest'})
 		const txHex = req.params.serializedTx;
@@ -26,7 +26,7 @@ module.exports = {
                 	}); 
                 }
 		else{
-                        const client = new Client({host:'192.168.51.33',port:'8332' ,username: 'bitcoinrpc', password: 'bitcoinrpctest', network: 'regtest'})
+                        const client = new Client({host:'192.168.51.156',port:'8332' ,username: 'bitcoinrpc', password: 'bitcoinrpctest', network: 'regtest'})
 			client.listUnspent(0,99999999,[req.params.address],function(error,rr){
                                 console.log(error)
 				res.send(rr);

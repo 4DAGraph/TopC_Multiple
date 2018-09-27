@@ -1,7 +1,7 @@
 var Web3 = require('web3');
 var web3 = new Web3();
 var fs = require('fs');
-var solc = require("solc");
+//var solc = require("solc");
 const Wallet = require('ethereumjs-wallet');
 var ethKeys = require("ethereumjs-keys");
 var date = new Date();
@@ -41,8 +41,11 @@ module.exports = {
         	}
 	},
         getBalance_app:  function getBalance(req, res, next){
-                console.log(req.query.token);
-		if((req.query.token=="ETH"||req.query.token==undefined)&&req.query.contractAddress==undefined){
+			res.header("Access-Control-Allow-Origin", "*");
+			res.header("Access-Control-Allow-Headers", "Content-Type,Content-Length, Authorization, Accept,X-Requested-With");
+			res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");        
+			console.log(req.query.token);
+			if((req.query.token=="ETH"||req.query.token==undefined)&&req.query.contractAddress==undefined){
                 	console.log(date+":getBalance");
                 	console.log(date+":getBalance-success");
                 	res.send({"balance":web3.eth.getBalance(req.params.address),"code":0,"message":"json"});

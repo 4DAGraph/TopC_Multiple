@@ -1,7 +1,7 @@
 var Web3 = require('web3');
 var web3 = new Web3();
 var fs = require('fs');
-var solc = require("solc");
+//var solc = require("solc");
 var request = require('request');
 var config = require('../config/default.js');
 //var nodeConnect = config.nodeRpc;
