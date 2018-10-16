@@ -10,7 +10,7 @@ module.exports = {
 		const txHex = req.params.serializedTx;
                 console.log("bro")
 		client.sendRawTransaction(txHex, (error, response) => {
-			if (error){ console.log(error); res.send("error")}
+			if (error){ console.log(error); res.send(error.message)}
 			else{
 			res.send(response);
 			}

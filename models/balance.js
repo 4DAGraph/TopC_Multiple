@@ -19,7 +19,7 @@ var CICport = config.cicport;
 var GUCport = config.gucport;
 module.exports = {
         getBalance:  function getBalance(req, res, next){
-		console.log(req.query.token);
+		//console.log(req.query.token);
 		if(req.query.token=="eth"||req.query.token==undefined){		
                 console.log(date+":getBalance");
                 console.log(date+":getBalance-success");
@@ -66,8 +66,8 @@ module.exports = {
                 }
 
 //console.log(req.query.token)		
-		if(req.query.token=="BTC"&&req.query.token!=undefined){
-			console.log("ttest");
+		else if(req.query.token=="BTC"&&req.query.token!=undefined){
+			console.log(date+":getBTCBalance-start");
 			request.get('https://blockexplorer.com/api/addr/'+req.params.address,function(error, response, body){
 				//console.log(body)
 				body = JSON.parse(body);
@@ -76,46 +76,37 @@ module.exports = {
 				
 				//console.log(JSON.parse(body)["balance"])
 				body["message"] = "json"
-        			res.send(body);
+				console.log(date+":getBTCBalance-success"+" source IP:"+req.ip);	
+        		res.send(body);
 			});						
 		}
-/*
-        if(req.query.token=="CIC"&&req.query.token!=undefined){
-            console.log("CICte");
-			console.log("address:"+req.params.address)
-            request.get(
-				"http://192.168.51.201:9000/"+"getAccount/"+req.params.address.toString(),
-			//CICport+"getAccount/"+req.params.address,
-				function (error, response, body) {
-					console.log(body.result)		
-					res.send(JSON.parse(body).result)
-				}
-            );
-        }
-*/
-        if(req.query.token=="CIC"&&req.query.token!=undefined){
-            console.log("CICte");
+
+        else if(req.query.token=="CIC"&&req.query.token!=undefined){
+            console.log(date+":getCICBalance-start");
             request.get(
                 CICport+"getAccount/"+req.params.address,
             //CICport+"getAccount/"+req.params.address,
                 function (error, response, body) {
-                    console.log(body.result)
+                    console.log(date+":getCICBalance-success"+" source IP:"+req.ip)
                     res.send(JSON.parse(body).result)
                 }
             );
         }
 
-        if(req.query.token=="GUC"&&req.query.token!=undefined){
-            console.log("GUCte");
+        else if(req.query.token=="GUC"&&req.query.token!=undefined){
+            console.log(date+":getGUCBalance-start");
             request.get(
                 GUCport+"getAccount/"+req.params.address,
             //CICport+"getAccount/"+req.params.address,
                 function (error, response, body) {
-                    console.log(body.result)
+                    console.log(date+":getGUCBalance-success"+" source IP:"+req.ip)
                     res.send(JSON.parse(body).result)
                 }
             );
         }
-
-        },
+		else{
+			console.log(date+":token error!")
+			res.send(date+":token error!")
+		}
+    },
 }
