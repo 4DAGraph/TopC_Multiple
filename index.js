@@ -34,6 +34,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(flash());
 
+var requestUrl = function (req, res, next) {
+  var fullUrl = req.protocol + '://' + req.get('host') + req.originalUrl;
+  console.log(fullUrl)
+  next();
+};
+
+app.use(requestUrl);
+
 routes(app);
 
 /*app.use(function (err, req, res, next) {
@@ -43,8 +51,8 @@ routes(app);
 });*/
 
 app.use(function (err, req, res, next) {
-        //console.error(err.stack)
-        res.status(500).send({"error":"error parameter","status":"1","message":err.stack})
+        console.error(err.stack)
+        res.status(500).send("error")// parameter","status":"1","message":err.stack})
 })
 
 app.set('port', config.port);

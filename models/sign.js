@@ -297,19 +297,23 @@ console.log(8)
 		req.params.to = rawtx.to
 		console.log(req.params.to);
 		req.params.value = rawtx.value
+		req.params.input = rawtx.input
 	}
         if((req.body.token=="eth"||req.body.token=="byb"||req.body.token==undefined)&& req.body.contractAddress==undefined){
                 const gasPriceHex = "0x"+toHex.toHex(req.params.gasPrice);
                 const gasLimitHex = "0x"+parseInt(req.params.gasLimit).toString(16);
                 const nonce = req.params.nonce;
                 const nonceHex = "0x"+parseInt(nonce).toString(16);
+				var input = "0x" + req.params.input
                 var rawTx = {
                     nonce: nonceHex,
                     gasLimit: gasLimitHex,
                     to: req.params.to,
                     value: parseInt(req.params.value),
-                    gasPrice: gasPriceHex
+                    gasPrice: gasPriceHex,
+					input:""
                 }
+				if(req.params.input!=undefined){rawTx.input = input}
                 return rawTx;
         }
 

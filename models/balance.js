@@ -26,14 +26,14 @@ module.exports = {
                 res.send(web3.eth.getBalance(req.params.address));
 		}
 		if(req.query.token!="eth"&&req.query.token!=undefined){
-                console.log(date+":Token");
+                console.log(date+":ETHToken");
                 var CoursetroContract = web3.eth.contract(abi["abi"]);
                 var Coursetro = CoursetroContract.at(address[req.query.token]);
 
                 Coursetro.balanceOf(req.params.address,function(error, result) {
                 if (!error) {
                         //console.log(result)
-                        console.log(date+":getTokenBalance-success");
+                        console.log(date+":getETHTokenBalance-success");
                         res.send(result);
                 } else
                         console.log(error);
@@ -44,21 +44,21 @@ module.exports = {
 			res.header("Access-Control-Allow-Origin", "*");
 			res.header("Access-Control-Allow-Headers", "Content-Type,Content-Length, Authorization, Accept,X-Requested-With");
 			res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");        
-			console.log(req.query.token);
+			//console.log(req.query.token);
 			if((req.query.token=="ETH"||req.query.token==undefined)&&req.query.contractAddress==undefined){
-                	console.log(date+":getBalance");
-                	console.log(date+":getBalance-success");
+                	console.log(date+":getETHBalance");
+                	console.log(date+":getETHBalance-success");
                 	res.send({"balance":web3.eth.getBalance(req.params.address),"code":0,"message":"json"});
                 }
 
                 if(req.query.token=="ETH"&&req.query.token!=undefined&&req.query.token!="BTC"&&req.query.contractAddress!=undefined){
-                	console.log(date+":Token");
+                	console.log(date+":ETHToken");
                 	var CoursetroContract = web3.eth.contract(abi["abi"]);
                 	var Coursetro = CoursetroContract.at(req.query.contractAddress);
                 	Coursetro.balanceOf(req.params.address,function(error, result) {
                 		if (!error) {
                         		//console.log(result)
-                        		console.log(date+":getTokenBalance-success");
+                        		console.log(date+":getETHTokenBalance-success");
                         		res.send({"balance":result,"code":0,"message":"json"});
                 		} else
                         	console.log(error);
@@ -68,7 +68,7 @@ module.exports = {
 //console.log(req.query.token)		
 		else if(req.query.token=="BTC"&&req.query.token!=undefined){
 			console.log(date+":getBTCBalance-start");
-			request.get('https://blockexplorer.com/api/addr/'+req.params.address,function(error, response, body){
+			request.get('https://blockexplorer.com/api/addr/'+req.params.address,function(error, response, body){		
 				//console.log(body)
 				body = JSON.parse(body);
 				body["code"] = 0
@@ -77,8 +77,13 @@ module.exports = {
 				//console.log(JSON.parse(body)["balance"])
 				body["message"] = "json"
 				console.log(date+":getBTCBalance-success"+" source IP:"+req.ip);	
-        		res.send(body);
-			});						
+        		res.end(JSON.stringify(body));	
+			});
+
+            request.get('https://blockchain.info/q/addressbalance/'+req.params.address+'?confirmations=0',function(error, response, body){ 
+                console.log(date+":getBTCBalance-success"+" source IP:"+req.ip);
+                res.end(JSON.stringify({"balance":body,"code":0,"message":"json"}));
+            });						
 		}
 
         else if(req.query.token=="CIC"&&req.query.token!=undefined){
