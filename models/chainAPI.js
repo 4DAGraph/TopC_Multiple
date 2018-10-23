@@ -1,7 +1,6 @@
 var Web3 = require('web3');
 var web3 = new Web3();
 var fs = require('fs');
-//var solc = require("solc");
 const Wallet = require('ethereumjs-wallet');
 var ethKeys = require("ethereumjs-keys");
 var date = new Date();
@@ -10,10 +9,7 @@ var crypto = require('crypto');
 var Tx = require('ethereumjs-tx');
 var abi = require('./erc.json');
 var request = require('request');
-//var nodeConnect = 'https://mainnet.infura.io/metamask';
-//var nodeConnect = 'http://'+config.nodeip+':'+config.rpcPort;
 var nodeConnect = config.nodeRpc;
-//console.log(nodeConnect)
 web3.setProvider(new web3.providers.HttpProvider(nodeConnect));
 var address = require("./address.json")
 var toHex = require('./bigIntToHex.js');
@@ -24,7 +20,6 @@ var broadcast = require("./broadcast.js")
 var mod_getpass = require('getpass');
 var globalKey = ""
 var Transaction = require('ethereumjs-tx')
-//console.log("chainAPI model")
 mod_getpass.getPass(
 	function(error,result){
 		globalKey = result
