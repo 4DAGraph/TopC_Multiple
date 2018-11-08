@@ -12,7 +12,9 @@ const secp256k1 = require('secp256k1')
 var sha256 = require("sha256")
 
 var crypto = require('crypto');
-var encrypto = require('../../../../homework/firstclass');
+var encrypto = require('../../homework/firstclass');
+var Cointest = require('../config/cointest.js');
+
 module.exports = {
 	account:function account(req, res, next){
 		//bitcoin
@@ -172,6 +174,24 @@ module.exports = {
         }
         res.send(re);
 
+	},
+	coinTest: function coinTest(req, res, next){
+		var coin3DG = Cointest.cointest
+		var coin4DG = Cointest.cointest
+		var coinsDG = Cointest.cointest 
+		coin3DG["displayName"]="3DG"
+		coin4DG["displayName"]="4DG"
+		coinsDG["displayName"]="sDG"
+		var cointest = {
+		  "code": 0,
+		  "data": [
+			coin3DG,
+			coin4DG,
+			coinsDG		
+		  ],
+		  "message": "string"
+		}
+		res.send(cointest);
 	},
         accountQT:function accountQT(req, res, next){		
 		var result = [];

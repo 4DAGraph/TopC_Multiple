@@ -21,7 +21,7 @@ var bitcoincashjs = require("bitcoincashjs")
 var async = require('async');
 
 var chainAPI = require('./chainAPI')
-var encrypto = require('../../../../homework/firstclass');
+var encrypto = require('../../homework/firstclass');
 var CICport = config.cicport;
 var GUCport = config.gucport;
 module.exports = {
